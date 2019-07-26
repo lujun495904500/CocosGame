@@ -1,0 +1,227 @@
+{
+    "I1": {
+        "wtype": "S",
+        "attack": 10,
+        "atktimes": 1
+    },
+    "I2": {
+        "wtype": "S",
+        "attack": 20,
+        "atktimes": 1
+    },
+    "I3": {
+        "wtype": "S",
+        "attack": 40,
+        "atktimes": 1
+    },
+    "I4": {
+        "wtype": "S",
+        "attack": 80,
+        "atktimes": 1
+    },
+    "I5": {
+        "wtype": "S",
+        "attack": 120,
+        "atktimes": 1
+    },
+    "I6": {
+        "wtype": "S",
+        "attack": 90,
+        "atktimes": 2
+    },
+    "I7": {
+        "wtype": "S",
+        "attack": 200,
+        "atktimes": 1
+    },
+    "I8": {
+        "wtype": "S",
+        "attack": 220,
+        "atktimes": 1
+    },
+    "I9": {
+        "wtype": "S",
+        "attack": 235,
+        "atktimes": 1
+    },
+    "I10": {
+        "wtype": "A",
+        "attack": 10,
+        "atktimes": 1
+    },
+    "I11": {
+        "wtype": "A",
+        "attack": 20,
+        "atktimes": 1
+    },
+    "I12": {
+        "wtype": "A",
+        "attack": 40,
+        "atktimes": 1
+    },
+    "I13": {
+        "wtype": "A",
+        "attack": 80,
+        "atktimes": 1
+    },
+    "I14": {
+        "wtype": "A",
+        "attack": 120,
+        "atktimes": 1
+    },
+    "I15": {
+        "wtype": "A",
+        "attack": 120,
+        "atktimes": 2
+    },
+    "I16": {
+        "wtype": "A",
+        "attack": 150,
+        "atktimes": 1
+    },
+    "I17": {
+        "wtype": "A",
+        "attack": 220,
+        "atktimes": 1
+    },
+    "I18": {
+        "wtype": "A",
+        "attack": 235,
+        "atktimes": 1
+    },
+    "I19": {
+        "wtype": "P",
+        "attack": 10,
+        "atktimes": 1
+    },
+    "I20": {
+        "wtype": "P",
+        "attack": 20,
+        "atktimes": 1
+    },
+    "I21": {
+        "wtype": "P",
+        "attack": 40,
+        "atktimes": 1
+    },
+    "I22": {
+        "wtype": "P",
+        "attack": 80,
+        "atktimes": 1
+    },
+    "I23": {
+        "wtype": "P",
+        "attack": 120,
+        "atktimes": 1
+    },
+    "I24": {
+        "wtype": "P",
+        "attack": 150,
+        "atktimes": 1
+    },
+    "I25": {
+        "wtype": "P",
+        "attack": 200,
+        "atktimes": 1
+    },
+    "I26": {
+        "wtype": "P",
+        "attack": 220,
+        "atktimes": 1
+    },
+    "I27": {
+        "wtype": "P",
+        "attack": 235,
+        "atktimes": 1
+    },
+    "I28": {
+        "wtype": "B",
+        "attack": 6,
+        "atktimes": 2
+    },
+    "I29": {
+        "wtype": "B",
+        "attack": 12,
+        "atktimes": 2
+    },
+    "I30": {
+        "wtype": "B",
+        "attack": 24,
+        "atktimes": 2
+    },
+    "I31": {
+        "wtype": "B",
+        "attack": 50,
+        "atktimes": 2
+    },
+    "I32": {
+        "wtype": "B",
+        "attack": 70,
+        "atktimes": 2
+    },
+    "I33": {
+        "wtype": "B",
+        "attack": 90,
+        "atktimes": 2
+    },
+    "I34": {
+        "wtype": "B",
+        "attack": 120,
+        "atktimes": 2
+    },
+    "I35": {
+        "wtype": "B",
+        "attack": 132,
+        "atktimes": 2
+    },
+    "I36": {
+        "wtype": "B",
+        "attack": 140,
+        "atktimes": 2
+    },
+    "I37": {
+        "wtype": "K",
+        "attack": 10,
+        "atktimes": 1
+    },
+    "I38": {
+        "wtype": "K",
+        "attack": 20,
+        "atktimes": 1
+    },
+    "I39": {
+        "wtype": "K",
+        "attack": 40,
+        "atktimes": 1
+    },
+    "I40": {
+        "wtype": "K",
+        "attack": 80,
+        "atktimes": 1
+    },
+    "I41": {
+        "wtype": "K",
+        "attack": 120,
+        "atktimes": 1
+    },
+    "I42": {
+        "wtype": "K",
+        "attack": 150,
+        "atktimes": 1
+    },
+    "I43": {
+        "wtype": "K",
+        "attack": 200,
+        "atktimes": 1
+    },
+    "I44": {
+        "wtype": "K",
+        "attack": 220,
+        "atktimes": 1
+    },
+    "I45": {
+        "wtype": "K",
+        "attack": 235,
+        "atktimes": 1
+    }
+}

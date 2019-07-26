@@ -1,0 +1,196 @@
+{
+  "version": "0.3.0",
+  "scope": "tree",
+  "id": "7a1561a4-2ecc-41cf-a140-33e8d32bc60b",
+  "title": "patrol",
+  "description": "",
+  "root": "732e6ab2-036f-44cb-af46-6d785236cb67",
+  "properties": {},
+  "nodes": {
+    "732e6ab2-036f-44cb-af46-6d785236cb67": {
+      "id": "732e6ab2-036f-44cb-af46-6d785236cb67",
+      "name": "MemSequence",
+      "title": "MemSequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -156,
+        "y": 24
+      },
+      "children": [
+        "1793ef21-90b2-431c-8098-6c6a63488d47",
+        "41ad8487-e57b-4cd5-9631-2edcf7cbd1bb",
+        "9151460c-c4ee-4b49-9982-d7850bd52b46",
+        "885a98bf-3377-4fff-8f36-270cfae20267",
+        "27b3b61f-3a5f-43de-b9b9-afb33ff42b48"
+      ]
+    },
+    "1793ef21-90b2-431c-8098-6c6a63488d47": {
+      "id": "1793ef21-90b2-431c-8098-6c6a63488d47",
+      "name": "RandValue",
+      "title": "RandValue (<label>,<min>,<max>)",
+      "description": "",
+      "properties": {
+        "label": "waittime",
+        "min": 2000,
+        "max": 3000
+      },
+      "display": {
+        "x": 108,
+        "y": -156
+      }
+    },
+    "41ad8487-e57b-4cd5-9631-2edcf7cbd1bb": {
+      "id": "41ad8487-e57b-4cd5-9631-2edcf7cbd1bb",
+      "name": "Wait",
+      "title": "Wait (<milliseconds>)",
+      "description": "",
+      "properties": {
+        "milliseconds": "#waittime"
+      },
+      "display": {
+        "x": 48,
+        "y": -72
+      }
+    },
+    "9151460c-c4ee-4b49-9982-d7850bd52b46": {
+      "id": "9151460c-c4ee-4b49-9982-d7850bd52b46",
+      "name": "patrol.Directs",
+      "title": "patrol.Directs (<label>)",
+      "description": "",
+      "properties": {
+        "label": "directs"
+      },
+      "display": {
+        "x": 60,
+        "y": 24
+      }
+    },
+    "885a98bf-3377-4fff-8f36-270cfae20267": {
+      "id": "885a98bf-3377-4fff-8f36-270cfae20267",
+      "name": "RandElement",
+      "title": "RandElement (<label>,<group>)",
+      "description": "",
+      "properties": {
+        "label": "direct",
+        "group": "#directs"
+      },
+      "display": {
+        "x": 96,
+        "y": 108
+      }
+    },
+    "27b3b61f-3a5f-43de-b9b9-afb33ff42b48": {
+      "id": "27b3b61f-3a5f-43de-b9b9-afb33ff42b48",
+      "name": "patrol.Move",
+      "title": "patrol.Move (<direct>)",
+      "description": "",
+      "properties": {
+        "direct": "#direct"
+      },
+      "display": {
+        "x": 60,
+        "y": 192
+      }
+    }
+  },
+  "display": {
+    "camera_x": 692.5,
+    "camera_y": 376.5,
+    "camera_z": 1,
+    "x": -360,
+    "y": 24
+  },
+  "custom_nodes": [
+    {
+      "version": "0.3.0",
+      "scope": "node",
+      "name": "battle.Attack",
+      "category": "action",
+      "title": "battle.Attack (<role>,<targets>,<onComplete>)",
+      "description": null,
+      "properties": {}
+    },
+    {
+      "version": "0.3.0",
+      "scope": "node",
+      "name": "RandValue",
+      "category": "action",
+      "title": "RandValue (<label>,<min>,<max>)",
+      "description": null,
+      "properties": {}
+    },
+    {
+      "version": "0.3.0",
+      "scope": "node",
+      "name": "patrol.Directs",
+      "category": "action",
+      "title": "patrol.Directs (<label>)",
+      "description": null,
+      "properties": {}
+    },
+    {
+      "version": "0.3.0",
+      "scope": "node",
+      "name": "RandElement",
+      "category": "action",
+      "title": "RandElement (<label>,<group>)",
+      "description": null,
+      "properties": {}
+    },
+    {
+      "version": "0.3.0",
+      "scope": "node",
+      "name": "patrol.Move",
+      "category": "action",
+      "title": "patrol.Move (<direct>)",
+      "description": null,
+      "properties": {}
+    },
+    {
+      "version": "0.3.0",
+      "scope": "node",
+      "name": "betray.BetrayRole",
+      "category": "action",
+      "title": "betray.BetrayRole (<label>)",
+      "description": null,
+      "properties": {}
+    },
+    {
+      "version": "0.3.0",
+      "scope": "node",
+      "name": "game.RoleTeam",
+      "category": "action",
+      "title": "game.RoleTeam (<label>,<role>)",
+      "description": null,
+      "properties": {}
+    },
+    {
+      "version": "0.3.0",
+      "scope": "node",
+      "name": "game.TeamRoles",
+      "category": "action",
+      "title": "game.TeamRoles (<label>,<team>,<alive>)",
+      "description": null,
+      "properties": {}
+    },
+    {
+      "version": "0.3.0",
+      "scope": "node",
+      "name": "game.OnComplete",
+      "category": "action",
+      "title": "game.OnComplete (<label>)",
+      "description": null,
+      "properties": {}
+    },
+    {
+      "version": "0.3.0",
+      "scope": "node",
+      "name": "Group",
+      "category": "action",
+      "title": "Group (<label>,<elements>)",
+      "description": null,
+      "properties": {}
+    }
+  ]
+}

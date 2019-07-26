@@ -1,0 +1,21 @@
+{
+	"source":"../heads",
+	"dest":"../../res/graphics/heads",
+	"heads":[
+		{
+			"head":"liubei.png",
+			"image":"p1_0.png",
+			"flipX":true
+		}
+		,{
+			"head":"guanyu.png",
+			"image":"p1_1.png",
+			"flipX":true
+		}
+		,{
+			"head":"zhangfei.png",
+			"image":"p1_2.png",
+			"flipX":true
+		}
+	]
+}

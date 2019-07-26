@@ -1,0 +1,253 @@
+{
+    "L1": {
+        "skills": [
+            "S1"
+        ],
+        "formations": [
+            "F1"
+        ]
+    },
+    "L2": {
+        "skills": [
+            "S2"
+        ]
+    },
+    "L3": {
+        "skills": [
+            "S3"
+        ]
+    },
+    "L4": {
+        "skills": [
+            "S4"
+        ]
+    },
+    "L5": {
+        "strategys": [
+            "S5"
+        ]
+    },
+    "L6": {
+        "formations": [
+            "F2"
+        ]
+    },
+    "L7": {
+        "strategys": [
+            "S6"
+        ]
+    },
+    "L8": {
+        "strategys": [
+            "S7"
+        ]
+    },
+    "L9": {
+        "strategys": [
+            "S8"
+        ]
+    },
+    "L10": {
+        "formations": [
+            "F3"
+        ]
+    },
+    "L11": {
+        "skills": [
+            "S9"
+        ]
+    },
+    "L12": {
+        "skills": [
+            "S10"
+        ]
+    },
+    "L13": {
+        "skills": [
+            "S11"
+        ]
+    },
+    "L14": {
+        "strategys": [
+            "S12"
+        ]
+    },
+    "L15": {
+        "strategys": [
+            "S13"
+        ]
+    },
+    "L16": {
+        "formations": [
+            "F4"
+        ]
+    },
+    "L17": {
+        "skills": [
+            "S14"
+        ]
+    },
+    "L18": {
+        "strategys": [
+            "S15"
+        ]
+    },
+    "L19": {
+        "strategys": [
+            "S16"
+        ]
+    },
+    "L20": {
+        "skills": [
+            "S17"
+        ]
+    },
+    "L21": {
+        "formations": [
+            "F5"
+        ]
+    },
+    "L22": {
+        "skills": [
+            "S18"
+        ]
+    },
+    "L23": {
+        "strategys": [
+            "S19"
+        ]
+    },
+    "L24": {
+        "skills": [
+            "S20"
+        ]
+    },
+    "L25": {
+        "strategys": [
+            "S21"
+        ]
+    },
+    "L26": {
+        "strategys": [
+            "S22"
+        ]
+    },
+    "L27": {
+        "formations": [
+            "F6"
+        ]
+    },
+    "L28": {
+        "skills": [
+            "S23"
+        ]
+    },
+    "L29": {
+        "strategys": [
+            "S24"
+        ]
+    },
+    "L30": {
+        "strategys": [
+            "S25"
+        ]
+    },
+    "L31": {
+        "strategys": [
+            "S26"
+        ]
+    },
+    "L32": {
+        "skills": [
+            "S27"
+        ]
+    },
+    "L33": {
+        "strategys": [
+            "S28"
+        ]
+    },
+    "L34": {
+        "skills": [
+            "S29"
+        ]
+    },
+    "L35": {
+        "skills": [
+            "S30"
+        ]
+    },
+    "L36": {
+        "strategys": [
+            "S31"
+        ]
+    },
+    "L37": {
+        "formations": [
+            "F7"
+        ]
+    },
+    "L38": {
+        "skills": [
+            "S32"
+        ]
+    },
+    "L39": {
+        "strategys": [
+            "S33"
+        ]
+    },
+    "L40": {
+        "skills": [
+            "S34"
+        ]
+    },
+    "L41": {
+        "strategys": [
+            "S35"
+        ]
+    },
+    "L42": {
+        "skills": [
+            "S36"
+        ]
+    },
+    "L43": {
+        "formations": [
+            "F8"
+        ]
+    },
+    "L44": {
+        "skills": [
+            "S37"
+        ]
+    },
+    "L45": {
+        "formations": [
+            "F9"
+        ]
+    },
+    "L46": {
+        "skills": [
+            "S38"
+        ]
+    },
+    "L47": {
+        "strategys": [
+            "S39",
+            "S40"
+        ]
+    },
+    "L48": {
+        "formations": [
+            "F10"
+        ]
+    },
+    "L255": {
+        "strategys": [
+            "S41",
+            "S42",
+            "S43"
+        ]
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "csb":"$(respath)/demo/cocosstudio/DemoScene.csb"
+	,"params":{
+		"bgm":"begin_15",
+		"fadetime":1
+	}
+    ,"bindings":{
+		"sp_1":"sp_1",
+		"sp_2":"sp_2",
+		"sp_2_e":"sp_2_e",
+		"sp_3":"sp_3",
+		"sp_3_e":"sp_3_e"
+    }
+}

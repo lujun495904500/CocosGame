@@ -1,0 +1,11 @@
+*.VC.db
+__pycache__
+*.sdf
+.vs
+ipch
+*_PList.Dir
+*.ilk
+*.pdb
+*.pack
+*.patch
+*logs.txt

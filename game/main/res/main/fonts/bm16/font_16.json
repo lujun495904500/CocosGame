@@ -1,0 +1,8 @@
+{
+    "name":"font_16",
+    "meta":"BMFont",
+    "fnt":"$(respath)/main/fonts/bm16/bm16.fnt",
+    "image":"$(respath)/main/fonts/bm16/bm16_0.png",
+    "size":[16,16],
+    "alphasize":[8,16]
+}

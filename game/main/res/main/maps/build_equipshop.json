@@ -1,0 +1,11 @@
+{
+	"name":"build_equipshop",
+	"meta":"TMXMap",
+	"tmx":"$(respath)/main/maps/build_equipshop.tmx",
+	"params":{
+		"maptype":"build",
+		"bgm":"room_11",
+		"moveorder":35,
+		"moveoffest":[0,4]
+	}
+}

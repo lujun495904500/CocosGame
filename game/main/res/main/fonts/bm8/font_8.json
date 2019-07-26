@@ -1,0 +1,8 @@
+{
+    "name":"font_8",
+    "meta":"BMFont",
+    "fnt":"$(respath)/main/fonts/bm8/bm8.fnt",
+    "image":"$(respath)/main/fonts/bm8/bm8_0.png",
+    "size":[8,8],
+    "alphasize":[4,8]
+}

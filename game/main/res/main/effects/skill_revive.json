@@ -1,0 +1,23 @@
+{
+    "name": "skill_revive",
+    "meta": "ReviveEffect",
+    "params": {
+        "offest": [
+            0,
+            8
+        ],
+        "count": 8,
+        "radius": 22,
+        "delay": 0.2,
+        "rotatetimes": 8,
+        "rotatespeed": 22
+    },
+    "source": {
+        "plist": "$(respath)/main/graphics/plists/effects/skill_revive.plist",
+        "image": "$(respath)/main/graphics/plists/effects/skill_revive.png",
+        "fpath": "main/effects/skill_revive/"
+    },
+    "frames": [
+        "fstar"
+    ]
+}

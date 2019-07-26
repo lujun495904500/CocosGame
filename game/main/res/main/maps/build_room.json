@@ -1,0 +1,11 @@
+{
+	"name":"build_room",
+	"meta":"TMXMap",
+	"tmx":"$(respath)/main/maps/build_room.tmx",
+	"params":{
+		"maptype":"build",
+		"bgm":"room_11",
+		"moveorder":35,
+		"moveoffest":[0,4]
+	}
+}

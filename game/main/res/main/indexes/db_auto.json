@@ -1,0 +1,70 @@
+{
+    "db": {
+        "buffs": [
+            "$(respath)/main/databases/buffs.json"
+        ],
+        "configs": [
+            "$(respath)/main/databases/configs.json"
+        ],
+        "events": [
+            "$(respath)/main/databases/events.json"
+        ],
+        "formulas": [
+            "$(respath)/main/databases/formulas.json"
+        ],
+        "items": [
+            "$(respath)/main/databases/items.json"
+        ],
+        "equipments": [
+            "$(respath)/main/databases/equipments.json"
+        ],
+        "weapons": [
+            "$(respath)/main/databases/weapons.json"
+        ],
+        "armors": [
+            "$(respath)/main/databases/armors.json"
+        ],
+        "accessorys": [
+            "$(respath)/main/databases/accessorys.json"
+        ],
+        "consumables": [
+            "$(respath)/main/databases/consumables.json"
+        ],
+        "soldiers": [
+            "$(respath)/main/databases/soldiers.json"
+        ],
+        "experiences": [
+            "$(respath)/main/databases/experiences.json"
+        ],
+        "roles": [
+            "$(respath)/main/databases/roles.json"
+        ],
+        "skills": [
+            "$(respath)/main/databases/skills.json"
+        ],
+        "strategys": [
+            "$(respath)/main/databases/strategys.json"
+        ],
+        "formations": [
+            "$(respath)/main/databases/formations.json"
+        ],
+        "levellearns": [
+            "$(respath)/main/databases/levellearns.json"
+        ],
+        "strings": [
+            "$(respath)/main/databases/strings.json"
+        ],
+        "talks": [
+            "$(respath)/main/databases/talks.json"
+        ],
+        "terrains": [
+            "$(respath)/main/databases/terrains.json"
+        ],
+        "towns": [
+            "$(respath)/main/databases/towns.json"
+        ],
+        "variables": [
+            "$(respath)/main/databases/variables.json"
+        ]
+    }
+}

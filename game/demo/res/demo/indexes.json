@@ -1,0 +1,5 @@
+{
+    "src": "$(respath)/demo/indexes/src.json",
+    "res": "$(respath)/demo/indexes/res.json",
+    "db_auto": "$(respath)/demo/indexes/db_auto.json"
+}

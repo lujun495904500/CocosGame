@@ -1,0 +1,8 @@
+LOCAL_PATH := $(call my-dir)
+
+include $(CLEAR_VARS)
+LOCAL_MODULE := libmpg123_static
+LOCAL_SRC_FILES := $(TARGET_ARCH_ABI)/libmpg123.a
+LOCAL_EXPORT_C_INCLUDES := $(LOCAL_PATH)/../include
+LOCAL_EXPORT_LDLIBS := -llog
+include $(PREBUILT_STATIC_LIBRARY)

@@ -1,0 +1,422 @@
+{
+    "TEST": [
+        "测试字符串"
+    ],
+    "UPDATE_PACK": [
+        "更新游戏包$(pack)…"
+    ],
+    "PACK_UPDATE_FAILURE": [
+        "游戏包$(pack)更新失败"
+    ],
+    "PACK_UPDATE_END": [
+        "游戏包更新完成"
+    ],
+    "PACK_LOADING": [
+        "正在加载游戏包…"
+    ],
+    "PACK_LOAD_FAILURE": [
+        "游戏包$(pack)加载失败"
+    ],
+    "PACK_LOAD_SUCCESS": [
+        "加载完成,正在进入游戏…"
+    ],
+    "CONFIRM": [
+        "确定"
+    ],
+    "CANCEL": [
+        "取消"
+    ],
+    "YES": [
+        "是"
+    ],
+    "NO": [
+        "否"
+    ],
+    "FAILURE": [
+        "失败"
+    ],
+    "SUCCESS": [
+        "成功"
+    ],
+    "BYE": [
+        "再见"
+    ],
+    "GOODNIGHT": [
+        "晚安"
+    ],
+    "HARDWORK": [
+        "辛苦了"
+    ],
+    "PURCHASE": [
+        "购入"
+    ],
+    "SELLOUT": [
+        "卖出"
+    ],
+    "WELCOMEAGAIN": [
+        "欢迎再来"
+    ],
+    "DEPOSIT": [
+        "寄存"
+    ],
+    "RECEIVE": [
+        "接受"
+    ],
+    "THANKS": [
+        "谢谢"
+    ],
+    "WHOSE": [
+        "谁的"
+    ],
+    "TOWHOM": [
+        "给哪位"
+    ],
+    "WHICH": [
+        "哪个"
+    ],
+    "GETWHICH": [
+        "取哪个"
+    ],
+    "BUYWHICH": [
+        "要哪个"
+    ],
+    "TEAM_NAME": [
+        "$(role)军"
+    ],
+    "HOSTEL_MSG1": [
+        "欢迎\n住一晚要$(costs)金\n住宿吗"
+    ],
+    "HOSTEL_MSG2": [
+        "早上好\n今天还请继续努力"
+    ],
+    "HOSTEL_MSG3": [
+        "钱不够  不能住"
+    ],
+    "RECORD_MSG1": [
+        "$(name:MAJOR,1,ALIVE)将军\n辛苦了"
+    ],
+    "RECORD_MSG2": [
+        "水平提高一档尚需经验点$(exps)"
+    ],
+    "RECORD_MSG3": [
+        "目前的情况记录吗"
+    ],
+    "RECORD_MSG4": [
+        "已经记录上了\n还要继续吗"
+    ],
+    "DEPOSIT_MSG1": [
+        "幸苦了\n能为您做什么"
+    ],
+    "DEPOSIT_MSG2": [
+        "没有可取的货物"
+    ],
+    "DEPOSIT_MSG3": [
+        "$(role)没有物品"
+    ],
+    "DEPOSIT_MSG4": [
+        "给了$(role)将军"
+    ],
+    "ESHOP_MSG": [
+        "欢迎光临\n这里是武器店\n能为您做什么"
+    ],
+    "ISHOP_MSG": [
+        "欢迎光临\n这里是工具店\n能为您做什么"
+    ],
+    "SHOP_MSG1": [
+        "$(role)将军无货可卖"
+    ],
+    "SHOP_MSG2": [
+        "不能售卖"
+    ],
+    "SHOP_MSG3": [
+        "$(golds)金够吗"
+    ],
+    "SHOP_MSG4": [
+        "多谢\n还卖别的吗"
+    ],
+    "SHOP_MSG5": [
+        "还有别的吗"
+    ],
+    "SHOP_MSG6": [
+        "钱不够  不能买"
+    ],
+    "SHOP_MSG7": [
+        "$(role)将军不能用\n要吗"
+    ],
+    "SHOP_MSG8": [
+        "谢谢\n还要别的吗"
+    ],
+    "TRAINNING_MSG1": [
+        "这里是训练场\n费用为$(costs)金\n训练吗"
+    ],
+    "TRAINNING_MSG2": [
+        "您的水平已经够高\n不必再在此训练\n请到别的训练场去吧"
+    ],
+    "TRAINNING_MSG3": [
+        "明白了\n请"
+    ],
+    "TRAINNING_MSG4": [
+        "呀……嘿"
+    ],
+    "TRAINNING_MSG5": [
+        "钱不够\n有机会再来吧"
+    ],
+    "NOBODY_HERE": [
+        "此处没有人"
+    ],
+    "APPOINT_ADVISER": [
+        "$(select)成为军师了"
+    ],
+    "RELIEVE_ADVISER": [
+        "$(select)不做军师了"
+    ],
+    "NOT_APPOINT_ADVISER": [
+        "$(select)不能当军师"
+    ],
+    "DROP_ITEM": [
+        "$(select)丢弃了\n$(item)"
+    ],
+    "NOT_UNEQUIP_ITEM": [
+        "$(select)不能去掉\n$(item)"
+    ],
+    "UNEQUIP_ITEM": [
+        "$(select)卸下了\n$(item)"
+    ],
+    "NOT_EQUIP_ITEM": [
+        "$(select)不能装备这个"
+    ],
+    "EQUIP_ITEM": [
+        "$(select)装备上了\n$(item)"
+    ],
+    "NOT_CARRY_ITEM": [
+        "$(select2)不能再拿了"
+    ],
+    "DELIVER_ITEM": [
+        "$(select)把$(item)\n交给了$(select2)"
+    ],
+    "DELIVER_ITEM_SELF": [
+        "$(select)把$(item)\n重新拿了回来"
+    ],
+    "NOT_USE_HERE": [
+        "这里不能使用"
+    ],
+    "LEVELUP_MSP": [
+        "谋略点 $(msp)"
+    ],
+    "LEVELUP_TEAM": [
+        "$(team)的水平增长了"
+    ],
+    "LEVELUP_SOLDIERS": [
+        "$(role)的士兵数\n变成了 $(soldier)"
+    ],
+    "LEVELUP_LEARN": [
+        "$(role)学会了\n$(learn)"
+    ],
+    "LACK_SP": [
+        "谋略点不足"
+    ],
+    "BATTLE_VICTORY": [
+        "$(our)在和$(enemy)\n的战斗中取胜"
+    ],
+    "BATTLE_FAILURE": [
+        "$(our)在和$(enemy)\n的战斗中被打败"
+    ],
+    "BATTLE_BALANCE": [
+        "得到了\n经验点 $(exps)\n金 $(golds)"
+    ],
+    "USE_ITEM": [
+        "$(role)使用了$(item)"
+    ],
+    "USE_SKILL": [
+        "$(role)使用了$(skill)"
+    ],
+    "RECOVER_SOLDIERS": [
+        "$(target)的士兵数恢复了$(soldiers)人"
+    ],
+    "RECOVER_SOLDIERS_ALL": [
+        "$(target)的士兵数完全恢复了"
+    ],
+    "NO_ADVISER": [
+        "没有军师"
+    ],
+    "SET_FORMATION": [
+        "$(role)设置了\n$(formation)"
+    ],
+    "ROLE_DEFENSE": [
+        "$(role)进行防御"
+    ],
+    "ROLE_ATTACK": [
+        "$(role)攻击"
+    ],
+    "ROLE_ATTACK_EXCITED": [
+        "$(role)奋战"
+    ],
+    "TARGET_LOSSES": [
+        "$(target)损失$(losses)人"
+    ],
+    "TARGET_BEATED": [
+        "$(role)击败了$(target)"
+    ],
+    "TARGET_REVIVE": [
+        "$(target)的伤好了"
+    ],
+    "WHO_FRONT": [
+        "谁的部队在正面"
+    ],
+    "ATTACK_FAILURE": [
+        "攻击失败"
+    ],
+    "NOTSET_FORMATION": [
+        "$(role)将军\n现在不能用此计"
+    ],
+    "UNSET_FORMATION": [
+        "$(team)的阵形散开了"
+    ],
+    "BUG": [
+        "BUG:$(bug)\n请联系开发人员"
+    ],
+    "TEAM_RETREAT": [
+        "$(team)撤退"
+    ],
+    "RETREAT_HUNT": [
+        "但是被追杀"
+    ],
+    "ARCHDELET_ENSURE": [
+        "删除后无法恢复\n确定删除吗?"
+    ],
+    "INPUT_ARCHNAME": [
+        "输入存档名称:"
+    ],
+    "NEW_ARCHIVE": [
+        "新存档"
+    ],
+    "ARCHNAME_NOEMPTY": [
+        "存档名不能为空"
+    ],
+    "NO_EFFECT": [
+        "没起什么作用"
+    ],
+    "DO_RESEARCH": [
+        "$(name:MAJOR,1,ALIVE)向四处张望"
+    ],
+    "FIND_NONE": [
+        "什么也没发现"
+    ],
+    "FIND_ITEM": [
+        "找到了$(item)"
+    ],
+    "FIND_CHEST": [
+        "找到了宝箱"
+    ],
+    "GET_GOLDS": [
+        "得到了金$(golds)"
+    ],
+    "GET_ITEM": [
+        "得到了$(item)"
+    ],
+    "LOST_EFFECT": [
+        "$(name)\n的效果\n消失了"
+    ],
+    "TEAM_FAIL": [
+        "$(team)\n全军覆没"
+    ],
+    "SKILL_SMOKEESCAPE": [
+        "奇怪的烟雾包围了\n$(team)"
+    ],
+    "SKILL_SUSPICION": [
+        "使敌将$(target)起了\n疑心"
+    ],
+    "ROLE_LOSTEFFECT": [
+        "$(role)摆脱了$(name)"
+    ],
+    "SKILL_BINDINGKILL": [
+        "敌将$(target)的行动\n被封锁"
+    ],
+    "SKILL_ALIENATE": [
+        "离间了敌将$(target)"
+    ],
+    "SKILL_BETRAY": [
+        "使敌将$(target)叛逃"
+    ],
+    "SKILL_STRATEGYBACK": [
+        "$(target)利用了\n敌人的策略"
+    ],
+    "SKILL_DISSOLVESTRATEGY": [
+        "敌人使用的谋略\n被化解"
+    ],
+    "SKILL_TRAP": [
+        "$(target)损失$(losses)人"
+    ],
+    "SKILL_SARCASTIC": [
+        "敌将$(target)被引诱\n出城"
+    ],
+    "SKILL_RESISTSTRATEGY": [
+        "提高了对谋略的防御\n能力"
+    ],
+    "SKILL_DESPERATEWAY": [
+        "$(team)退怯"
+    ],
+    "SKILL_AVOIDSTRATEGY": [
+        "敌人的谋略未奏效"
+    ],
+    "SKILL_AVOIDATTACK": [
+        "敌人的攻击未奏效"
+    ],
+    "SKILL_ASSASSINATE": [
+        "$(role)斩了$(target)"
+    ],
+    "SKILL_PRETENDRETREAT": [
+        "$(team)被引诱\n出城"
+    ],
+    "SKILL_CONFUSION": [
+        "$(team)的谋略点\n减少"
+    ],
+    "GAMEEXIT_ENSURE": [
+        "当前游戏未保存\n确定退出吗?"
+    ],
+    "ROLE_DESC_C1": [
+        "为复兴汉室举兵，\n中山靖王刘胜之后\n刘备  字 玄德"
+    ],
+    "ROLE_DESC_C2": [
+        "手使80斤重青龙偃月刀，\n有万夫不当之勇的豪杰\n关羽  字 云长"
+    ],
+    "ROLE_DESC_C3": [
+        "仅凭一人喝退曹军百万\n之众的猛将\n张飞  字 翼德"
+    ],
+    "ROLE_DESC_C68": [
+        "凭讨伐黄巾贼而扬名，\n乘乱世一展抱负的乱世奸雄\n曹操  字 孟德"
+    ],
+    "ROLE_DESC_C63": [
+        "无视汉朝，自立为帝的\n袁术  字 公路"
+    ],
+    "ROLE_DESC_C116": [
+        "最强武将，反复无常的\n吕布  字 奉先"
+    ],
+    "ROLE_DESC_C10": [
+        "仅凭一骑独闯曹军百万大军，\n名扬天下的名将\n赵云  字 子龙"
+    ],
+    "ROLE_DESC_C22": [
+        "立志向曹操报杀父之仇的\n马超  字 孟起"
+    ],
+    "ROLE_DESC_C16": [
+        "治军严谨、老当益壮的老将\n黄忠  字 汉升"
+    ],
+    "ROLE_DESC_C86": [
+        "在战场上拔矢啖睛的独眼将军\n夏侯惇  字 元让"
+    ],
+    "ROLE_DESC_C71": [
+        "以800骑击退孙权10万大军，\n威震东吴的\n张辽  字 文远"
+    ],
+    "ROLE_DESC_C69": [
+        "曹操军中精锐护卫部队的大将\n许褚  字 仲康"
+    ],
+    "ROLE_DESC_C12": [
+        "身受三顾之礼，最强军师，\n人称伏龙的\n诸葛亮  字 孔明"
+    ],
+    "ROLE_DESC_C17": [
+        "白眉似雪的荆州贤者\n马良  字 季常"
+    ],
+    "ROLE_DESC_C19": [
+        "与诸葛亮齐名的天才军师，\n凤雏\n庞统  字 士元"
+    ]
+}

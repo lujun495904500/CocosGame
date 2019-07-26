@@ -1,0 +1,11 @@
+{
+	"name":"build_palace",
+	"meta":"TMXMap",
+	"tmx":"$(respath)/main/maps/build_palace.tmx",
+	"params":{
+		"maptype":"build",
+		"bgm":"palace_12",
+		"moveorder":35,
+		"moveoffest":[0,4]
+	}
+}

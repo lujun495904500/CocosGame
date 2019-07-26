@@ -1,0 +1,11 @@
+{
+	"name":"town_xuzhou",
+	"meta":"TMXMap",
+	"tmx":"$(respath)/main/maps/town_xuzhou.tmx",
+	"params":{
+		"maptype":"town",
+		"bgm":"town_8",
+		"moveorder":55,
+		"moveoffest":[0,4]
+	}
+}

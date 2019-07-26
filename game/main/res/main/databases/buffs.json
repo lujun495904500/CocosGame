@@ -1,0 +1,108 @@
+{
+    "B1": {
+        "name": "护身烟",
+        "map": true,
+        "battle": false,
+        "positive": true,
+        "script": "states.buff.M_BodyProtect",
+        "param": {
+            "steps": 64
+        }
+    },
+    "B2": {
+        "name": "烟遁计",
+        "map": true,
+        "battle": false,
+        "positive": true,
+        "script": "states.buff.M_SmokeEscape",
+        "param": {
+            "steps": 64
+        }
+    },
+    "B3": {
+        "name": "杀毒计",
+        "map": true,
+        "battle": false,
+        "positive": true,
+        "script": "states.buff.M_AntiVirus",
+        "param": {
+            "steps": 128
+        }
+    },
+    "B4": {
+        "name": "烟遁计",
+        "map": false,
+        "battle": true,
+        "positive": true,
+        "script": "states.buff.B_SmokeEscape",
+        "param": {
+            "roundmin": 1,
+            "roundmax": 5
+        }
+    },
+    "B5": {
+        "name": "疑心计",
+        "map": false,
+        "battle": true,
+        "positive": false,
+        "script": "states.buff.B_Suspicion",
+        "param": {
+            "roundmin": 1,
+            "roundmax": 5
+        }
+    },
+    "B6": {
+        "name": "缚杀计",
+        "map": false,
+        "battle": true,
+        "positive": false,
+        "script": "states.buff.B_BindingKill"
+    },
+    "B7": {
+        "name": "离间计",
+        "map": false,
+        "battle": true,
+        "positive": false,
+        "script": "states.buff.B_Alienate",
+        "param": {
+            "roundmin": 1,
+            "roundmax": 5
+        }
+    },
+    "B8": {
+        "name": "叛离计",
+        "map": false,
+        "battle": true,
+        "positive": false,
+        "script": "states.buff.B_Betray"
+    },
+    "B9": {
+        "name": "策返计",
+        "map": false,
+        "battle": true,
+        "positive": true,
+        "script": "states.buff.B_StrategyBack"
+    },
+    "B10": {
+        "name": "策免计",
+        "map": false,
+        "battle": true,
+        "positive": false,
+        "script": "states.buff.B_AvoidStrategy",
+        "param": {
+            "roundmin": 1,
+            "roundmax": 5
+        }
+    },
+    "B11": {
+        "name": "击免计",
+        "map": false,
+        "battle": true,
+        "positive": false,
+        "script": "states.buff.B_AvoidAttack",
+        "param": {
+            "roundmin": 1,
+            "roundmax": 5
+        }
+    }
+}

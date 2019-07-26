@@ -1,0 +1,28 @@
+{
+    "meta":"Dialogue"
+    ,"name":"dialogue"
+    ,"params":{
+        
+    }
+    ,"csb":"$(respath)/main/cocosstudio/Select.csb"
+    ,"widgets":{
+		"wg_message":{
+            "source":"wg_message",
+            "type":"message"
+        }
+		,"wg_select":{
+            "source":"wg_select",
+            "type":"table",
+            "config":{
+                "itemsize":[48,16],
+                "selectable":true,
+                "itemrows":2,
+                "itemcolumns":1,
+				"itemanchor":[0,0.5],
+				"itemwidget":{
+					"type":"label"
+				}
+            }
+        }
+    }
+}

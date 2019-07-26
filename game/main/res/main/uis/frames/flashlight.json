@@ -1,0 +1,11 @@
+{
+    "meta":"FlashLight"
+    ,"name":"flashlight"
+    ,"params":{
+        
+    }
+    ,"csb":"$(respath)/main/cocosstudio/FlashLight.csb"
+    ,"bindings":{
+		"pl_flash":"pl_flash"
+    }
+}

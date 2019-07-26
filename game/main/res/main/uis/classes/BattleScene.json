@@ -1,0 +1,10 @@
+{
+    "csb":"$(respath)/main/cocosstudio/BattleScene.csb"
+    ,"bindings":{
+		"pl_environment":"pl_environment",
+		"sp_ourhead":"sp_ourhead",
+		"sp_enemyhead":"sp_enemyhead",
+		"pl_ourteam":"pl_ourteam",
+		"pl_enemyteam":"pl_enemyteam"
+    }
+}

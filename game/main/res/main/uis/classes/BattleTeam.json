@@ -1,0 +1,13 @@
+{
+    "csb":"$(respath)/main/cocosstudio/BattleTeam.csb"
+	,"params":{
+		"rolecount":5
+	}
+    ,"bindings":{
+		"pl_role1":"pl_team/pl_role1",
+		"pl_role2":"pl_team/pl_role2",
+		"pl_role3":"pl_team/pl_role3",
+		"pl_role4":"pl_team/pl_role4",
+		"pl_role5":"pl_team/pl_role5"
+    }
+}

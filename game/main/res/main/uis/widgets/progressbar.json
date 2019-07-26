@@ -1,0 +1,8 @@
+{
+    "meta":"ProgressBar",
+    "name":"progressbar",
+    "image":"#main/images/attrbar",
+    "rightinc":true,
+    "segment":19,
+    "maxvalue":255
+}

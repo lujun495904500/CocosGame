@@ -1,0 +1,35 @@
+{
+    "meta":"GameMenu"
+    ,"name":"gamemenu"
+    ,"params":{
+        
+    }
+    ,"csb":"$(respath)/main/cocosstudio/GameMenu.csb"
+    ,"widgets":{
+		"wg_menus":{
+            "source":"wg_menus",
+            "type":"table",
+			"config":{
+				"itemsize":[80,16],
+                "selectable":true,
+                "itemrows":2,
+                "itemcolumns":1,
+				"itemwidget":{
+					"type":"label"
+				}
+			},
+			"params":{
+				"items":[
+					{
+						"label":"查看游戏包",
+						"type":"P"
+					}
+					,{
+						"label":"退出游戏",
+						"type":"E"
+					}
+				]
+			}
+        }
+    }
+}

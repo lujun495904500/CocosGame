@@ -1,0 +1,14 @@
+Demo版未有操作引导
+按键设置如下
+
+W	上
+S	下
+A	左
+D	右
+F	SELECT
+H	START
+J	A键
+K	B键
+
+当前秘籍:
+START + SELECT 立刻升一级

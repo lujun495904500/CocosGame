@@ -1,0 +1,187 @@
+{
+    "src":{
+		"behavior3s":{
+			"game.OnComplete":"app.main.logics.behavior3s.game.OnComplete",
+			"game.Entity":"app.main.logics.behavior3s.game.Entity",
+			"game.RoleTeam":"app.main.logics.behavior3s.game.RoleTeam",
+			"game.TeamRoles":"app.main.logics.behavior3s.game.TeamRoles",
+			"game.EnemyTeam":"app.main.logics.behavior3s.game.EnemyTeam",
+			"battle.Attack":"app.main.logics.behavior3s.battle.Attack",
+			"patrol.Directs":"app.main.logics.behavior3s.patrol.Directs",
+			"patrol.Move":"app.main.logics.behavior3s.patrol.Move",
+			"betray.BetrayRole":"app.main.logics.behavior3s.betray.BetrayRole"
+		}
+		,"battles":{
+			"envs":{
+				"Image":"app.main.logics.games.battle.env.Image",
+				"Animation":"app.main.logics.games.battle.env.Animation"
+			}
+		}
+        ,"effects":{
+			"FrameEffect":"app.main.logics.effects.FrameEffect",
+			"Fire1Effect":"app.main.logics.effects.Fire1Effect",
+			"Water1Effect":"app.main.logics.effects.Water1Effect",
+			"FallwoodEffect":"app.main.logics.effects.FallwoodEffect",
+			"Fire2Effect":"app.main.logics.effects.Fire2Effect",
+			"Water2Effect":"app.main.logics.effects.Water2Effect",
+			"FallstoneEffect":"app.main.logics.effects.FallstoneEffect",
+			"ReviveEffect":"app.main.logics.effects.ReviveEffect",
+			"RecoveryEffect":"app.main.logics.effects.RecoveryEffect"
+		}
+		,"fonts":{
+			"BMFont":"app.main.logics.fonts.BMFont",
+			"CharMapFont":"app.main.logics.fonts.CharMapFont"
+		}
+		,"maps":{
+			"TMXMap":"app.main.logics.maps.TMXMap"
+		}
+		,"models":{
+			"RoleModel":"app.main.logics.models.RoleModel"
+		}
+		,"serializes":{
+			"Team":"app.main.logics.games.Team",
+			"Role":"app.main.logics.games.Role",
+			"Item":"app.main.logics.games.item.Item",
+			"Equipment":"app.main.logics.games.item.Equipment",
+			"Weapon":"app.main.logics.games.item.Weapon",
+			"Armor":"app.main.logics.games.item.Armor",
+			"Accessory":"app.main.logics.games.item.Accessory",
+			"Consumable":"app.main.logics.games.item.Consumable"
+		}
+		,"scenes":{
+			"TestScene":"app.main.logics.scenes.TestScene",
+			"BootScene":"app.main.logics.scenes.BootScene",
+			"MapScene":"app.main.logics.scenes.MapScene",
+			"BattleScene":"app.main.logics.scenes.BattleScene"
+		}
+		,"scripts":{
+			"maps.city.Xuzhou":"app.main.logics.scripts.maps.city.Xuzhou",
+			"actions.Test":"app.main.logics.scripts.actions.Test",
+			
+			"actions.equip.Weapon":"app.main.logics.scripts.actions.equip.Weapon",
+			"actions.equip.Armor":"app.main.logics.scripts.actions.equip.Armor",
+			"actions.equip.Accessory":"app.main.logics.scripts.actions.equip.Accessory",
+			
+			"actions.SelectTarget":"app.main.logics.scripts.actions.SelectTarget",
+			"actions.Dialogue":"app.main.logics.scripts.actions.Dialogue",
+			"actions.Hostel":"app.main.logics.scripts.actions.Hostel",
+			"actions.EquipShop":"app.main.logics.scripts.actions.EquipShop",
+			"actions.ItemShop":"app.main.logics.scripts.actions.ItemShop",
+			"actions.Archive":"app.main.logics.scripts.actions.Archive",
+			"actions.Deposit":"app.main.logics.scripts.actions.Deposit",
+			"actions.Training":"app.main.logics.scripts.actions.Training",
+			"actions.FindItem":"app.main.logics.scripts.actions.FindItem",
+			"actions.DisplayItem":"app.main.logics.scripts.actions.DisplayItem",
+			"actions.ChestItem":"app.main.logics.scripts.actions.ChestItem",
+			
+			"effects.battle.Attack":"app.main.logics.scripts.effects.battle.Attack",
+			"effects.battle.Defense":"app.main.logics.scripts.effects.battle.Defense",
+			"effects.battle.UseItem":"app.main.logics.scripts.effects.battle.UseItem",
+			
+			"effects.map.UseItem":"app.main.logics.scripts.effects.map.UseItem",
+			
+			"effects.item.Recovery":"app.main.logics.scripts.effects.item.Recovery",
+			"effects.item.Revive":"app.main.logics.scripts.effects.item.Revive",
+			"effects.item.BodyProtect":"app.main.logics.scripts.effects.item.BodyProtect",
+			
+			"effects.skill.Recovery":"app.main.logics.scripts.effects.skill.Recovery",
+			"effects.skill.Attack":"app.main.logics.scripts.effects.skill.Attack",
+			
+			"effects.strategy.Revive":"app.main.logics.scripts.effects.strategy.Revive",
+			"effects.strategy.Shrink":"app.main.logics.scripts.effects.strategy.Shrink",
+			"effects.strategy.AntiVirus":"app.main.logics.scripts.effects.strategy.AntiVirus",
+			"effects.strategy.SmokeEscape":"app.main.logics.scripts.effects.strategy.SmokeEscape",
+			"effects.strategy.Suspicion":"app.main.logics.scripts.effects.strategy.Suspicion",
+			"effects.strategy.BindingKill":"app.main.logics.scripts.effects.strategy.BindingKill",
+			"effects.strategy.Alienate":"app.main.logics.scripts.effects.strategy.Alienate",
+			"effects.strategy.StrategyBack":"app.main.logics.scripts.effects.strategy.StrategyBack",
+			"effects.strategy.DissolveStrategy":"app.main.logics.scripts.effects.strategy.DissolveStrategy",
+			"effects.strategy.DissolveFormation":"app.main.logics.scripts.effects.strategy.DissolveFormation",
+			"effects.strategy.Trap":"app.main.logics.scripts.effects.strategy.Trap",
+			"effects.strategy.Sarcastic":"app.main.logics.scripts.effects.strategy.Sarcastic",
+			"effects.strategy.ResistStrategy":"app.main.logics.scripts.effects.strategy.ResistStrategy",
+			"effects.strategy.DesperateWay":"app.main.logics.scripts.effects.strategy.DesperateWay",
+			"effects.strategy.AvoidStrategy":"app.main.logics.scripts.effects.strategy.AvoidStrategy",
+			"effects.strategy.AvoidAttack":"app.main.logics.scripts.effects.strategy.AvoidAttack",
+			"effects.strategy.Assassinate":"app.main.logics.scripts.effects.strategy.Assassinate",
+			"effects.strategy.PretendRetreat":"app.main.logics.scripts.effects.strategy.PretendRetreat",
+			"effects.strategy.Confusion":"app.main.logics.scripts.effects.strategy.Confusion",
+			"effects.strategy.Betray":"app.main.logics.scripts.effects.strategy.Betray",
+			
+			"effects.formation.Disband":"app.main.logics.scripts.effects.formation.Disband",
+			"effects.formation.SimpleSet":"app.main.logics.scripts.effects.formation.SimpleSet",
+			"effects.formation.EightDiagrams":"app.main.logics.scripts.effects.formation.EightDiagrams",
+			
+			"states.formation.Silence":"app.main.logics.scripts.states.formation.Silence",
+			"states.formation.Attribute":"app.main.logics.scripts.states.formation.Attribute",
+			"states.formation.EightDiagrams":"app.main.logics.scripts.states.formation.EightDiagrams",
+			
+			"states.buff.M_AntiVirus":"app.main.logics.scripts.states.buff.M_AntiVirus",
+			"states.buff.M_SmokeEscape":"app.main.logics.scripts.states.buff.M_SmokeEscape",
+			"states.buff.B_SmokeEscape":"app.main.logics.scripts.states.buff.B_SmokeEscape",
+			"states.buff.M_BodyProtect":"app.main.logics.scripts.states.buff.M_BodyProtect",
+			"states.buff.B_Suspicion":"app.main.logics.scripts.states.buff.B_Suspicion",
+			"states.buff.B_BindingKill":"app.main.logics.scripts.states.buff.B_BindingKill",
+			"states.buff.B_Alienate":"app.main.logics.scripts.states.buff.B_Alienate",
+			"states.buff.B_Betray":"app.main.logics.scripts.states.buff.B_Betray",
+			"states.buff.B_StrategyBack":"app.main.logics.scripts.states.buff.B_StrategyBack",
+			"states.buff.B_AvoidStrategy":"app.main.logics.scripts.states.buff.B_AvoidStrategy",
+			"states.buff.B_AvoidAttack":"app.main.logics.scripts.states.buff.B_AvoidAttack",
+			
+			"ais.battle.Betray":"app.main.logics.scripts.ais.battle.Betray",
+			"ais.battle.Attack":"app.main.logics.scripts.ais.battle.Attack",
+			
+			"ais.map.Patrol":"app.main.logics.scripts.ais.map.Patrol",
+			
+			"terrains.Swamp":"app.main.logics.scripts.terrains.Swamp"
+		}
+		,"uiwidgets":{
+			"MessageWindow":"app.main.logics.uiwidgets.MessageWindow",
+			"TableWindow":"app.main.logics.uiwidgets.TableWindow",
+			"ProgressBar":"app.main.logics.uiwidgets.ProgressBar",
+			"TextLabel":"app.main.logics.uiwidgets.TextLabel",
+			"RoleItem":"app.main.logics.uiwidgets.RoleItem",
+			"LuggageItem":"app.main.logics.uiwidgets.LuggageItem",
+			"RoleSoldiersItem":"app.main.logics.uiwidgets.RoleSoldiersItem",
+			"ArchiveItem":"app.main.logics.uiwidgets.ArchiveItem",
+			"PackItem":"app.main.logics.uiwidgets.PackItem"
+		}
+		,"uis":{
+			"RoleAttribute":"app.main.logics.uis.RoleAttribute",
+			"TeamAttribute":"app.main.logics.uis.TeamAttribute",
+			"PackList":"app.main.logics.uis.PackList",
+			"GameMenu":"app.main.logics.uis.GameMenu",
+			
+			"Update":"app.main.logics.uis.Update",
+			"Message":"app.main.logics.uis.Message",
+			"Select":"app.main.logics.uis.Select",
+			"Dialogue":"app.main.logics.uis.Dialogue",
+			"LevelUp":"app.main.logics.uis.LevelUp",
+			"TextInput":"app.main.logics.uis.TextInput",
+			"Golds":"app.main.logics.uis.Golds",
+			"ShadeLight":"app.main.logics.uis.ShadeLight",
+			"FlashLight":"app.main.logics.uis.FlashLight",
+			
+			"MapFunction":"app.main.logics.uis.MapFunction",
+			"OptionTable":"app.main.logics.uis.OptionTable",
+			"RoleSelect":"app.main.logics.uis.RoleSelect",
+			"AdviserSet":"app.main.logics.uis.AdviserSet",
+			"QueueSort":"app.main.logics.uis.QueueSort",
+			"MapStrategy":"app.main.logics.uis.MapStrategy",
+			"TargetSelect":"app.main.logics.uis.TargetSelect",
+			"ItemOperate":"app.main.logics.uis.ItemOperate",
+			"ItemDeposit":"app.main.logics.uis.ItemDeposit",
+			"ItemTrade":"app.main.logics.uis.ItemTrade",
+			
+			"BattleFunction":"app.main.logics.uis.BattleFunction",
+			"BattleStrategy":"app.main.logics.uis.BattleStrategy",
+			"BattleItemUse":"app.main.logics.uis.BattleItemUse",
+			"BattleVictory":"app.main.logics.uis.BattleVictory",
+			
+			"ArchiveSelect":"app.main.logics.uis.ArchiveSelect"
+		}
+		,"variables":[
+			"app.main.logics.variables.define"
+		]
+    }
+}

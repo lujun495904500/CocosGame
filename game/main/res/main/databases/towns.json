@@ -1,0 +1,502 @@
+{
+    "town_xuzhou": {
+        "palacemap": "build_palace",
+        "hotelcost": 5,
+        "trainingcost": 500,
+        "traininglevel": 5,
+        "equipments": [
+            "I1",
+            "I10",
+            "I19",
+            "I47",
+            "I55",
+            "I62"
+        ],
+        "items": [
+            "I76",
+            "I86",
+            "I88"
+        ]
+    },
+    "village_yizhou": {
+        "hotelcost": 7,
+        "trainingcost": 0,
+        "traininglevel": 0
+    },
+    "town_yizhou": {
+        "hotelcost": 7,
+        "trainingcost": 1000,
+        "traininglevel": 8,
+        "equipments": [
+            "I2",
+            "I20",
+            "I47",
+            "I55",
+            "I63",
+            "I37"
+        ],
+        "items": [
+            "I76",
+            "I86",
+            "I88"
+        ]
+    },
+    "town_wan": {
+        "hotelcost": 0,
+        "trainingcost": 0,
+        "traininglevel": 0
+    },
+    "town_luoyang": {
+        "hotelcost": 10,
+        "trainingcost": 1500,
+        "traininglevel": 10,
+        "equipments": [
+            "I2",
+            "I19",
+            "I38",
+            "I47",
+            "I55",
+            "I63"
+        ],
+        "items": [
+            "I76",
+            "I86",
+            "I88"
+        ]
+    },
+    "town_jingzhou": {
+        "hotelcost": 10,
+        "trainingcost": 2500,
+        "traininglevel": 12,
+        "equipments": [
+            "I2",
+            "I20",
+            "I38",
+            "I48",
+            "I56",
+            "I63"
+        ],
+        "items": [
+            "I76",
+            "I86",
+            "I88"
+        ]
+    },
+    "village_jingzhou": {
+        "hotelcost": 10,
+        "trainingcost": 0,
+        "traininglevel": 0
+    },
+    "town_xinye_1": {
+        "hotelcost": 10,
+        "trainingcost": 0,
+        "traininglevel": 0
+    },
+    "town_jiangxia": {
+        "hotelcost": 12,
+        "trainingcost": 4000,
+        "traininglevel": 13,
+        "equipments": [
+            "I2",
+            "I20",
+            "I38",
+            "I11",
+            "I48",
+            "I64"
+        ],
+        "items": [
+            "I77",
+            "I86",
+            "I88"
+        ]
+    },
+    "town_chaisang": {
+        "hotelcost": 15,
+        "trainingcost": 9000,
+        "traininglevel": 17,
+        "equipments": [
+            "I3",
+            "I20",
+            "I11",
+            "I56",
+            "I49",
+            "I64"
+        ],
+        "items": [
+            "I77",
+            "I86",
+            "I88",
+            "I73"
+        ]
+    },
+    "village_riben": {
+        "hotelcost": 10,
+        "trainingcost": 0,
+        "traininglevel": 0
+    },
+    "town_xiangyang": {
+        "hotelcost": 20,
+        "trainingcost": 0,
+        "traininglevel": 0,
+        "equipments": [
+            "I3",
+            "I21",
+            "I39",
+            "I12",
+            "I49",
+            "I64"
+        ],
+        "items": [
+            "I77",
+            "I86",
+            "I88",
+            "I85"
+        ]
+    },
+    "town_yiling": {
+        "hotelcost": 25,
+        "trainingcost": 0,
+        "traininglevel": 0,
+        "items": [
+            "I77",
+            "I86",
+            "I88"
+        ]
+    },
+    "town_nan": {
+        "hotelcost": 25,
+        "trainingcost": 0,
+        "traininglevel": 0,
+        "items": [
+            "I77",
+            "I86",
+            "I88",
+            "I73"
+        ]
+    },
+    "town_fan": {
+        "hotelcost": 25,
+        "trainingcost": 15000,
+        "traininglevel": 20,
+        "equipments": [
+            "I21",
+            "I39",
+            "I12",
+            "I49",
+            "I57",
+            "I65"
+        ],
+        "items": [
+            "I77",
+            "I86",
+            "I88",
+            "I80"
+        ]
+    },
+    "town_guiyang": {
+        "hotelcost": 30,
+        "trainingcost": 0,
+        "traininglevel": 0,
+        "items": [
+            "I77",
+            "I86",
+            "I88"
+        ]
+    },
+    "town_wuling": {
+        "hotelcost": 30,
+        "trainingcost": 0,
+        "traininglevel": 0,
+        "equipments": [
+            "I4",
+            "I22",
+            "I40",
+            "I50",
+            "I57"
+        ],
+        "items": [
+            "I77",
+            "I86",
+            "I88",
+            "I80"
+        ]
+    },
+    "village_changsha": {
+        "hotelcost": 30,
+        "trainingcost": 0,
+        "traininglevel": 0
+    },
+    "town_changsha": {
+        "hotelcost": 30,
+        "trainingcost": 0,
+        "traininglevel": 0,
+        "equipments": [
+            "I22",
+            "I13",
+            "I31",
+            "I50"
+        ],
+        "items": [
+            "I77",
+            "I86",
+            "I88",
+            "I73"
+        ]
+    },
+    "town_xinye_2": {
+        "hotelcost": 10,
+        "trainingcost": 24000,
+        "traininglevel": 22,
+        "equipments": [
+            "I4",
+            "I13",
+            "I40",
+            "I31",
+            "I50",
+            "I66"
+        ],
+        "items": [
+            "I77",
+            "I88",
+            "I85",
+            "I73"
+        ]
+    },
+    "town_fushui": {
+        "hotelcost": 50,
+        "trainingcost": 0,
+        "traininglevel": 0,
+        "equipments": [
+            "I4",
+            "I22",
+            "I31",
+            "I39",
+            "I66"
+        ],
+        "items": [
+            "I78",
+            "I88",
+            "I86",
+            "I87"
+        ]
+    },
+    "gate_jiameng": {
+        "hotelcost": 60,
+        "trainingcost": 0,
+        "traininglevel": 0
+    },
+    "gate_yangping": {
+        "hotelcost": 60,
+        "trainingcost": 0,
+        "traininglevel": 0
+    },
+    "gate_nanzheng": {
+        "hotelcost": 70,
+        "trainingcost": 0,
+        "traininglevel": 0
+    },
+    "town_hanzhong": {
+        "hotelcost": 70,
+        "trainingcost": 0,
+        "traininglevel": 0,
+        "items": [
+            "I78",
+            "I88",
+            "I73",
+            "I87"
+        ]
+    },
+    "town_ba": {
+        "hotelcost": 80,
+        "trainingcost": 20000,
+        "traininglevel": 35,
+        "equipments": [
+            "I5",
+            "I23",
+            "I40",
+            "I13",
+            "I51",
+            "I66"
+        ],
+        "items": [
+            "I78",
+            "I88",
+            "I85",
+            "I87"
+        ]
+    },
+    "village_chenjia": {
+        "hotelcost": 90,
+        "trainingcost": 0,
+        "traininglevel": 0,
+        "items": [
+            "I78",
+            "I88",
+            "I80"
+        ]
+    },
+    "town_jianning": {
+        "hotelcost": 90,
+        "trainingcost": 0,
+        "traininglevel": 0,
+        "items": [
+            "I78",
+            "I88",
+            "I80",
+            "I87"
+        ]
+    },
+    "village_jiangjia": {
+        "hotelcost": 100,
+        "trainingcost": 0,
+        "traininglevel": 0
+    },
+    "town_yuejun": {
+        "hotelcost": 100,
+        "trainingcost": 30000,
+        "traininglevel": 37,
+        "equipments": [
+            "I5",
+            "I23",
+            "I31"
+        ]
+    },
+    "town_luo": {
+        "hotelcost": 110,
+        "trainingcost": 0,
+        "traininglevel": 0,
+        "items": [
+            "I78",
+            "I88",
+            "I73",
+            "I87"
+        ]
+    },
+    "town_chengdu": {
+        "hotelcost": 110,
+        "trainingcost": 40000,
+        "traininglevel": 40,
+        "equipments": [
+            "I5",
+            "I23",
+            "I14",
+            "I41",
+            "I51",
+            "I58"
+        ],
+        "items": [
+            "I78",
+            "I88",
+            "I85",
+            "I87"
+        ]
+    },
+    "town_nanan": {
+        "hotelcost": 120,
+        "trainingcost": 0,
+        "traininglevel": 0,
+        "equipments": [
+            "I32",
+            "I6",
+            "I51",
+            "I67",
+            "I58"
+        ],
+        "items": [
+            "I79",
+            "I88",
+            "I86",
+            "I87"
+        ]
+    },
+    "town_anding": {
+        "hotelcost": 120,
+        "trainingcost": 50000,
+        "traininglevel": 44,
+        "items": [
+            "I79",
+            "I88",
+            "I80",
+            "I87"
+        ]
+    },
+    "town_tianshui": {
+        "hotelcost": 120,
+        "trainingcost": 0,
+        "traininglevel": 0,
+        "equipments": [
+            "I7",
+            "I16",
+            "I24",
+            "I33",
+            "I42",
+            "I52"
+        ],
+        "items": [
+            "I79",
+            "I88",
+            "I85",
+            "I87"
+        ]
+    },
+    "town_chencang": {
+        "hotelcost": 120,
+        "trainingcost": 0,
+        "traininglevel": 0,
+        "items": [
+            "I79",
+            "I88",
+            "I87",
+            "I73"
+        ]
+    },
+    "village_gaolaozhuang": {
+        "hotelcost": 130,
+        "trainingcost": 0,
+        "traininglevel": 0
+    },
+    "gate_xiegu": {
+        "hotelcost": 0,
+        "trainingcost": 0,
+        "traininglevel": 0
+    },
+    "town_lu": {
+        "hotelcost": 130,
+        "trainingcost": 0,
+        "traininglevel": 0,
+        "items": [
+            "I79",
+            "I88",
+            "I85",
+            "I87"
+        ]
+    },
+    "gate_weishui": {
+        "hotelcost": 140,
+        "trainingcost": 0,
+        "traininglevel": 0,
+        "items": [
+            "I79",
+            "I88",
+            "I87"
+        ]
+    },
+    "town_changan": {
+        "hotelcost": 140,
+        "trainingcost": 60000,
+        "traininglevel": 48,
+        "equipments": [
+            "I15",
+            "I34",
+            "I25",
+            "I43",
+            "I68"
+        ],
+        "items": [
+            "I79",
+            "I88",
+            "I80",
+            "I87"
+        ]
+    }
+}

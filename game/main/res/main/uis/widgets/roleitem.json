@@ -1,0 +1,8 @@
+{
+    "meta":"RoleItem",
+    "name":"roleitem",
+    "adviserimg":"#main/images/start",
+	"font":{
+		"name":"font_16"
+	}
+}

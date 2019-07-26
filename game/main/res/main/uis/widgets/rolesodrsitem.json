@@ -1,0 +1,12 @@
+{
+    "meta":"RoleSoldiersItem",
+    "name":"rolesodrsitem",
+    "adviserimg":"#main/images/start",
+	"namefont":{
+		"name":"font_16"
+	},
+	"sodrsfont":{
+		"name":"font_8"
+	},
+	"sodrswidth":40
+}

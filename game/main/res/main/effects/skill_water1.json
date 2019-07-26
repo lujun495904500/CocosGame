@@ -1,0 +1,29 @@
+{
+    "name": "skill_water1",
+    "meta": "Water1Effect",
+    "params": {
+        "offestX": 20,
+        "action1": {
+            "delay": 0.1
+        },
+        "action2": {
+            "times": 5,
+            "delay": 0.07
+        },
+        "action3": {
+            "delay": 0.1
+        }
+    },
+    "source": {
+        "plist": "$(respath)/main/graphics/plists/effects/skill_water1.plist",
+        "image": "$(respath)/main/graphics/plists/effects/skill_water1.png",
+        "fpath": "main/effects/skill_water1/"
+    },
+    "frames": [
+        "spout",
+        "spoutH",
+        "spoutT",
+        "spray1",
+        "spray2"
+    ]
+}

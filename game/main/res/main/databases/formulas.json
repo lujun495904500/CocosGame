@@ -1,0 +1,55 @@
+{
+    "TEST": {
+        "calculate": "\"公式测试\""
+    },
+    "ATTACK_HIT": {
+        "params": "config,role,target",
+        "calculate": "not (math.random(100) <= (10+100*target.dodge))"
+    },
+    "ATTACK_EXCITED": {
+        "params": "config,role,target",
+        "calculate": "(config.extexcited + math.random(100)) >=90"
+    },
+    "ATTACK_DAMAGE": {
+        "params": "config,role,target",
+        "statements": "local ff = (role.force-target.force)/config.attrmax;local af = (role.attack-target.defense)/config.attrmax;local ef = config.excited and 0.5 or 0;local df = config.defensing and 0.5 or 0;",
+        "calculate": "role.attack>0 and role.soldiers*0.5*(1+ff)*(1+af)*(1+ef)*(1-df) or role.soldiers*0.01"
+    },
+    "SKILL_RECOVERY": {
+        "params": "config,role,target",
+        "calculate": "config.base*(1+0.4*(role.intellect/config.attrmax))"
+    },
+    "SKILL_HIT": {
+        "params": "config,role,target",
+        "calculate": "not (math.random(100) <= (10+100*target.stydodge))"
+    },
+    "SKILL_DAMAGE": {
+        "params": "config,role,target",
+        "calculate": "config.base*(1+0.4*(role.intellect/config.attrmax))"
+    },
+    "BATTLE_BALANCE": {
+        "params": "config,roles",
+        "statements": "local exps = 0;local golds = 0;table.walk(roles,function(role) exps = exps + role.soldiers;golds = golds + role.soldiers end)",
+        "calculate": "0.2*exps/#roles,0.1*golds/#roles"
+    },
+    "BATTLE_RETREAT": {
+        "params": "config,our,enemy",
+        "calculate": "math.random(100) > 50"
+    },
+    "SWAMP_DAMAGE": {
+        "params": "config,role",
+        "calculate": "role.soldiers/100"
+    },
+    "TEAMSTY_HIT": {
+        "params": "config,role",
+        "calculate": "math.random(100) > 0"
+    },
+    "ROLESTY_HIT": {
+        "params": "config,role,target",
+        "calculate": "math.random(100) > 0"
+    },
+    "TRAP_DAMAGE": {
+        "params": "config,role,target",
+        "calculate": "target.soldiers*0.4"
+    }
+}

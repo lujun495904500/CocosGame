@@ -1,0 +1,38 @@
+{
+    "meta":"TableWindow",
+    "name":"table",
+	
+    "background":{
+		"csb":"$(respath)/main/cocosstudio/Window.csb"
+		,"bindings":{
+			"pl_window":"pl_window"
+		}
+		,"context":"pl_window"
+	},
+	
+	"bgborder":[8,8,8,8],
+	"tbborder":[0,0,0,0],
+	
+	"cursorimg":"#main/images/cursor_r",
+	"cursordelay":0.3,
+	"cursorrate":2,
+	
+	"itemsize":[32,16],
+	"itemspace":[0,0],
+	"itemcolumns":1,
+	"itemrows":2,
+	"itemanchor":[0.5,0.5],
+	"itemwidget":{
+		"meta":"label"
+	},
+	
+	"changesound":"hint_27",
+	"selectsound":"select_29",
+    
+    "selectable":false,
+	"markselect":true,
+    "adaptrows":false,
+
+    "loopYsel":true,
+    "loopXsel":false
+}

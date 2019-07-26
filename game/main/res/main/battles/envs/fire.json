@@ -1,0 +1,9 @@
+{
+	"meta":"Animation",
+	"images":[
+		"$(respath)/main/graphics/battles/envs/fire_1.png",
+		"$(respath)/main/graphics/battles/envs/fire_2.png",
+		"$(respath)/main/graphics/battles/envs/fire_3.png"
+	],
+	"delay":0.4
+}

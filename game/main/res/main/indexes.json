@@ -1,0 +1,6 @@
+{
+    "src": "$(respath)/main/indexes/src.json",
+    "res": "$(respath)/main/indexes/res.json",
+    "db_auto": "$(respath)/main/indexes/db_auto.json",
+    "prot_auto": "$(respath)/main/indexes/prot_auto.json"
+}

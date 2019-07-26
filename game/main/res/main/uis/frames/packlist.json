@@ -1,0 +1,49 @@
+{
+    "meta":"PackList"
+    ,"name":"packlist"
+    ,"params":{
+		"cursorrate" : 2,
+		"cursordelay" : 0.3,
+		"text":{
+			"bootpack": "启动",
+			"basepack": "基础",
+			"funpack": "功能"
+		},
+		"titleitem": {
+			"type":"类型",
+			"name":"包名",
+			"version":"版本号"
+		}
+    }
+    ,"csb":"$(respath)/main/cocosstudio/PackList.csb"
+    ,"bindings":{
+		"sp_last":"sp_last",
+		"sp_next":"sp_next"
+    }
+	,"widgets":{
+		"wg_title":{
+            "source":"wg_title",
+            "type":"label",
+			"config":{
+				"font":{
+					"name":"font_16"
+				}
+            },
+			"params":{
+				"text":"游戏包列表"
+			}
+        }
+		,"wg_packlist":{
+            "source":"wg_packlist",
+            "type":"table",
+            "config":{
+                "itemsize":[210,16],
+                "itemrows":9,
+                "itemcolumns":1,
+				"itemwidget":{
+					"type":"packitem"
+				}
+            }
+        }
+    }
+}

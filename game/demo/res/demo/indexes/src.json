@@ -1,0 +1,13 @@
+{
+    "src":{
+		"scenes":{
+			"DemoScene":"app.demo.logics.scenes.DemoScene"
+		}
+		,"plays":{
+			"demo":"app.demo.logics.plays.Play"
+		}
+		,"scripts":{
+			"plays.DemoBattle":"app.demo.logics.scripts.plays.DemoBattle"
+		}
+	}
+}

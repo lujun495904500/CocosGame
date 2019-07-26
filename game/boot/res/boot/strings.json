@@ -1,0 +1,15 @@
+{
+	"GAME_NAME":"吞食天地2",
+	"UPDATING":"正在更新...",
+	"UNZIP_ASSETS":"解压资源...",
+	"UNZIP_ASSETS_END":"解压资源完成",
+	"READ_CONFIG":"读取配置...",
+	"LOAD_REMOTE_CONFIG":"加载远程配置...",
+	"READ_CONFIG_END":"读取配置完成",
+	"UPDATE_FAILURE":"更新失败,请重试",
+	"UPDATE_SUCCESS":"更新完成,正在进入游戏...",
+	"PACK_LOAD_FAILURE":"游戏包[%s]加载失败",
+	"UPDATE_PACK":"更新游戏包[%s]...",
+	"PACK_UPDATE_FAILURE":"游戏包[%s]更新失败",
+	"COMPUTE_UPDATE_PACK":"计算需要更新的包..."
+}

@@ -1,0 +1,28 @@
+{
+    "none": {
+        "value": 0
+    },
+    "water": {
+        "value": 1
+    },
+    "plain": {
+        "value": 2
+    },
+    "sand": {
+        "value": 4
+    },
+    "hill": {
+        "value": 8
+    },
+    "forest": {
+        "value": 16
+    },
+    "mountain": {
+        "value": 32
+    },
+    "swamp": {
+        "value": 64,
+        "script": "terrains.Swamp",
+        "se_hurt": "hit_40"
+    }
+}

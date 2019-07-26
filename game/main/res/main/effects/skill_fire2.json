@@ -1,0 +1,41 @@
+{
+    "name": "skill_fire2",
+    "meta": "Fire2Effect",
+    "params": {
+        "action1": {
+            "delay": 0.1,
+            "turns": 1
+        },
+        "action2": {
+            "delay": 0.1
+        },
+        "action3": {
+            "delay": 0.1,
+            "times": 3
+        },
+        "action4": {
+            "delay": 0.1
+        },
+        "action5": {
+            "duration": 0.1,
+            "offestY": 8,
+            "moveY": 6
+        }
+    },
+    "source": {
+        "plist": "$(respath)/main/graphics/plists/effects/skill_fire2.plist",
+        "image": "$(respath)/main/graphics/plists/effects/skill_fire2.png",
+        "fpath": "main/effects/skill_fire2/"
+    },
+    "frames": [
+        "fsmall",
+        "fmedi",
+        "fanime1",
+        "fanime2",
+        "fanime3",
+        "fend1",
+        "fend2",
+        "fend3",
+        "fmoveup"
+    ]
+}

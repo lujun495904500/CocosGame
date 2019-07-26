@@ -1,0 +1,228 @@
+{
+  "version": "0.3.0",
+  "scope": "tree",
+  "id": "392ce9d7-37c0-4dcc-8252-0ba2e72bac63",
+  "title": "betray",
+  "description": "",
+  "root": "ac71733a-00b0-45a6-8510-51b0656331a7",
+  "properties": {},
+  "nodes": {
+    "8b852712-e70c-419f-8359-ce6b68682c75": {
+      "id": "8b852712-e70c-419f-8359-ce6b68682c75",
+      "name": "betray.BetrayRole",
+      "title": "betray.BetrayRole (<label>)",
+      "description": "",
+      "properties": {
+        "label": "brole"
+      },
+      "display": {
+        "x": 156,
+        "y": -168
+      }
+    },
+    "338fbebf-0ad0-491c-828d-df23accaa753": {
+      "id": "338fbebf-0ad0-491c-828d-df23accaa753",
+      "name": "game.RoleTeam",
+      "title": "game.RoleTeam (<label>,<role>)",
+      "description": "",
+      "properties": {
+        "label": "brteam",
+        "role": "#brole"
+      },
+      "display": {
+        "x": 180,
+        "y": -96
+      }
+    },
+    "ac71733a-00b0-45a6-8510-51b0656331a7": {
+      "id": "ac71733a-00b0-45a6-8510-51b0656331a7",
+      "name": "Sequence",
+      "title": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -84,
+        "y": 12
+      },
+      "children": [
+        "8b852712-e70c-419f-8359-ce6b68682c75",
+        "338fbebf-0ad0-491c-828d-df23accaa753",
+        "9fae9d52-2458-4c30-9a73-35b8ea39eacf",
+        "2043d805-8705-4d79-86da-c5020a8263d4",
+        "ba33e12d-ee81-4296-9899-6b21c5d9885a",
+        "e2c73415-e7c2-4e6b-a07e-caa6103539e8",
+        "686fa6f1-0427-4a90-8a1c-9320f2941dd5"
+      ]
+    },
+    "9fae9d52-2458-4c30-9a73-35b8ea39eacf": {
+      "id": "9fae9d52-2458-4c30-9a73-35b8ea39eacf",
+      "name": "game.TeamRoles",
+      "title": "game.TeamRoles (<label>,<team>,<alive>)",
+      "description": "",
+      "properties": {
+        "label": "alives",
+        "team": "#brteam",
+        "alive": "true"
+      },
+      "display": {
+        "x": 204,
+        "y": -24
+      }
+    },
+    "2043d805-8705-4d79-86da-c5020a8263d4": {
+      "id": "2043d805-8705-4d79-86da-c5020a8263d4",
+      "name": "RandElement",
+      "title": "RandElement (<label>,<group>)",
+      "description": "",
+      "properties": {
+        "label": "target",
+        "group": "#alives"
+      },
+      "display": {
+        "x": 168,
+        "y": 48
+      }
+    },
+    "ba33e12d-ee81-4296-9899-6b21c5d9885a": {
+      "id": "ba33e12d-ee81-4296-9899-6b21c5d9885a",
+      "name": "Group",
+      "title": "Group (<label>,<elements>)",
+      "description": "",
+      "properties": {
+        "label": "targets",
+        "elements": "#target"
+      },
+      "display": {
+        "x": 144,
+        "y": 120
+      }
+    },
+    "e2c73415-e7c2-4e6b-a07e-caa6103539e8": {
+      "id": "e2c73415-e7c2-4e6b-a07e-caa6103539e8",
+      "name": "game.OnComplete",
+      "title": "game.OnComplete (<label>)",
+      "description": "",
+      "properties": {
+        "label": "onEnd"
+      },
+      "display": {
+        "x": 168,
+        "y": 192
+      }
+    },
+    "686fa6f1-0427-4a90-8a1c-9320f2941dd5": {
+      "id": "686fa6f1-0427-4a90-8a1c-9320f2941dd5",
+      "name": "battle.Attack",
+      "title": "battle.Attack (<role>,<targets>,<onComplete>)",
+      "description": "",
+      "properties": {
+        "role": "#brole",
+        "targets": "#targets",
+        "onComplete": "#onEnd"
+      },
+      "display": {
+        "x": 204,
+        "y": 264
+      }
+    }
+  },
+  "display": {
+    "camera_x": 601.5249999999651,
+    "camera_y": 299.5,
+    "camera_z": 1,
+    "x": -216,
+    "y": 12
+  },
+  "custom_nodes": [
+    {
+      "version": "0.3.0",
+      "scope": "node",
+      "name": "battle.Attack",
+      "category": "action",
+      "title": "battle.Attack (<role>,<targets>,<onComplete>)",
+      "description": null,
+      "properties": {}
+    },
+    {
+      "version": "0.3.0",
+      "scope": "node",
+      "name": "RandValue",
+      "category": "action",
+      "title": "RandValue (<label>,<min>,<max>)",
+      "description": null,
+      "properties": {}
+    },
+    {
+      "version": "0.3.0",
+      "scope": "node",
+      "name": "patrol.Directs",
+      "category": "action",
+      "title": "patrol.Directs (<label>)",
+      "description": null,
+      "properties": {}
+    },
+    {
+      "version": "0.3.0",
+      "scope": "node",
+      "name": "RandElement",
+      "category": "action",
+      "title": "RandElement (<label>,<group>)",
+      "description": null,
+      "properties": {}
+    },
+    {
+      "version": "0.3.0",
+      "scope": "node",
+      "name": "patrol.Move",
+      "category": "action",
+      "title": "patrol.Move (<direct>)",
+      "description": null,
+      "properties": {}
+    },
+    {
+      "version": "0.3.0",
+      "scope": "node",
+      "name": "betray.BetrayRole",
+      "category": "action",
+      "title": "betray.BetrayRole (<label>)",
+      "description": null,
+      "properties": {}
+    },
+    {
+      "version": "0.3.0",
+      "scope": "node",
+      "name": "game.RoleTeam",
+      "category": "action",
+      "title": "game.RoleTeam (<label>,<role>)",
+      "description": null,
+      "properties": {}
+    },
+    {
+      "version": "0.3.0",
+      "scope": "node",
+      "name": "game.TeamRoles",
+      "category": "action",
+      "title": "game.TeamRoles (<label>,<team>,<alive>)",
+      "description": null,
+      "properties": {}
+    },
+    {
+      "version": "0.3.0",
+      "scope": "node",
+      "name": "game.OnComplete",
+      "category": "action",
+      "title": "game.OnComplete (<label>)",
+      "description": null,
+      "properties": {}
+    },
+    {
+      "version": "0.3.0",
+      "scope": "node",
+      "name": "Group",
+      "category": "action",
+      "title": "Group (<label>,<elements>)",
+      "description": null,
+      "properties": {}
+    }
+  ]
+}

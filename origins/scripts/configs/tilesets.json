@@ -1,0 +1,26 @@
+{
+	"source":"../../tilesets",
+	"dest":"../../tilesets/extends",
+	"tilesets":[
+		{
+			"image":"build.png",
+			"tilesize":[16,16],
+			"padding":1
+		},
+		{
+			"image":"cave.png",
+			"tilesize":[16,16],
+			"padding":1
+		},
+		{
+			"image":"region.png",
+			"tilesize":[16,16],
+			"padding":1
+		},
+		{
+			"image":"town.png",
+			"tilesize":[16,16],
+			"padding":1
+		}
+	]
+}

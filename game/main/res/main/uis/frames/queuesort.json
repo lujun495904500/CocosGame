@@ -1,0 +1,36 @@
+{
+    "meta":"QueueSort"
+    ,"name":"queuesort"
+    ,"params":{
+        
+    }
+    ,"csb":"$(respath)/main/cocosstudio/QueueSort.csb"
+    ,"widgets":{
+		"wg_rolelist":{
+            "source":"wg_rolelist",
+            "type":"table",
+            "config":{
+                "itemsize":[64,16],
+                "selectable":true,
+                "itemrows":5,
+                "itemcolumns":1,
+				"itemwidget":{
+					"type":"roleitem"
+				}
+            }
+        }
+		,"wg_sortlist":{
+            "source":"wg_sortlist",
+            "type":"table",
+            "config":{
+				"tbborder":[8,0,0,0],
+                "itemsize":[64,16],
+                "itemrows":5,
+                "itemcolumns":1,
+				"itemwidget":{
+					"type":"roleitem"
+				}
+            }
+        }
+    }
+}

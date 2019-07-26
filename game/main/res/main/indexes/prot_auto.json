@@ -1,0 +1,6 @@
+{
+    "prot": [
+        "app.main.logics.protocols.common",
+        "app.main.logics.protocols.test"
+    ]
+}

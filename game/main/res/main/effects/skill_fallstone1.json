@@ -1,0 +1,44 @@
+{
+    "name": "skill_fallstone1",
+    "meta": "FallstoneEffect",
+    "params": {
+        "delay": 0.06,
+        "sequence": [
+            "f1",
+            "f2",
+            "f3",
+            "f4"
+        ],
+        "begin": [
+            18,
+            24
+        ],
+        "paths": [
+            {
+                "pos": [
+                    12,
+                    8
+                ],
+                "duration": 0.4
+            },
+            {
+                "pos": [
+                    4,
+                    8
+                ],
+                "duration": 0.2
+            }
+        ]
+    },
+    "source": {
+        "plist": "$(respath)/main/graphics/plists/effects/skill_fallstone1.plist",
+        "image": "$(respath)/main/graphics/plists/effects/skill_fallstone1.png",
+        "fpath": "main/effects/skill_fallstone1/"
+    },
+    "frames": [
+        "f1",
+        "f2",
+        "f3",
+        "f4"
+    ]
+}

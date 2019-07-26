@@ -1,0 +1,268 @@
+{
+    "T1": [
+        {
+            "msg": "皇帝：刘皇叔，淮南袁术十恶不赦，请皇叔去讨伐袁术"
+        }
+    ],
+    "T2": [
+        {
+            "msg": "曹操：玄德，河北袁绍窥视我国，令我无法抽身",
+            "cursor": true
+        },
+        {
+            "msg": "就派部将朱灵露昭助你攻打袁术吧",
+            "noctrl": true
+        },
+        {
+            "cmds": [
+                {
+                    "type": "SELECT",
+                    "selects": [
+                        {
+                            "label": "是",
+                            "id": "T3"
+                        },
+                        {
+                            "label": "否",
+                            "id": "T4"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "T3": [
+        {
+            "msg": "朱灵 露昭加入队列",
+            "cmds": [
+                {
+                    "type": "SCRIPT",
+                    "index": 1,
+                    "param": [
+                        "JOIN"
+                    ]
+                },
+                {
+                    "type": "EPOINT",
+                    "index": 1,
+                    "value": true
+                },
+                {
+                    "type": "EPOINT",
+                    "index": 2,
+                    "value": true
+                }
+            ]
+        }
+    ],
+    "T4": [
+        {
+            "msg": "多谢曹将军",
+            "cmds": [
+                {
+                    "type": "EPOINT",
+                    "index": 1,
+                    "value": true
+                }
+            ]
+        }
+    ],
+    "T5": [
+        {
+            "msg": "关羽：兄长，讨伐袁术，吾愿为先锋，当开先路",
+            "noctrl": true
+        },
+        {
+            "cmds": [
+                {
+                    "type": "SELECT",
+                    "selects": [
+                        {
+                            "label": "是",
+                            "id": "T6"
+                        },
+                        {
+                            "label": "否",
+                            "id": "T7"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "T6": [
+        {
+            "msg": "谢谢，又加上一个",
+            "cmds": [
+                {
+                    "type": "SCRIPT",
+                    "index": 1,
+                    "param": [
+                        "GUANYU"
+                    ]
+                },
+                {
+                    "type": "EPOINT",
+                    "index": 1,
+                    "value": true
+                }
+            ]
+        }
+    ],
+    "T7": [
+        {
+            "msg": "别那样说……",
+            "noctrl": true
+        },
+        {
+            "cmds": [
+                {
+                    "type": "SELECT",
+                    "selects": [
+                        {
+                            "label": "是",
+                            "id": "T6"
+                        },
+                        {
+                            "label": "否",
+                            "id": "T7"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "T8": [
+        {
+            "msg": "张飞：让俺与兄长同去讨伐袁术吧",
+            "noctrl": true
+        },
+        {
+            "cmds": [
+                {
+                    "type": "SELECT",
+                    "selects": [
+                        {
+                            "label": "是",
+                            "id": "T9"
+                        },
+                        {
+                            "label": "否",
+                            "id": "T10"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "T9": [
+        {
+            "msg": "不然，我要憋死了",
+            "cursor": true
+        },
+        {
+            "msg": "于是，张飞也加入队列",
+            "cmds": [
+                {
+                    "type": "SCRIPT",
+                    "index": 1,
+                    "param": [
+                        "ZHANGFEI"
+                    ]
+                },
+                {
+                    "type": "EPOINT",
+                    "index": 1,
+                    "value": true
+                }
+            ]
+        }
+    ],
+    "T10": [
+        {
+            "msg": "别那样说",
+            "noctrl": true
+        },
+        {
+            "cmds": [
+                {
+                    "type": "SELECT",
+                    "selects": [
+                        {
+                            "label": "是",
+                            "id": "T9"
+                        },
+                        {
+                            "label": "否",
+                            "id": "T10"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "T11": [
+        {
+            "msg": "嗯"
+        }
+    ],
+    "T12": [
+        {
+            "msg": "这里是徐州城"
+        }
+    ],
+    "T13": [
+        {
+            "msg": "伪帝袁术在城东南的山洞里，路上有纪灵等把守"
+        }
+    ],
+    "T14": [
+        {
+            "msg": "有五员武将就可以布阵了"
+        }
+    ],
+    "T15": [
+        {
+            "msg": "携带的武器和防具应该装备上，否则不起作用",
+            "cursor": true
+        },
+        {
+            "msg": "以后应不断更新装备才能提高战斗力"
+        }
+    ],
+    "T16": [
+        {
+            "msg": "董承：吾等歃血为盟共灭曹贼，皇叔何故突然离京",
+            "cursor": true
+        },
+        {
+            "msg": "刘备：曹操心思缜密为防其识破吾等之计出城暂避尔",
+            "cursor": true
+        },
+        {
+            "cmds": [
+                {
+                    "type": "EPOINT",
+                    "index": "DISABLE",
+                    "value": true
+                },
+                {
+                    "type": "TALK",
+                    "id": "T17"
+                }
+            ]
+        }
+    ],
+    "T17": [
+        {
+            "msg": "董承：请多加小心",
+            "cmds": [
+                {
+                    "type": "EPOINT",
+                    "index": 1,
+                    "value": true
+                }
+            ]
+        }
+    ]
+}

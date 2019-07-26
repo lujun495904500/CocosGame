@@ -1,0 +1,13 @@
+{
+    "meta":"PackItem",
+    "name":"packitem",
+	"typefont":{
+		"name":"font_16"
+	},
+	"namefont":{
+		"name":"font_16"
+	},
+	"verfont":{
+		"name":"font_16"
+	}
+}

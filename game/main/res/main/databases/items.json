@@ -1,0 +1,1089 @@
+{
+    "I1": {
+        "name": "短剑",
+        "type": "E",
+        "price": 100,
+        "stack": 1,
+        "sell": true,
+        "script_equip": "actions.equip.Weapon",
+        "se_attack": "attack_32",
+        "se_hit": "hit_40",
+        "effect_hit": "battle_damage"
+    },
+    "I2": {
+        "name": "铜剑",
+        "type": "E",
+        "price": 300,
+        "stack": 1,
+        "sell": true,
+        "script_equip": "actions.equip.Weapon",
+        "se_attack": "attack_32",
+        "se_hit": "hit_40",
+        "effect_hit": "battle_damage"
+    },
+    "I3": {
+        "name": "铁剑",
+        "type": "E",
+        "price": 800,
+        "stack": 1,
+        "sell": true,
+        "script_equip": "actions.equip.Weapon",
+        "se_attack": "attack_32",
+        "se_hit": "hit_40",
+        "effect_hit": "battle_damage"
+    },
+    "I4": {
+        "name": "闪电剑",
+        "type": "E",
+        "price": 2000,
+        "stack": 1,
+        "sell": true,
+        "script_equip": "actions.equip.Weapon",
+        "se_attack": "attack_32",
+        "se_hit": "hit_40",
+        "effect_hit": "battle_damage"
+    },
+    "I5": {
+        "name": "赤龙剑",
+        "type": "E",
+        "price": 5000,
+        "stack": 1,
+        "sell": true,
+        "script_equip": "actions.equip.Weapon",
+        "se_attack": "attack_32",
+        "se_hit": "hit_40",
+        "effect_hit": "battle_damage"
+    },
+    "I6": {
+        "name": "连打剑",
+        "type": "E",
+        "price": 10000,
+        "stack": 1,
+        "sell": true,
+        "script_equip": "actions.equip.Weapon",
+        "se_attack": "attack_32",
+        "se_hit": "hit_40",
+        "effect_hit": "battle_damage"
+    },
+    "I7": {
+        "name": "怒龙剑",
+        "type": "E",
+        "price": 25000,
+        "stack": 1,
+        "sell": true,
+        "script_equip": "actions.equip.Weapon",
+        "se_attack": "attack_32",
+        "se_hit": "hit_40",
+        "effect_hit": "battle_damage"
+    },
+    "I8": {
+        "name": "倚天剑",
+        "type": "E",
+        "stack": 1,
+        "sell": false,
+        "script_equip": "actions.equip.Weapon",
+        "se_attack": "attack_32",
+        "se_hit": "hit_40",
+        "effect_hit": "battle_damage"
+    },
+    "I9": {
+        "name": "青虹剑",
+        "type": "E",
+        "stack": 1,
+        "sell": false,
+        "script_equip": "actions.equip.Weapon",
+        "se_attack": "attack_32",
+        "se_hit": "hit_40",
+        "effect_hit": "battle_damage"
+    },
+    "I10": {
+        "name": "石斧",
+        "type": "E",
+        "price": 80,
+        "stack": 1,
+        "sell": true,
+        "script_equip": "actions.equip.Weapon",
+        "se_attack": "attack_32",
+        "se_hit": "hit_40",
+        "effect_hit": "battle_damage"
+    },
+    "I11": {
+        "name": "铜斧",
+        "type": "E",
+        "price": 200,
+        "stack": 1,
+        "sell": true,
+        "script_equip": "actions.equip.Weapon",
+        "se_attack": "attack_32",
+        "se_hit": "hit_40",
+        "effect_hit": "battle_damage"
+    },
+    "I12": {
+        "name": "铁斧",
+        "type": "E",
+        "price": 500,
+        "stack": 1,
+        "sell": true,
+        "script_equip": "actions.equip.Weapon",
+        "se_attack": "attack_32",
+        "se_hit": "hit_40",
+        "effect_hit": "battle_damage"
+    },
+    "I13": {
+        "name": "钢斧",
+        "type": "E",
+        "price": 1500,
+        "stack": 1,
+        "sell": true,
+        "script_equip": "actions.equip.Weapon",
+        "se_attack": "attack_32",
+        "se_hit": "hit_40",
+        "effect_hit": "battle_damage"
+    },
+    "I14": {
+        "name": "火焰斧",
+        "type": "E",
+        "price": 6000,
+        "stack": 1,
+        "sell": true,
+        "script_equip": "actions.equip.Weapon",
+        "se_attack": "attack_32",
+        "se_hit": "hit_40",
+        "effect_hit": "battle_damage"
+    },
+    "I15": {
+        "name": "诸刃斧",
+        "type": "E",
+        "price": 10000,
+        "stack": 1,
+        "sell": true,
+        "script_equip": "actions.equip.Weapon",
+        "se_attack": "attack_32",
+        "se_hit": "hit_40",
+        "effect_hit": "battle_damage"
+    },
+    "I16": {
+        "name": "白虎斧",
+        "type": "E",
+        "price": 10000,
+        "stack": 1,
+        "sell": true,
+        "script_equip": "actions.equip.Weapon",
+        "se_attack": "attack_32",
+        "se_hit": "hit_40",
+        "effect_hit": "battle_damage"
+    },
+    "I17": {
+        "name": "薄刃斧",
+        "type": "E",
+        "stack": 1,
+        "sell": false,
+        "script_equip": "actions.equip.Weapon",
+        "se_attack": "attack_32",
+        "se_hit": "hit_40",
+        "effect_hit": "battle_damage"
+    },
+    "I18": {
+        "name": "落雷斧",
+        "type": "E",
+        "stack": 1,
+        "sell": false,
+        "script_equip": "actions.equip.Weapon",
+        "se_attack": "attack_32",
+        "se_hit": "hit_40",
+        "effect_hit": "battle_damage"
+    },
+    "I19": {
+        "name": "木枪",
+        "type": "E",
+        "price": 80,
+        "stack": 1,
+        "sell": true,
+        "script_equip": "actions.equip.Weapon",
+        "se_attack": "attack_32",
+        "se_hit": "hit_40",
+        "effect_hit": "battle_damage"
+    },
+    "I20": {
+        "name": "铜枪",
+        "type": "E",
+        "price": 200,
+        "stack": 1,
+        "sell": true,
+        "script_equip": "actions.equip.Weapon",
+        "se_attack": "attack_32",
+        "se_hit": "hit_40",
+        "effect_hit": "battle_damage"
+    },
+    "I21": {
+        "name": "铁枪",
+        "type": "E",
+        "price": 500,
+        "stack": 1,
+        "sell": true,
+        "script_equip": "actions.equip.Weapon",
+        "se_attack": "attack_32",
+        "se_hit": "hit_40",
+        "effect_hit": "battle_damage"
+    },
+    "I22": {
+        "name": "钢枪",
+        "type": "E",
+        "price": 1500,
+        "stack": 1,
+        "sell": true,
+        "script_equip": "actions.equip.Weapon",
+        "se_attack": "attack_32",
+        "se_hit": "hit_40",
+        "effect_hit": "battle_damage"
+    },
+    "I23": {
+        "name": "冰枪",
+        "type": "E",
+        "price": 5000,
+        "stack": 1,
+        "sell": true,
+        "script_equip": "actions.equip.Weapon",
+        "se_attack": "attack_32",
+        "se_hit": "hit_40",
+        "effect_hit": "battle_damage"
+    },
+    "I24": {
+        "name": "真空枪",
+        "type": "E",
+        "price": 35000,
+        "stack": 1,
+        "sell": true,
+        "script_equip": "actions.equip.Weapon",
+        "se_attack": "attack_32",
+        "se_hit": "hit_40",
+        "effect_hit": "battle_damage"
+    },
+    "I25": {
+        "name": "会心枪",
+        "type": "E",
+        "price": 40000,
+        "stack": 1,
+        "sell": true,
+        "script_equip": "actions.equip.Weapon",
+        "se_attack": "attack_32",
+        "se_hit": "hit_40",
+        "effect_hit": "battle_damage"
+    },
+    "I26": {
+        "name": "黑龙枪",
+        "type": "E",
+        "stack": 1,
+        "sell": false,
+        "script_equip": "actions.equip.Weapon",
+        "se_attack": "attack_32",
+        "se_hit": "hit_40",
+        "effect_hit": "battle_damage"
+    },
+    "I27": {
+        "name": "蛇戟",
+        "type": "E",
+        "stack": 1,
+        "sell": false,
+        "script_equip": "actions.equip.Weapon",
+        "se_attack": "attack_32",
+        "se_hit": "hit_40",
+        "effect_hit": "battle_damage"
+    },
+    "I28": {
+        "name": "石弓",
+        "type": "E",
+        "price": 120,
+        "stack": 1,
+        "sell": true,
+        "script_equip": "actions.equip.Weapon",
+        "se_attack": "arrowattack_38",
+        "se_hit": "arrowhit_39",
+        "effect_hit": "battle_damage"
+    },
+    "I29": {
+        "name": "铜弓",
+        "type": "E",
+        "price": 400,
+        "stack": 1,
+        "sell": true,
+        "script_equip": "actions.equip.Weapon",
+        "se_attack": "arrowattack_38",
+        "se_hit": "arrowhit_39",
+        "effect_hit": "battle_damage"
+    },
+    "I30": {
+        "name": "铁弓",
+        "type": "E",
+        "price": 1000,
+        "stack": 1,
+        "sell": true,
+        "script_equip": "actions.equip.Weapon",
+        "se_attack": "arrowattack_38",
+        "se_hit": "arrowhit_39",
+        "effect_hit": "battle_damage"
+    },
+    "I31": {
+        "name": "钢弓",
+        "type": "E",
+        "price": 3000,
+        "stack": 1,
+        "sell": true,
+        "script_equip": "actions.equip.Weapon",
+        "se_attack": "arrowattack_38",
+        "se_hit": "arrowhit_39",
+        "effect_hit": "battle_damage"
+    },
+    "I32": {
+        "name": "火焰弓",
+        "type": "E",
+        "price": 6000,
+        "stack": 1,
+        "sell": true,
+        "script_equip": "actions.equip.Weapon",
+        "se_attack": "arrowattack_38",
+        "se_hit": "arrowhit_39",
+        "effect_hit": "battle_damage"
+    },
+    "I33": {
+        "name": "冰弓",
+        "type": "E",
+        "price": 15000,
+        "stack": 1,
+        "sell": true,
+        "script_equip": "actions.equip.Weapon",
+        "se_attack": "arrowattack_38",
+        "se_hit": "arrowhit_39",
+        "effect_hit": "battle_damage"
+    },
+    "I34": {
+        "name": "半月弓",
+        "type": "E",
+        "price": 35000,
+        "stack": 1,
+        "sell": true,
+        "script_equip": "actions.equip.Weapon",
+        "se_attack": "arrowattack_38",
+        "se_hit": "arrowhit_39",
+        "effect_hit": "battle_damage"
+    },
+    "I35": {
+        "name": "养由弓",
+        "type": "E",
+        "stack": 1,
+        "sell": false,
+        "script_equip": "actions.equip.Weapon",
+        "se_attack": "arrowattack_38",
+        "se_hit": "arrowhit_39",
+        "effect_hit": "battle_damage"
+    },
+    "I36": {
+        "name": "李广弓",
+        "type": "E",
+        "stack": 1,
+        "sell": false,
+        "script_equip": "actions.equip.Weapon",
+        "se_attack": "arrowattack_38",
+        "se_hit": "arrowhit_39",
+        "effect_hit": "battle_damage"
+    },
+    "I37": {
+        "name": "石刀",
+        "type": "E",
+        "price": 80,
+        "stack": 1,
+        "sell": true,
+        "script_equip": "actions.equip.Weapon",
+        "se_attack": "attack_32",
+        "se_hit": "hit_40",
+        "effect_hit": "battle_damage"
+    },
+    "I38": {
+        "name": "铜刀",
+        "type": "E",
+        "price": 150,
+        "stack": 1,
+        "sell": true,
+        "script_equip": "actions.equip.Weapon",
+        "se_attack": "attack_32",
+        "se_hit": "hit_40",
+        "effect_hit": "battle_damage"
+    },
+    "I39": {
+        "name": "铁刀",
+        "type": "E",
+        "price": 400,
+        "stack": 1,
+        "sell": true,
+        "script_equip": "actions.equip.Weapon",
+        "se_attack": "attack_32",
+        "se_hit": "hit_40",
+        "effect_hit": "battle_damage"
+    },
+    "I40": {
+        "name": "钢刀",
+        "type": "E",
+        "price": 1000,
+        "stack": 1,
+        "sell": true,
+        "script_equip": "actions.equip.Weapon",
+        "se_attack": "attack_32",
+        "se_hit": "hit_40",
+        "effect_hit": "battle_damage"
+    },
+    "I41": {
+        "name": "青龙刀",
+        "type": "E",
+        "price": 4000,
+        "stack": 1,
+        "sell": true,
+        "script_equip": "actions.equip.Weapon",
+        "se_attack": "attack_32",
+        "se_hit": "hit_40",
+        "effect_hit": "battle_damage"
+    },
+    "I42": {
+        "name": "古锭刀",
+        "type": "E",
+        "price": 12000,
+        "stack": 1,
+        "sell": true,
+        "script_equip": "actions.equip.Weapon",
+        "se_attack": "attack_32",
+        "se_hit": "hit_40",
+        "effect_hit": "battle_damage"
+    },
+    "I43": {
+        "name": "紫鲨刀",
+        "type": "E",
+        "price": 30000,
+        "stack": 1,
+        "sell": true,
+        "script_equip": "actions.equip.Weapon",
+        "se_attack": "attack_32",
+        "se_hit": "hit_40",
+        "effect_hit": "battle_damage"
+    },
+    "I44": {
+        "name": "偃月刀",
+        "type": "E",
+        "stack": 1,
+        "sell": false,
+        "script_equip": "actions.equip.Weapon",
+        "se_attack": "attack_32",
+        "se_hit": "hit_40",
+        "effect_hit": "battle_damage"
+    },
+    "I45": {
+        "name": "胜宗刀",
+        "type": "E",
+        "stack": 1,
+        "sell": false,
+        "script_equip": "actions.equip.Weapon",
+        "se_attack": "attack_32",
+        "se_hit": "hit_40",
+        "effect_hit": "battle_damage"
+    },
+    "I46": {
+        "name": "布服",
+        "type": "E",
+        "price": 100,
+        "stack": 1,
+        "sell": true,
+        "script_equip": "actions.equip.Armor"
+    },
+    "I47": {
+        "name": "皮甲",
+        "type": "E",
+        "price": 300,
+        "stack": 1,
+        "sell": true,
+        "script_equip": "actions.equip.Armor"
+    },
+    "I48": {
+        "name": "铜甲",
+        "type": "E",
+        "price": 600,
+        "stack": 1,
+        "sell": true,
+        "script_equip": "actions.equip.Armor"
+    },
+    "I49": {
+        "name": "铁甲",
+        "type": "E",
+        "price": 1500,
+        "stack": 1,
+        "sell": true,
+        "script_equip": "actions.equip.Armor"
+    },
+    "I50": {
+        "name": "钢甲",
+        "type": "E",
+        "price": 4000,
+        "stack": 1,
+        "sell": true,
+        "script_equip": "actions.equip.Armor"
+    },
+    "I51": {
+        "name": "火焰甲",
+        "type": "E",
+        "price": 10000,
+        "stack": 1,
+        "sell": true,
+        "script_equip": "actions.equip.Armor"
+    },
+    "I52": {
+        "name": "青龙甲",
+        "type": "E",
+        "price": 40000,
+        "stack": 1,
+        "sell": true,
+        "script_equip": "actions.equip.Armor"
+    },
+    "I53": {
+        "name": "藤甲",
+        "type": "E",
+        "stack": 1,
+        "sell": false,
+        "script_equip": "actions.equip.Armor"
+    },
+    "I54": {
+        "name": "头带",
+        "type": "E",
+        "price": 50,
+        "stack": 1,
+        "sell": true,
+        "script_equip": "actions.equip.Armor"
+    },
+    "I55": {
+        "name": "皮帽",
+        "type": "E",
+        "price": 100,
+        "stack": 1,
+        "sell": true,
+        "script_equip": "actions.equip.Armor"
+    },
+    "I56": {
+        "name": "铜盔",
+        "type": "E",
+        "price": 200,
+        "stack": 1,
+        "sell": true,
+        "script_equip": "actions.equip.Armor"
+    },
+    "I57": {
+        "name": "铁盔",
+        "type": "E",
+        "price": 2000,
+        "stack": 1,
+        "sell": true,
+        "script_equip": "actions.equip.Armor"
+    },
+    "I58": {
+        "name": "钢盔",
+        "type": "E",
+        "price": 4000,
+        "stack": 1,
+        "sell": true,
+        "script_equip": "actions.equip.Armor"
+    },
+    "I59": {
+        "name": "风盔",
+        "type": "E",
+        "stack": 1,
+        "sell": false,
+        "script_equip": "actions.equip.Armor"
+    },
+    "I60": {
+        "name": "天空盔",
+        "type": "E",
+        "stack": 1,
+        "sell": false,
+        "script_equip": "actions.equip.Armor"
+    },
+    "I61": {
+        "name": "木盾",
+        "type": "E",
+        "price": 50,
+        "stack": 1,
+        "sell": true,
+        "script_equip": "actions.equip.Armor"
+    },
+    "I62": {
+        "name": "皮盾",
+        "type": "E",
+        "price": 100,
+        "stack": 1,
+        "sell": true,
+        "script_equip": "actions.equip.Armor"
+    },
+    "I63": {
+        "name": "鳞盾",
+        "type": "E",
+        "price": 500,
+        "stack": 1,
+        "sell": true,
+        "script_equip": "actions.equip.Armor"
+    },
+    "I64": {
+        "name": "铜盾",
+        "type": "E",
+        "price": 1000,
+        "stack": 1,
+        "sell": true,
+        "script_equip": "actions.equip.Armor"
+    },
+    "I65": {
+        "name": "铁盾",
+        "type": "E",
+        "price": 2000,
+        "stack": 1,
+        "sell": true,
+        "script_equip": "actions.equip.Armor"
+    },
+    "I66": {
+        "name": "钢盾",
+        "type": "E",
+        "price": 4000,
+        "stack": 1,
+        "sell": true,
+        "script_equip": "actions.equip.Armor"
+    },
+    "I67": {
+        "name": "火焰盾",
+        "type": "E",
+        "price": 30000,
+        "stack": 1,
+        "sell": true,
+        "script_equip": "actions.equip.Armor"
+    },
+    "I68": {
+        "name": "雷神盾",
+        "type": "E",
+        "price": 60000,
+        "stack": 1,
+        "sell": true,
+        "script_equip": "actions.equip.Armor"
+    },
+    "I69": {
+        "name": "伏龙盾",
+        "type": "E",
+        "stack": 1,
+        "sell": false,
+        "script_equip": "actions.equip.Armor"
+    },
+    "I70": {
+        "name": "孟德新书",
+        "type": "A",
+        "stack": 1,
+        "sell": false,
+        "script_equip": "actions.equip.Accessory"
+    },
+    "I71": {
+        "name": "乱码画屏",
+        "type": "A",
+        "stack": 1,
+        "sell": true,
+        "script_equip": "actions.equip.Accessory"
+    },
+    "I72": {
+        "name": "赤兔马",
+        "type": "A",
+        "stack": 1,
+        "sell": false,
+        "script_equip": "actions.equip.Accessory"
+    },
+    "I73": {
+        "name": "白马",
+        "type": "A",
+        "price": 2000,
+        "stack": 1,
+        "sell": true,
+        "script_equip": "actions.equip.Accessory"
+    },
+    "I74": {
+        "name": "速攻鞋",
+        "type": "A",
+        "stack": 1,
+        "sell": false,
+        "script_equip": "actions.equip.Accessory"
+    },
+    "I75": {
+        "name": "项羽护手",
+        "type": "A",
+        "stack": 1,
+        "sell": false,
+        "script_equip": "actions.equip.Accessory"
+    },
+    "I76": {
+        "name": "赤心丹",
+        "type": "C",
+        "price": 50,
+        "stack": 9,
+        "sell": true,
+        "script_action": "actions.SelectTarget",
+        "param_action": {
+            "toenemy": false,
+            "multisel": false,
+            "role_normal": true,
+            "role_dead": false
+        },
+        "script_effect": "effects.item.Recovery",
+        "se_use": "recovery",
+        "effect_use": "skill_recovery"
+    },
+    "I77": {
+        "name": "铜仙丹",
+        "type": "C",
+        "price": 100,
+        "stack": 9,
+        "sell": true,
+        "script_action": "actions.SelectTarget",
+        "param_action": {
+            "toenemy": false,
+            "multisel": false,
+            "role_normal": true,
+            "role_dead": false
+        },
+        "script_effect": "effects.item.Recovery",
+        "se_use": "recovery",
+        "effect_use": "skill_recovery"
+    },
+    "I78": {
+        "name": "银仙丹",
+        "type": "C",
+        "price": 500,
+        "stack": 9,
+        "sell": true,
+        "script_action": "actions.SelectTarget",
+        "param_action": {
+            "toenemy": false,
+            "multisel": false,
+            "role_normal": true,
+            "role_dead": false
+        },
+        "script_effect": "effects.item.Recovery",
+        "se_use": "recovery",
+        "effect_use": "skill_recovery"
+    },
+    "I79": {
+        "name": "金仙丹",
+        "type": "C",
+        "price": 1000,
+        "stack": 9,
+        "sell": true,
+        "script_action": "actions.SelectTarget",
+        "param_action": {
+            "toenemy": false,
+            "multisel": false,
+            "role_normal": true,
+            "role_dead": false
+        },
+        "script_effect": "effects.item.Recovery",
+        "se_use": "recovery",
+        "effect_use": "skill_recovery"
+    },
+    "I80": {
+        "name": "银仙石",
+        "type": "C",
+        "stack": 1,
+        "sell": false,
+        "script_action": "actions.SelectTarget",
+        "param_action": {
+            "toenemy": false,
+            "multisel": false,
+            "role_normal": true,
+            "role_dead": false
+        },
+        "script_effect": "effects.item.Recovery",
+        "se_use": "recovery",
+        "effect_use": "skill_recovery"
+    },
+    "I81": {
+        "name": "金仙石",
+        "type": "C",
+        "stack": 1,
+        "sell": false,
+        "script_action": "actions.SelectTarget",
+        "param_action": {
+            "toenemy": false,
+            "multisel": false,
+            "role_normal": true,
+            "role_dead": false
+        },
+        "script_effect": "effects.item.Recovery",
+        "se_use": "recovery",
+        "effect_use": "skill_recovery"
+    },
+    "I82": {
+        "name": "会心丹",
+        "type": "C",
+        "price": 300,
+        "stack": 9,
+        "sell": true,
+        "script_action": "actions.SelectTarget",
+        "param_action": {
+            "toenemy": true,
+            "multisel": false,
+            "role_normal": true,
+            "role_dead": false
+        }
+    },
+    "I83": {
+        "name": "会心石",
+        "type": "C",
+        "stack": 1,
+        "sell": false,
+        "script_action": "actions.SelectTarget",
+        "param_action": {
+            "toenemy": true,
+            "multisel": false,
+            "role_normal": true,
+            "role_dead": false
+        }
+    },
+    "I84": {
+        "name": "进攻令牌",
+        "type": "C",
+        "price": 500,
+        "stack": 9,
+        "sell": true
+    },
+    "I85": {
+        "name": "野营帐",
+        "type": "C",
+        "price": 1000,
+        "stack": 9,
+        "sell": true
+    },
+    "I86": {
+        "name": "护身烟",
+        "type": "C",
+        "price": 300,
+        "stack": 9,
+        "sell": true,
+        "script_effect": "effects.item.BodyProtect",
+        "param_effect": {
+            "bid": "B1"
+        }
+    },
+    "I87": {
+        "name": "智复丹",
+        "type": "C",
+        "price": 2500,
+        "stack": 9,
+        "sell": true
+    },
+    "I88": {
+        "name": "招魂丹",
+        "type": "C",
+        "price": 100,
+        "stack": 9,
+        "sell": true,
+        "script_action": "actions.SelectTarget",
+        "param_action": {
+            "toenemy": false,
+            "multisel": false,
+            "role_normal": false,
+            "role_dead": true
+        },
+        "script_effect": "effects.item.Revive",
+        "se_use": "recovery",
+        "effect_use": "skill_revive"
+    },
+    "I89": {
+        "name": "火神书",
+        "type": "C",
+        "stack": 1,
+        "sell": false,
+        "script_action": "actions.SelectTarget",
+        "param_action": {
+            "toenemy": true,
+            "multisel": false,
+            "role_normal": true,
+            "role_dead": false
+        }
+    },
+    "I90": {
+        "name": "水龙书",
+        "type": "C",
+        "stack": 1,
+        "sell": false,
+        "script_action": "actions.SelectTarget",
+        "param_action": {
+            "toenemy": true,
+            "multisel": false,
+            "role_normal": true,
+            "role_dead": false
+        }
+    },
+    "I91": {
+        "name": "激石书",
+        "type": "C",
+        "stack": 1,
+        "sell": false,
+        "script_action": "actions.SelectTarget",
+        "param_action": {
+            "toenemy": true,
+            "multisel": false,
+            "role_normal": true,
+            "role_dead": false
+        }
+    },
+    "I92": {
+        "name": "兵法书",
+        "type": "C",
+        "stack": 1,
+        "sell": false
+    },
+    "I93": {
+        "name": "地图",
+        "type": "I",
+        "stack": 1,
+        "sell": false
+    },
+    "I94": {
+        "name": "西蜀地图",
+        "type": "I",
+        "stack": 1,
+        "sell": false
+    },
+    "I95": {
+        "name": "连弩",
+        "type": "I",
+        "stack": 1,
+        "sell": false
+    },
+    "I96": {
+        "name": "信",
+        "type": "I",
+        "stack": 1,
+        "sell": false
+    },
+    "I97": {
+        "name": "九转丹",
+        "type": "I",
+        "stack": 1,
+        "sell": false
+    },
+    "I98": {
+        "name": "六甲天书",
+        "type": "I",
+        "stack": 1,
+        "sell": false
+    },
+    "I99": {
+        "name": "茶",
+        "type": "I",
+        "stack": 1,
+        "sell": false
+    },
+    "I100": {
+        "name": "水壶",
+        "type": "I",
+        "stack": 1,
+        "sell": false
+    },
+    "I101": {
+        "name": "茶具",
+        "type": "I",
+        "stack": 1,
+        "sell": false
+    },
+    "I102": {
+        "name": "胡班家书",
+        "type": "I",
+        "stack": 1,
+        "sell": false
+    },
+    "I103": {
+        "name": "秘法书",
+        "type": "I",
+        "stack": 1,
+        "sell": false
+    },
+    "I104": {
+        "name": "硝石",
+        "type": "I",
+        "stack": 1,
+        "sell": false
+    },
+    "I105": {
+        "name": "老树枝",
+        "type": "I",
+        "stack": 1,
+        "sell": false
+    },
+    "I106": {
+        "name": "火药",
+        "type": "I",
+        "stack": 1,
+        "sell": false
+    },
+    "I107": {
+        "name": "百万支箭",
+        "type": "I",
+        "stack": 1,
+        "sell": false
+    },
+    "I108": {
+        "name": "兵符",
+        "type": "I",
+        "stack": 1,
+        "sell": false
+    },
+    "I109": {
+        "name": "锦囊",
+        "type": "I",
+        "stack": 1,
+        "sell": false
+    },
+    "I110": {
+        "name": "养由弓",
+        "type": "I",
+        "stack": 1,
+        "sell": false
+    },
+    "I111": {
+        "name": "酒",
+        "type": "I",
+        "stack": 1,
+        "sell": false
+    },
+    "I112": {
+        "name": "信",
+        "type": "I",
+        "stack": 1,
+        "sell": false
+    },
+    "I113": {
+        "name": "血书",
+        "type": "I",
+        "stack": 1,
+        "sell": false
+    },
+    "I114": {
+        "name": "青铜钥匙",
+        "type": "I",
+        "stack": 1,
+        "sell": false
+    },
+    "I115": {
+        "name": "火药壶",
+        "type": "I",
+        "stack": 1,
+        "sell": false
+    },
+    "I116": {
+        "name": "介绍信",
+        "type": "I",
+        "stack": 1,
+        "sell": false
+    },
+    "I117": {
+        "name": "渡海书",
+        "type": "I",
+        "stack": 1,
+        "sell": false
+    }
+}

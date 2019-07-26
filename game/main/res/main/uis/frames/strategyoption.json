@@ -1,0 +1,35 @@
+{
+    "meta":"OptionTable"
+    ,"name":"strategyoption"
+    ,"params":{
+        
+    }
+    ,"csb":"$(respath)/main/cocosstudio/QueueOption.csb"
+    ,"widgets":{
+		"wg_options":{
+            "source":"wg_options",
+            "type":"table",
+            "config":{
+                "itemsize":[32,16],
+                "selectable":true,
+                "itemrows":2,
+                "itemcolumns":1,
+				"itemwidget":{
+					"type":"label"
+				}
+            },
+			"params":{
+				"items":[
+					{
+						"label":"谋略",
+						"type":"S"
+					},
+					{
+						"label":"阵形",
+						"type":"F"
+					}
+				]
+			}
+        }
+    }
+}

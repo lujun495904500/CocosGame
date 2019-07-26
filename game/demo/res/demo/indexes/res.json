@@ -1,0 +1,12 @@
+{
+	"res":{
+		"uis":{
+			"classes":{
+				"DemoScene":"$(respath)/demo/uis/classes/DemoScene.json"
+			}
+			,"frames":{
+				"demomessage":"$(respath)/demo/uis/frames/demomessage.json"
+			}
+		}
+	}
+}

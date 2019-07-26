@@ -1,0 +1,157 @@
+{
+    "name": "skill_recovery",
+    "meta": "RecoveryEffect",
+    "params": {
+        "count": 6,
+        "delay": 0.15,
+        "particles": [
+            [
+                {
+                    "frame": "f3",
+                    "pos": [
+                        -13,
+                        20
+                    ]
+                },
+                {
+                    "frame": "f4",
+                    "pos": [
+                        -4,
+                        20
+                    ]
+                },
+                {
+                    "frame": "f7",
+                    "pos": [
+                        10,
+                        20
+                    ]
+                },
+                {
+                    "frame": "f6",
+                    "pos": [
+                        6,
+                        12
+                    ]
+                },
+                {
+                    "frame": "f7",
+                    "pos": [
+                        -12,
+                        4
+                    ]
+                },
+                {
+                    "frame": "f5",
+                    "pos": [
+                        4,
+                        4
+                    ]
+                }
+            ],
+            [
+                {
+                    "frame": "f6",
+                    "pos": [
+                        -5,
+                        20
+                    ]
+                },
+                {
+                    "frame": "f2",
+                    "pos": [
+                        8,
+                        20
+                    ]
+                },
+                {
+                    "frame": "f5",
+                    "pos": [
+                        -1,
+                        15
+                    ]
+                },
+                {
+                    "frame": "f6",
+                    "pos": [
+                        -8,
+                        8
+                    ]
+                },
+                {
+                    "frame": "f7",
+                    "pos": [
+                        13,
+                        5
+                    ]
+                },
+                {
+                    "frame": "f1",
+                    "pos": [
+                        -9,
+                        5
+                    ]
+                }
+            ],
+            [
+                {
+                    "frame": "f7",
+                    "pos": [
+                        -8,
+                        16
+                    ]
+                },
+                {
+                    "frame": "f6",
+                    "pos": [
+                        4,
+                        21
+                    ]
+                },
+                {
+                    "frame": "f6",
+                    "pos": [
+                        7,
+                        9
+                    ]
+                },
+                {
+                    "frame": "f6",
+                    "pos": [
+                        2,
+                        4
+                    ]
+                },
+                {
+                    "frame": "f2",
+                    "pos": [
+                        -8,
+                        8
+                    ]
+                },
+                {
+                    "frame": "f6",
+                    "pos": [
+                        -2,
+                        2
+                    ]
+                }
+            ]
+        ]
+    },
+    "source": {
+        "plist": "$(respath)/main/graphics/plists/effects/skill_recovery.plist",
+        "image": "$(respath)/main/graphics/plists/effects/skill_recovery.png",
+        "fpath": "main/effects/skill_recovery/"
+    },
+    "frames": [
+        "f1",
+        "f2",
+        "f3",
+        "f4",
+        "f5",
+        "f6",
+        "f7",
+        "f8"
+    ]
+}

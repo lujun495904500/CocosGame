@@ -1,0 +1,14 @@
+{
+    "meta":"Message"
+    ,"name":"demomessage"
+    ,"params":{
+        
+    }
+    ,"csb":"$(respath)/demo/cocosstudio/DemoMessage.csb"
+    ,"widgets":{
+		"wg_message":{
+            "source":"wg_message",
+            "type":"message"
+        }
+    }
+}

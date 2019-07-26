@@ -1,0 +1,13 @@
+{
+    "db": {
+        "events": [
+            "$(respath)/demo/databases/events.json"
+        ],
+        "strings": [
+            "$(respath)/demo/databases/strings.json"
+        ],
+        "talks": [
+            "$(respath)/demo/databases/talks.json"
+        ]
+    }
+}

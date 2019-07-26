@@ -1,0 +1,23 @@
+{
+    "meta":"BattleItemUse"
+    ,"name":"battleitemuse"
+    ,"params":{
+        
+    }
+    ,"csb":"$(respath)/main/cocosstudio/BattleItemUse.csb"
+    ,"widgets":{
+		"wg_items":{
+            "source":"wg_items",
+            "type":"table",
+            "config":{
+                "itemsize":[72,16],
+                "selectable":true,
+                "itemrows":3,
+                "itemcolumns":2,
+				"itemwidget":{
+					"type":"luggageitem"
+				}
+            }
+        }
+    }
+}

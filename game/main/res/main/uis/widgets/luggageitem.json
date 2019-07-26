@@ -1,0 +1,11 @@
+{
+    "meta":"LuggageItem",
+    "name":"luggageitem",
+    "equipimg":"#main/images/start",
+	"namefont":{
+		"name":"font_16"
+	},
+	"amountfont":{
+		"name":"font_8"
+	}
+}

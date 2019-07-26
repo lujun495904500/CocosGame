@@ -1,0 +1,10 @@
+{
+    "test": {
+        "type": "string",
+        "value": "变量测试"
+    },
+    "formulatest": {
+        "type": "formula",
+        "value": "TEST"
+    }
+}

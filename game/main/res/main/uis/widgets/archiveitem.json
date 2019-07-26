@@ -1,0 +1,15 @@
+{
+    "meta":"ArchiveItem",
+    "name":"archiveitem",
+	"namefont":{
+		"name":"font_16"
+	},
+	"datefont":{
+		"name":"font_8"
+	},
+	"verfont":{
+		"name":"font_8"
+	},
+	"newtext":"[新建游戏]",
+	"nexttext":"[下一页]"
+}

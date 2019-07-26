@@ -1,0 +1,49 @@
+{
+    "DM_WLC": [
+        {
+            "msg": "欢迎试玩\n吞食天地Demo"
+        }
+    ],
+    "DM_BATTLE": [
+        {
+            "msg": "想要较量一下吗",
+            "noctrl": true
+        },
+        {
+            "cmds": [
+                {
+                    "type": "SELECT",
+                    "selects": [
+                        {
+                            "label": "是",
+                            "id": "DM_ENTER"
+                        },
+                        {
+                            "label": "否",
+                            "id": "DM_CANCEL"
+                        }
+                    ],
+                    "cancel": "DM_CANCEL"
+                }
+            ]
+        }
+    ],
+    "DM_ENTER": [
+        {
+            "msg": "来吧，拿出实力来吧"
+        },
+        {
+            "cmds": [
+                {
+                    "type": "SCRIPT",
+                    "index": 1
+                }
+            ]
+        }
+    ],
+    "DM_CANCEL": [
+        {
+            "msg": "随时奉陪"
+        }
+    ]
+}

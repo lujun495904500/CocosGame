@@ -1,0 +1,35 @@
+{
+    "meta":"OptionTable"
+    ,"name":"queueoption"
+    ,"params":{
+        
+    }
+    ,"csb":"$(respath)/main/cocosstudio/QueueOption.csb"
+    ,"widgets":{
+		"wg_options":{
+            "source":"wg_options",
+            "type":"table",
+            "config":{
+                "itemsize":[32,16],
+                "selectable":true,
+                "itemrows":2,
+                "itemcolumns":1,
+				"itemwidget":{
+					"type":"label"
+				}
+            },
+			"params":{
+				"items":[
+					{
+						"label":"队列",
+						"type":"Q"
+					},
+					{
+						"label":"军师",
+						"type":"A"
+					}
+				]
+			}
+        }
+    }
+}

@@ -1,0 +1,18 @@
+<Solution>
+  <PropertyGroup Name="CocosUI" Version="3.10.0.0" Type="CocosStudio" />
+  <SolutionFolder>
+    <Group ctype="ResourceGroup">
+      <RootFolder Name=".">
+        <PlistImageFolder Image="images.png" PListFile="images.plist" Name=".images_PList.Dir">
+          <PlistImageFile Name="demo_images_pic1" Key="demo/images/pic1" />
+          <PlistImageFile Name="demo_images_pic2" Key="demo/images/pic2" />
+          <PlistImageFile Name="demo_images_pic2-effect" Key="demo/images/pic2-effect" />
+          <PlistImageFile Name="demo_images_pic3" Key="demo/images/pic3" />
+          <PlistImageFile Name="demo_images_pic3-effect" Key="demo/images/pic3-effect" />
+        </PlistImageFolder>
+        <Project Name="DemoMessage.csd" Type="Layer" />
+        <Project Name="DemoScene.csd" Type="Layer" />
+      </RootFolder>
+    </Group>
+  </SolutionFolder>
+</Solution>

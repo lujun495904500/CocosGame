@@ -1,0 +1,21 @@
+#command	10000;		// 当前开始命令
+
+/* 测试 */
+struct test {
+	int8	arg1;		// int8 类型测试
+	uint8	arg2;
+	int16	arg3;
+	uint16	arg4;
+	int32	arg5;
+	uint32	arg6;
+	float	arg7;
+	double	arg8;
+	string	arg9;
+	int8 []	arg10;		// 数组测试
+	int64	arg11;
+};
+
+/* 测试 欢迎消息 */
+struct test_welcome {
+	string	text;
+};

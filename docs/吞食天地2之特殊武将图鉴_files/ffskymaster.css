@@ -1,0 +1,89 @@
+﻿
+#maindiv {
+    padding: 70px 0 10px;
+    margin-bottom: 0;
+}
+#article_header ,#article_content{
+    padding: 0px 30px;
+}
+/* Large desktop */
+@media (min-width: 1200px) {
+    .hero-unit {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+ }
+ 
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) { 
+    #maindiv {
+        padding: 0px 0 10px;
+    }
+    .hero-unit {
+        padding: 5px 20px;
+    }
+    #article_header ,#article_content{
+        padding: 0px 5px;
+    }
+}
+ 
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) { 
+    #maindiv {
+        padding: 0px 0 10px;
+    }
+    .hero-unit {
+        padding: 5px 20px;
+    }
+    #article_header ,#article_content{
+        padding: 0px 5px;
+    }
+}
+ 
+/* Landscape phones and down */
+@media (max-width: 480px) {
+    #maindiv {
+        padding: 0px 0 10px;
+    }
+    .hero-unit {
+        padding: 5px 20px;
+    }
+    
+    #article_header ,#article_content{
+        padding: 0px 5px;
+    }
+}
+
+#new_zhuanti .row{
+    padding: 10px;
+    border-bottom: 1px solid #cccccc;
+    font-size: 0.8em;
+}
+#friend_links ul li {
+    min-width: 100px;
+}
+#new_zhuanti_list img{
+    width: 85px;
+}
+footer {
+    border-top: 1px solid #eeeeee;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+#article_cata li{
+    width: 200px;
+    overflow: hidden;
+}
+
+.red {
+    color: red;
+}
+
+#pic_content {
+    width: 98%;
+    text-align: center;
+}
+#pic_content img {
+    max-width: 100%;
+}

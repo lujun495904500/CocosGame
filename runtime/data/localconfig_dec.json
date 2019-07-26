@@ -1,0 +1,12 @@
+{
+    "remoteconfig": "http://120.79.54.128:8848/gameconfig.json",
+    "enableremote": false,
+    "enableupdate": true,
+    "development": true,
+    "enablenetwork": true,
+    "plays": {
+        "demo": {
+            "pack": "demo"
+        }
+    }
+}

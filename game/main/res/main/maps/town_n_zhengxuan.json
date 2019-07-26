@@ -1,0 +1,11 @@
+{
+	"name":"town_n_zhengxuan",
+	"meta":"TMXMap",
+	"tmx":"$(respath)/main/maps/town_n_zhengxuan.tmx",
+	"params":{
+		"maptype":"town",
+		"bgm":"village_10",
+		"moveorder":45,
+		"moveoffest":[0,4]
+	}
+}

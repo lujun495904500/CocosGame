@@ -1,0 +1,26 @@
+{
+    "meta":"MessageWindow",
+    "name":"message",
+    "background":{
+		"csb":"$(respath)/main/cocosstudio/Window.csb"
+		,"bindings":{
+			"pl_window":"pl_window"
+		}
+		,"context":"pl_window"
+	},
+	
+    "borders":[8,8,8,8],
+	
+    "font":{
+        "name":"font_16"
+    },
+	
+    "moveuptime":0.2,
+	
+    "printspeed":0.07,
+    "printsound":"message_42",
+	
+	"cursorimg":"#main/images/cursor_b",
+	"cursordelay":0.3,
+    "cursorrate":2
+}

@@ -1,0 +1,10 @@
+{
+	"name":"region_xuzhou",
+	"meta":"TMXMap",
+	"tmx":"$(respath)/main/maps/region_xuzhou.tmx",
+	"params":{
+		"maptype":"region",
+		"bgm":"region_2",
+		"moveorder":45
+	}
+}

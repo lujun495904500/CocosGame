@@ -1,0 +1,22 @@
+{
+    "name": "battle_damage",
+    "meta": "FrameEffect",
+    "params": {
+        "delay": 0.2,
+        "sequence": [
+            "f1",
+            "f2",
+            "f3"
+        ]
+    },
+    "source": {
+        "plist": "$(respath)/main/graphics/plists/effects/battle_damage.plist",
+        "image": "$(respath)/main/graphics/plists/effects/battle_damage.png",
+        "fpath": "main/effects/battle_damage/"
+    },
+    "frames": [
+        "f1",
+        "f2",
+        "f3"
+    ]
+}

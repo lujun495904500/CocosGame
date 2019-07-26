@@ -1,0 +1,31 @@
+{
+    "meta":"Golds"
+    ,"name":"golds"
+    ,"params":{
+        
+    }
+    ,"csb":"$(respath)/main/cocosstudio/Golds.csb"
+    ,"widgets":{
+		"lb_golds_c":{
+			"source":"pl_golds/lb_golds_c",
+			"type":"label",
+			"config":{
+				"font":{
+					"name":"font_8"
+				}
+			},
+			"params":{
+				"text":"金"
+            }
+		}
+		,"lb_golds":{
+			"source":"pl_golds/lb_golds",
+			"type":"label",
+			"config":{
+				"font":{
+					"name":"font_8"
+				}
+			}
+		}
+    }
+}

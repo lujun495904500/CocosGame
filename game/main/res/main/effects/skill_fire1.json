@@ -1,0 +1,28 @@
+{
+    "name": "skill_fire1",
+    "meta": "Fire1Effect",
+    "params": {
+        "action1": {
+            "turns": 1,
+            "delay": 0.1
+        },
+        "action2": {
+            "turns": 3,
+            "delay": 0.1
+        },
+        "action3": {
+            "moveY": 4,
+            "duration": 0.2
+        }
+    },
+    "source": {
+        "plist": "$(respath)/main/graphics/plists/effects/skill_fire1.plist",
+        "image": "$(respath)/main/graphics/plists/effects/skill_fire1.png",
+        "fpath": "main/effects/skill_fire1/"
+    },
+    "frames": [
+        "fire1",
+        "fire2",
+        "smoke"
+    ]
+}

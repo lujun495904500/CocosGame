@@ -1,0 +1,73 @@
+<Solution>
+  <PropertyGroup Name="CocosUI" Version="3.10.0.0" Type="CocosStudio" />
+  <SolutionFolder>
+    <Group ctype="ResourceGroup">
+      <RootFolder Name=".">
+        <PlistImageFolder Image="images.png" PListFile="images.plist" Name=".images_PList.Dir">
+          <PlistImageFile Name="main_images_attrbar" Key="main/images/attrbar" />
+          <PlistImageFile Name="main_images_black" Key="main/images/black" />
+          <PlistImageFile Name="main_images_button_a" Key="main/images/button_a" />
+          <PlistImageFile Name="main_images_button_a_over" Key="main/images/button_a_over" />
+          <PlistImageFile Name="main_images_button_b" Key="main/images/button_b" />
+          <PlistImageFile Name="main_images_button_b_over" Key="main/images/button_b_over" />
+          <PlistImageFile Name="main_images_button_center" Key="main/images/button_center" />
+          <PlistImageFile Name="main_images_button_down" Key="main/images/button_down" />
+          <PlistImageFile Name="main_images_button_down_over" Key="main/images/button_down_over" />
+          <PlistImageFile Name="main_images_button_left" Key="main/images/button_left" />
+          <PlistImageFile Name="main_images_button_left_over" Key="main/images/button_left_over" />
+          <PlistImageFile Name="main_images_button_right" Key="main/images/button_right" />
+          <PlistImageFile Name="main_images_button_right_over" Key="main/images/button_right_over" />
+          <PlistImageFile Name="main_images_button_up" Key="main/images/button_up" />
+          <PlistImageFile Name="main_images_button_up_over" Key="main/images/button_up_over" />
+          <PlistImageFile Name="main_images_cursor_b" Key="main/images/cursor_b" />
+          <PlistImageFile Name="main_images_cursor_r" Key="main/images/cursor_r" />
+          <PlistImageFile Name="main_images_cursor_t" Key="main/images/cursor_t" />
+          <PlistImageFile Name="main_images_enemysoldierbar" Key="main/images/enemysoldierbar" />
+          <PlistImageFile Name="main_images_hand_l" Key="main/images/hand_l" />
+          <PlistImageFile Name="main_images_hand_r" Key="main/images/hand_r" />
+          <PlistImageFile Name="main_images_r_button_select" Key="main/images/r_button_select" />
+          <PlistImageFile Name="main_images_r_button_select_over" Key="main/images/r_button_select_over" />
+          <PlistImageFile Name="main_images_r_button_start" Key="main/images/r_button_start" />
+          <PlistImageFile Name="main_images_r_button_start_over" Key="main/images/r_button_start_over" />
+          <PlistImageFile Name="main_images_soldierbar" Key="main/images/soldierbar" />
+          <PlistImageFile Name="main_images_spanel1" Key="main/images/spanel1" />
+          <PlistImageFile Name="main_images_spanel2" Key="main/images/spanel2" />
+          <PlistImageFile Name="main_images_start" Key="main/images/start" />
+          <PlistImageFile Name="main_images_title1" Key="main/images/title1" />
+          <PlistImageFile Name="main_images_window" Key="main/images/window" />
+        </PlistImageFolder>
+        <Project Name="ArchiveSelect.csd" Type="Layer" />
+        <Project Name="BattleFunction.csd" Type="Layer" />
+        <Project Name="BattleItemUse.csd" Type="Layer" />
+        <Project Name="BattleRole.csd" Type="Layer" />
+        <Project Name="BattleScene.csd" Type="Layer" />
+        <Project Name="BattleStrategy.csd" Type="Layer" />
+        <Project Name="BattleTeam.csd" Type="Layer" />
+        <Project Name="BattleVictory.csd" Type="Layer" />
+        <Project Name="BootScene.csd" Type="Layer" />
+        <Project Name="FlashLight.csd" Type="Layer" />
+        <Project Name="GameMenu.csd" Type="Layer" />
+        <Project Name="GamePad.csd" Type="Layer" />
+        <Project Name="Golds.csd" Type="Layer" />
+        <Project Name="ItemDeposit.csd" Type="Layer" />
+        <Project Name="ItemOperate.csd" Type="Layer" />
+        <Project Name="ItemTrade.csd" Type="Layer" />
+        <Project Name="MapFunction.csd" Type="Layer" />
+        <Project Name="MapStrategy.csd" Type="Layer" />
+        <Project Name="Message.csd" Type="Layer" />
+        <Project Name="PackList.csd" Type="Layer" />
+        <Project Name="QueueOption.csd" Type="Layer" />
+        <Project Name="QueueSort.csd" Type="Layer" />
+        <Project Name="RoleAttribute.csd" Type="Layer" />
+        <Project Name="RoleSelect.csd" Type="Layer" />
+        <Project Name="Select.csd" Type="Layer" />
+        <Project Name="ShadeLight.csd" Type="Layer" />
+        <Project Name="SkillWindow.csd" Type="Layer" />
+        <Project Name="TeamAttribute.csd" Type="Layer" />
+        <Project Name="TextInput.csd" Type="Layer" />
+        <Project Name="TradeSelect.csd" Type="Layer" />
+        <Project Name="Window.csd" Type="Layer" />
+      </RootFolder>
+    </Group>
+  </SolutionFolder>
+</Solution>

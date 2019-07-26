@@ -1,0 +1,292 @@
+{
+    "S5": {
+        "name": "嘲骂计",
+        "sp": 4,
+        "level": 5,
+        "map": false,
+        "battle": true,
+        "script_action": "actions.SelectTarget",
+        "param_action": {
+            "toenemy": true,
+            "multisel": false,
+            "role_normal": true,
+            "role_dead": false
+        },
+        "script_effect": "effects.strategy.Sarcastic"
+    },
+    "S6": {
+        "name": "杀毒计",
+        "sp": 4,
+        "level": 7,
+        "map": true,
+        "battle": true,
+        "script_effect": "effects.strategy.AntiVirus",
+        "param_effect": {
+            "bid": "B3"
+        }
+    },
+    "S7": {
+        "name": "策减计",
+        "sp": 8,
+        "level": 8,
+        "map": false,
+        "battle": true,
+        "script_effect": "effects.strategy.ResistStrategy",
+        "param_effect": {
+            "rmin": 10,
+            "rmax": 10
+        }
+    },
+    "S8": {
+        "name": "血路计",
+        "sp": 8,
+        "level": 9,
+        "map": false,
+        "battle": true,
+        "script_effect": "effects.strategy.DesperateWay"
+    },
+    "S12": {
+        "name": "缩地计",
+        "sp": 8,
+        "level": 14,
+        "map": true,
+        "battle": false,
+        "script_effect": "effects.strategy.Shrink",
+        "param_effect": {
+            "delay": 1.3
+        },
+        "se_use": "takeoff_43"
+    },
+    "S13": {
+        "name": "疑心计",
+        "sp": 6,
+        "level": 15,
+        "map": false,
+        "battle": true,
+        "script_action": "actions.SelectTarget",
+        "param_action": {
+            "toenemy": true,
+            "multisel": false,
+            "role_normal": true,
+            "role_dead": false
+        },
+        "script_effect": "effects.strategy.Suspicion",
+        "param_effect": {
+            "bid": "B5"
+        }
+    },
+    "S15": {
+        "name": "烟遁计",
+        "sp": 8,
+        "level": 18,
+        "map": true,
+        "battle": true,
+        "script_effect": "effects.strategy.SmokeEscape",
+        "param_effect": {
+            "map": "B2",
+            "battle": "B4"
+        }
+    },
+    "S16": {
+        "name": "伪退计",
+        "sp": 8,
+        "level": 19,
+        "map": false,
+        "battle": true,
+        "script_effect": "effects.strategy.PretendRetreat"
+    },
+    "S19": {
+        "name": "策返计",
+        "sp": 8,
+        "level": 23,
+        "map": false,
+        "battle": true,
+        "script_action": "actions.SelectTarget",
+        "param_action": {
+            "toenemy": false,
+            "multisel": false,
+            "role_normal": true,
+            "role_dead": false
+        },
+        "script_effect": "effects.strategy.StrategyBack",
+        "param_effect": {
+            "bid": "B9"
+        }
+    },
+    "S21": {
+        "name": "心乱计",
+        "sp": 4,
+        "level": 25,
+        "map": false,
+        "battle": true,
+        "script_effect": "effects.strategy.Confusion",
+        "param_effect": {
+            "smin": 8,
+            "smax": 12
+        }
+    },
+    "S22": {
+        "name": "离间计",
+        "sp": 8,
+        "level": 26,
+        "map": false,
+        "battle": true,
+        "script_action": "actions.SelectTarget",
+        "param_action": {
+            "toenemy": true,
+            "multisel": false,
+            "role_normal": true,
+            "role_dead": false
+        },
+        "script_effect": "effects.strategy.Alienate",
+        "param_effect": {
+            "bid": "B7"
+        }
+    },
+    "S24": {
+        "name": "缚杀计",
+        "sp": 12,
+        "level": 29,
+        "map": false,
+        "battle": true,
+        "script_action": "actions.SelectTarget",
+        "param_action": {
+            "toenemy": true,
+            "multisel": false,
+            "role_normal": true,
+            "role_dead": false
+        },
+        "script_effect": "effects.strategy.BindingKill",
+        "param_effect": {
+            "bid": "B6"
+        }
+    },
+    "S25": {
+        "name": "解阵计",
+        "sp": 16,
+        "level": 30,
+        "map": false,
+        "battle": true,
+        "script_effect": "effects.strategy.DissolveFormation"
+    },
+    "S26": {
+        "name": "解策计",
+        "sp": 8,
+        "level": 31,
+        "map": false,
+        "battle": true,
+        "script_effect": "effects.strategy.DissolveStrategy"
+    },
+    "S28": {
+        "name": "陷阱计",
+        "sp": 12,
+        "level": 33,
+        "map": false,
+        "battle": true,
+        "script_action": "actions.SelectTarget",
+        "param_action": {
+            "toenemy": true,
+            "multisel": false,
+            "role_normal": true,
+            "role_dead": false
+        },
+        "script_effect": "effects.strategy.Trap"
+    },
+    "S31": {
+        "name": "招魂计",
+        "sp": 32,
+        "level": 36,
+        "map": true,
+        "battle": true,
+        "script_action": "actions.SelectTarget",
+        "param_action": {
+            "toenemy": false,
+            "multisel": false,
+            "role_normal": false,
+            "role_dead": true
+        },
+        "script_effect": "effects.strategy.Revive",
+        "param_effect": {
+            "smin": 500,
+            "smax": 500
+        },
+        "effect_use": "skill_revive",
+        "se_use": "recovery"
+    },
+    "S33": {
+        "name": "叛离计",
+        "sp": 16,
+        "level": 39,
+        "map": false,
+        "battle": true,
+        "script_action": "actions.SelectTarget",
+        "param_action": {
+            "toenemy": true,
+            "multisel": false,
+            "role_normal": true,
+            "role_dead": false
+        },
+        "script_effect": "effects.strategy.Betray",
+        "param_effect": {
+            "bid": "B8"
+        }
+    },
+    "S35": {
+        "name": "击免计",
+        "sp": 12,
+        "level": 41,
+        "map": false,
+        "battle": true,
+        "script_effect": "effects.strategy.AvoidAttack",
+        "param_effect": {
+            "bid": "B11"
+        }
+    },
+    "S39": {
+        "name": "暗杀计",
+        "sp": 16,
+        "level": 47,
+        "map": false,
+        "battle": true,
+        "script_action": "actions.SelectTarget",
+        "param_action": {
+            "toenemy": true,
+            "multisel": false,
+            "role_normal": true,
+            "role_dead": false
+        },
+        "script_effect": "effects.strategy.Assassinate"
+    },
+    "S40": {
+        "name": "策免计",
+        "sp": 16,
+        "level": 47,
+        "map": false,
+        "battle": true,
+        "script_effect": "effects.strategy.AvoidStrategy",
+        "param_effect": {
+            "bid": "B10"
+        }
+    },
+    "S41": {
+        "name": "倍击计",
+        "sp": 1,
+        "level": 255,
+        "map": false,
+        "battle": true
+    },
+    "S42": {
+        "name": "归还计",
+        "sp": 1,
+        "level": 255,
+        "map": false,
+        "battle": true
+    },
+    "S43": {
+        "name": "智复计",
+        "sp": 1,
+        "level": 255,
+        "map": true,
+        "battle": true
+    }
+}

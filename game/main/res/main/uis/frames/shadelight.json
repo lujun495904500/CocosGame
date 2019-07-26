@@ -1,0 +1,11 @@
+{
+    "meta":"ShadeLight"
+    ,"name":"shadelight"
+    ,"params":{
+        
+    }
+    ,"csb":"$(respath)/main/cocosstudio/ShadeLight.csb"
+    ,"bindings":{
+		"pl_shade":"pl_shade"
+    }
+}

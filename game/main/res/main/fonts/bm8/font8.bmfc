@@ -1,0 +1,80 @@
+# AngelCode Bitmap Font Generator configuration file
+fileVersion=1
+
+# font settings
+fontName=ËÎÌו
+fontFile=
+charSet=0
+fontSize=8
+aa=1
+scaleH=100
+useSmoothing=1
+isBold=0
+isItalic=0
+useUnicode=1
+disableBoxChars=1
+outputInvalidCharGlyph=0
+dontIncludeKerningPairs=0
+useHinting=1
+renderFromOutline=0
+useClearType=1
+
+# character alignment
+paddingDown=0
+paddingUp=0
+paddingRight=0
+paddingLeft=0
+spacingHoriz=1
+spacingVert=1
+useFixedHeight=0
+forceZero=0
+
+# output file
+outWidth=1024
+outHeight=1024
+outBitDepth=32
+fontDescFormat=0
+fourChnlPacked=0
+textureFormat=png
+textureCompression=0
+alphaChnl=4
+redChnl=0
+greenChnl=0
+blueChnl=0
+invA=0
+invR=0
+invG=0
+invB=0
+
+# outline
+outlineThickness=0
+
+# selected chars
+chars=32,37,46-58,77,80,83,86,20853,24179,27700,32463,37329,39564
+
+# imported icon images
+icon="../../../../../origins/origins/fonts/font8/chars/space.png",32,0,0,0
+icon="../../../../../origins/origins/fonts/font8/chars/0.png",48,0,0,0
+icon="../../../../../origins/origins/fonts/font8/chars/1.png",49,0,0,0
+icon="../../../../../origins/origins/fonts/font8/chars/2.png",50,0,0,0
+icon="../../../../../origins/origins/fonts/font8/chars/3.png",51,0,0,0
+icon="../../../../../origins/origins/fonts/font8/chars/4.png",52,0,0,0
+icon="../../../../../origins/origins/fonts/font8/chars/5.png",53,0,0,0
+icon="../../../../../origins/origins/fonts/font8/chars/6.png",54,0,0,0
+icon="../../../../../origins/origins/fonts/font8/chars/7.png",55,0,0,0
+icon="../../../../../origins/origins/fonts/font8/chars/8.png",56,0,0,0
+icon="../../../../../origins/origins/fonts/font8/chars/9.png",57,0,0,0
+icon="../../../../../origins/origins/fonts/font8/chars/colon.png",58,0,0,0
+icon="../../../../../origins/origins/fonts/font8/chars/bing.png",20853,0,0,0
+icon="../../../../../origins/origins/fonts/font8/chars/ping.png",24179,0,0,0
+icon="../../../../../origins/origins/fonts/font8/chars/shui.png",27700,0,0,0
+icon="../../../../../origins/origins/fonts/font8/chars/jing.png",32463,0,0,0
+icon="../../../../../origins/origins/fonts/font8/chars/jin.png",37329,0,0,0
+icon="../../../../../origins/origins/fonts/font8/chars/yan.png",39564,0,0,0
+icon="../../../../../origins/origins/fonts/font8/chars/M.png",77,0,0,0
+icon="../../../../../origins/origins/fonts/font8/chars/P.png",80,0,0,0
+icon="../../../../../origins/origins/fonts/font8/chars/S.png",83,0,0,0
+icon="../../../../../origins/origins/fonts/font8/chars/slash.png",47,0,0,0
+icon="../../../../../origins/origins/fonts/font8/chars/point.png",46,0,0,0
+icon="../../../../../origins/origins/fonts/font8/chars/per.png",37,0,0,0
+icon="../../../../../origins/origins/fonts/font8/chars/V.png",86,0,0,0

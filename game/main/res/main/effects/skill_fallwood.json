@@ -1,0 +1,91 @@
+{
+    "name": "skill_fallwood",
+    "meta": "FallwoodEffect",
+    "params": {
+        "action1": {
+            "delay": 0.1,
+            "sequence": [
+                {
+                    "fsr": 0,
+                    "fsp": [
+                        30,
+                        31
+                    ],
+                    "fw1p": [
+                        17,
+                        17
+                    ],
+                    "fw2p": [
+                        6,
+                        4
+                    ]
+                },
+                {
+                    "fsr": 180,
+                    "fsp": [
+                        27,
+                        29
+                    ],
+                    "fw1p": [
+                        5,
+                        11
+                    ],
+                    "fw2p": [
+                        15,
+                        14
+                    ]
+                },
+                {
+                    "fsr": 0,
+                    "fsp": [
+                        28,
+                        27
+                    ],
+                    "fw1p": [
+                        15,
+                        13
+                    ],
+                    "fw2p": [
+                        5,
+                        0
+                    ]
+                },
+                {
+                    "fsr": 180,
+                    "fsp": [
+                        24,
+                        23
+                    ],
+                    "fw1p": [
+                        2,
+                        5
+                    ],
+                    "fw2p": [
+                        12,
+                        8
+                    ]
+                }
+            ]
+        },
+        "action2": {
+            "delay": 0.1,
+            "turns": 1
+        },
+        "action3": {
+            "delay": 0.1,
+            "turns": 1
+        }
+    },
+    "source": {
+        "plist": "$(respath)/main/graphics/plists/effects/skill_fallwood.plist",
+        "image": "$(respath)/main/graphics/plists/effects/skill_fallwood.png",
+        "fpath": "main/effects/skill_fallwood/"
+    },
+    "frames": [
+        "fsmoke",
+        "fwood1",
+        "fwood2",
+        "fdust1",
+        "fdust2"
+    ]
+}

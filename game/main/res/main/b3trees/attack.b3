@@ -1,0 +1,252 @@
+{
+  "version": "0.3.0",
+  "scope": "tree",
+  "id": "54d7c20e-ccb7-4f01-83eb-e4c2d275b776",
+  "title": "attack",
+  "description": "",
+  "root": "4e4184b4-180d-4f93-8bbc-c97ac8017c80",
+  "properties": {},
+  "nodes": {
+    "337301b3-ebaa-4848-b997-13c56e740297": {
+      "id": "337301b3-ebaa-4848-b997-13c56e740297",
+      "name": "betray.BetrayRole",
+      "title": "betray.BetrayRole (<label>)",
+      "description": "",
+      "properties": {
+        "label": "brole"
+      },
+      "display": {
+        "x": 84,
+        "y": -300
+      }
+    },
+    "01955b7c-69de-4796-a878-88f823791d6c": {
+      "id": "01955b7c-69de-4796-a878-88f823791d6c",
+      "name": "game.RoleTeam",
+      "title": "game.RoleTeam (<label>,<role>)",
+      "description": "",
+      "properties": {
+        "label": "brteam",
+        "role": "#brole"
+      },
+      "display": {
+        "x": 120,
+        "y": -216
+      }
+    },
+    "4e4184b4-180d-4f93-8bbc-c97ac8017c80": {
+      "id": "4e4184b4-180d-4f93-8bbc-c97ac8017c80",
+      "name": "Sequence",
+      "title": "Sequence",
+      "description": "",
+      "properties": {},
+      "display": {
+        "x": -120,
+        "y": 12
+      },
+      "children": [
+        "337301b3-ebaa-4848-b997-13c56e740297",
+        "01955b7c-69de-4796-a878-88f823791d6c",
+        "df083850-0969-4a0e-9764-835d50c7ddb2",
+        "185fa8ed-4284-4542-8ecc-348ccfd07afe",
+        "017fe764-1d43-4a93-8b18-5e45454834fa",
+        "ef26d7ae-278f-4f37-8e25-cc45e1a22b83",
+        "67396b82-34d4-4b0c-8dc9-d6c9b1e64cd4",
+        "f3964227-a1df-4524-870b-d00f348461e2"
+      ]
+    },
+    "185fa8ed-4284-4542-8ecc-348ccfd07afe": {
+      "id": "185fa8ed-4284-4542-8ecc-348ccfd07afe",
+      "name": "game.TeamRoles",
+      "title": "game.TeamRoles (<label>,<team>,<alive>)",
+      "description": "",
+      "properties": {
+        "label": "alives",
+        "team": "#brteam",
+        "alive": "true"
+      },
+      "display": {
+        "x": 144,
+        "y": -36
+      }
+    },
+    "017fe764-1d43-4a93-8b18-5e45454834fa": {
+      "id": "017fe764-1d43-4a93-8b18-5e45454834fa",
+      "name": "RandElement",
+      "title": "RandElement (<label>,<group>)",
+      "description": "",
+      "properties": {
+        "label": "target",
+        "group": "#alives"
+      },
+      "display": {
+        "x": 108,
+        "y": 48
+      }
+    },
+    "ef26d7ae-278f-4f37-8e25-cc45e1a22b83": {
+      "id": "ef26d7ae-278f-4f37-8e25-cc45e1a22b83",
+      "name": "Group",
+      "title": "Group (<label>,<elements>)",
+      "description": "",
+      "properties": {
+        "label": "targets",
+        "elements": "#target"
+      },
+      "display": {
+        "x": 84,
+        "y": 144
+      }
+    },
+    "67396b82-34d4-4b0c-8dc9-d6c9b1e64cd4": {
+      "id": "67396b82-34d4-4b0c-8dc9-d6c9b1e64cd4",
+      "name": "game.OnComplete",
+      "title": "game.OnComplete (<label>)",
+      "description": "",
+      "properties": {
+        "label": "onEnd"
+      },
+      "display": {
+        "x": 96,
+        "y": 228
+      }
+    },
+    "f3964227-a1df-4524-870b-d00f348461e2": {
+      "id": "f3964227-a1df-4524-870b-d00f348461e2",
+      "name": "battle.Attack",
+      "title": "battle.Attack (<role>,<targets>,<onComplete>)",
+      "description": "",
+      "properties": {
+        "role": "#brole",
+        "targets": "#targets",
+        "onComplete": "#onEnd"
+      },
+      "display": {
+        "x": 144,
+        "y": 312
+      }
+    },
+    "df083850-0969-4a0e-9764-835d50c7ddb2": {
+      "id": "df083850-0969-4a0e-9764-835d50c7ddb2",
+      "name": "game.EnemyTeam",
+      "title": "game.EnemyTeam (<label>,<team>)",
+      "description": "",
+      "properties": {
+        "label": "brteam",
+        "team": "#brteam"
+      },
+      "display": {
+        "x": 132,
+        "y": -120
+      }
+    }
+  },
+  "display": {
+    "camera_x": 635.5,
+    "camera_y": 399.5,
+    "camera_z": 1,
+    "x": -324,
+    "y": 12
+  },
+  "custom_nodes": [
+    {
+      "version": "0.3.0",
+      "scope": "node",
+      "name": "battle.Attack",
+      "category": "action",
+      "title": "battle.Attack (<role>,<targets>,<onComplete>)",
+      "description": null,
+      "properties": {}
+    },
+    {
+      "version": "0.3.0",
+      "scope": "node",
+      "name": "RandValue",
+      "category": "action",
+      "title": "RandValue (<label>,<min>,<max>)",
+      "description": null,
+      "properties": {}
+    },
+    {
+      "version": "0.3.0",
+      "scope": "node",
+      "name": "patrol.Directs",
+      "category": "action",
+      "title": "patrol.Directs (<label>)",
+      "description": null,
+      "properties": {}
+    },
+    {
+      "version": "0.3.0",
+      "scope": "node",
+      "name": "RandElement",
+      "category": "action",
+      "title": "RandElement (<label>,<group>)",
+      "description": null,
+      "properties": {}
+    },
+    {
+      "version": "0.3.0",
+      "scope": "node",
+      "name": "patrol.Move",
+      "category": "action",
+      "title": "patrol.Move (<direct>)",
+      "description": null,
+      "properties": {}
+    },
+    {
+      "version": "0.3.0",
+      "scope": "node",
+      "name": "betray.BetrayRole",
+      "category": "action",
+      "title": "betray.BetrayRole (<label>)",
+      "description": null,
+      "properties": {}
+    },
+    {
+      "version": "0.3.0",
+      "scope": "node",
+      "name": "game.RoleTeam",
+      "category": "action",
+      "title": "game.RoleTeam (<label>,<role>)",
+      "description": null,
+      "properties": {}
+    },
+    {
+      "version": "0.3.0",
+      "scope": "node",
+      "name": "game.TeamRoles",
+      "category": "action",
+      "title": "game.TeamRoles (<label>,<team>,<alive>)",
+      "description": null,
+      "properties": {}
+    },
+    {
+      "version": "0.3.0",
+      "scope": "node",
+      "name": "game.OnComplete",
+      "category": "action",
+      "title": "game.OnComplete (<label>)",
+      "description": null,
+      "properties": {}
+    },
+    {
+      "version": "0.3.0",
+      "scope": "node",
+      "name": "Group",
+      "category": "action",
+      "title": "Group (<label>,<elements>)",
+      "description": null,
+      "properties": {}
+    },
+    {
+      "version": "0.3.0",
+      "scope": "node",
+      "name": "game.EnemyTeam",
+      "category": "action",
+      "title": "game.EnemyTeam (<label>,<team>)",
+      "description": null,
+      "properties": {}
+    }
+  ]
+}

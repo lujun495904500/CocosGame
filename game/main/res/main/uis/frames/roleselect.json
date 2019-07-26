@@ -1,0 +1,23 @@
+{
+    "meta":"RoleSelect"
+    ,"name":"roleselect"
+    ,"params":{
+        
+    }
+    ,"csb":"$(respath)/main/cocosstudio/RoleSelect.csb"
+    ,"widgets":{
+		"wg_rolelist":{
+            "source":"wg_rolelist",
+            "type":"table",
+            "config":{
+                "itemsize":[64,16],
+                "selectable":true,
+                "itemrows":5,
+                "itemcolumns":1,
+				"itemwidget":{
+					"type":"roleitem"
+				}
+            }
+        }
+    }
+}

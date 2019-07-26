@@ -1,0 +1,12 @@
+{
+    "meta":"Update"
+    ,"name":"update"
+    ,"params":{
+        
+    }
+    ,"csb":"$(respath)/boot/cocosstudio/UpdateScene.csb"
+    ,"bindings":{
+        "lb_update":"lb_update",
+		"gb_update":"gb_update"
+    }
+}

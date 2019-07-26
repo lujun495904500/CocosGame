@@ -1,0 +1,67 @@
+{
+    "I76": {
+        "mintimes": 1,
+        "recovery": 100
+    },
+    "I77": {
+        "mintimes": 1,
+        "recovery": 500
+    },
+    "I78": {
+        "mintimes": 1,
+        "recovery": 1000
+    },
+    "I79": {
+        "mintimes": 1,
+        "recovery": 4500
+    },
+    "I80": {
+        "mintimes": 5,
+        "randtimes": 3,
+        "recovery": 1000
+    },
+    "I81": {
+        "mintimes": 5,
+        "randtimes": 3,
+        "recovery": 4500
+    },
+    "I82": {
+        "mintimes": 1
+    },
+    "I83": {
+        "mintimes": 5,
+        "randtimes": 5
+    },
+    "I84": {
+        "mintimes": 1
+    },
+    "I85": {
+        "mintimes": 1
+    },
+    "I86": {
+        "mintimes": 1
+    },
+    "I87": {
+        "mintimes": 1
+    },
+    "I88": {
+        "mintimes": 1,
+        "revivesoldiers": 500
+    },
+    "I89": {
+        "mintimes": 5,
+        "randtimes": 5
+    },
+    "I90": {
+        "mintimes": 5,
+        "randtimes": 5
+    },
+    "I91": {
+        "mintimes": 5,
+        "randtimes": 5
+    },
+    "I92": {
+        "mintimes": 5,
+        "randtimes": 5
+    }
+}

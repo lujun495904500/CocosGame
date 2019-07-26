@@ -1,0 +1,11 @@
+{
+	"name":"cave_xuzhou_yuanshu",
+	"meta":"TMXMap",
+	"tmx":"$(respath)/main/maps/cave_xuzhou_yuanshu.tmx",
+	"params":{
+		"maptype":"cave",
+		"bgm":"cave_17",
+		"moveorder":45,
+		"moveoffest":[0,4]
+	}
+}

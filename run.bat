@@ -1,0 +1,1 @@
+start runtime\win32\CocosGame -resolution 852x480 -workdir "%cd%/runtime/data"

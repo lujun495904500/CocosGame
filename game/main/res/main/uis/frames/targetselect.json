@@ -1,0 +1,23 @@
+{
+    "meta":"TargetSelect"
+    ,"name":"targetselect"
+    ,"params":{
+        
+    }
+    ,"csb":"$(respath)/main/cocosstudio/RoleSelect.csb"
+    ,"widgets":{
+		"wg_targetlist":{
+            "source":"wg_rolelistext",
+            "type":"table",
+            "config":{
+                "itemsize":[64,16],
+                "selectable":true,
+                "itemrows":5,
+                "itemcolumns":1,
+				"itemwidget":{
+					"type":"roleitem"
+				}
+            }
+        }
+    }
+}

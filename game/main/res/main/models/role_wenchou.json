@@ -1,0 +1,134 @@
+{
+    "name": "role_wenchou",
+    "meta": "RoleModel",
+    "modelsize": [
+        16,
+        16
+    ],
+    "anchor": [
+        0.5,
+        0
+    ],
+    "params": {
+        "actions": {
+            "WALK_DOWN": {
+                "nofore": true,
+                "type": "animation",
+                "time": 0.65,
+                "sequeue": [
+                    "walk_down1",
+                    "walk_down2"
+                ]
+            },
+            "WALK_UP": {
+                "nofore": true,
+                "type": "animation",
+                "time": 0.65,
+                "sequeue": [
+                    "walk_up1",
+                    "walk_up2"
+                ]
+            },
+            "WALK_RIGHT": {
+                "nofore": true,
+                "type": "animation",
+                "time": 0.65,
+                "sequeue": [
+                    "walk_right1",
+                    "walk_right2"
+                ]
+            },
+            "WALK_LEFT": {
+                "nofore": true,
+                "flip": [
+                    true,
+                    false
+                ],
+                "type": "animation",
+                "time": 0.65,
+                "sequeue": [
+                    "walk_right2",
+                    "walk_right1"
+                ]
+            },
+            "STAND_DOWN": {
+                "nofore": true,
+                "type": "frame",
+                "frame": "walk_down2"
+            },
+            "STAND_UP": {
+                "nofore": true,
+                "type": "frame",
+                "frame": "walk_up2"
+            },
+            "STAND_RIGHT": {
+                "nofore": true,
+                "type": "frame",
+                "frame": "walk_right2"
+            },
+            "STAND_LEFT": {
+                "nofore": true,
+                "flip": [
+                    true,
+                    false
+                ],
+                "type": "frame",
+                "frame": "walk_right1"
+            },
+            "DEATH_RIGHT": {
+                "nofore": true,
+                "type": "frame",
+                "frame": "death1"
+            },
+            "DEATH_LEFT": {
+                "nofore": true,
+                "flip": [
+                    true,
+                    false
+                ],
+                "type": "frame",
+                "frame": "death1"
+            },
+            "ATTACK_RIGHT": {
+                "type": "animation",
+                "once": true,
+                "time": 0.25,
+                "sequeue": [
+                    "attack1",
+                    "attack2",
+                    "walk_right2"
+                ]
+            },
+            "ATTACK_LEFT": {
+                "flip": [
+                    true,
+                    false
+                ],
+                "type": "animation",
+                "once": true,
+                "time": 0.25,
+                "sequeue": [
+                    "attack1",
+                    "attack2",
+                    "walk_right1"
+                ]
+            }
+        }
+    },
+    "source": {
+        "plist": "$(respath)/main/graphics/plists/models/role_wenchou.plist",
+        "image": "$(respath)/main/graphics/plists/models/role_wenchou.png",
+        "fpath": "main/models/role_wenchou/"
+    },
+    "frames": [
+        "walk_down1",
+        "walk_down2",
+        "walk_up1",
+        "walk_up2",
+        "walk_right1",
+        "walk_right2",
+        "death1",
+        "attack1",
+        "attack2"
+    ]
+}

@@ -1,0 +1,36 @@
+{
+    "meta":"MapStrategy"
+    ,"name":"mapstrategy"
+    ,"params":{
+        
+    }
+    ,"csb":"$(respath)/main/cocosstudio/MapStrategy.csb"
+    ,"widgets":{
+		"wg_strategys":{
+            "source":"wg_strategys",
+            "type":"table",
+            "config":{
+                "itemsize":[48,16],
+                "selectable":true,
+                "itemcolumns":1,
+                "itemrows":5,
+				"itemwidget":{
+					"type":"label"
+				}
+            }
+        }
+		,"wg_formations":{
+            "source":"wg_formations",
+            "type":"table",
+            "config":{
+                "itemsize":[48,16],
+                "selectable":true,
+                "itemcolumns":1,
+                "itemrows":7,
+				"itemwidget":{
+					"type":"label"
+				}
+            }
+        }
+    }
+}

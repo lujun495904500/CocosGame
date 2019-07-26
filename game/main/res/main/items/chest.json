@@ -1,0 +1,4 @@
+{
+	"chest":"$(respath)/main/graphics/images/chest.png",
+	"chest_opened":"$(respath)/main/graphics/images/chest_opened.png"
+}

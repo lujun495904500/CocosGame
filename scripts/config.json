@@ -1,0 +1,303 @@
+{
+    "debug": true,
+    "printlog": true,
+    "path": {
+        "origins": "../origins",
+        "project": "../frameworks/runtime-src",
+        "aeskeyscpp": "../frameworks/cocos2d-x/cocos/L/aeskeys.cpp",
+        "game": "../game",
+        "packs": "../packs",
+        "rundata": "../runtime/data",
+        "publish": "../publish"
+    },
+    "publish": {
+		"debug":false,
+        "packagename": "com.tunshitiandi2.lujun",
+        "basepacks": [
+            "main"
+        ],
+        "preplays": [
+            "demo"
+        ],
+        "localconfig": {
+            "remoteconfig": "http://120.79.54.128:8848/gameconfig.json",
+            "enableremote": false,
+            "enableupdate": true,
+            "development": true,
+			"enablenetwork": true
+        }
+    },
+    "sync": {
+		"ftp": {
+			"connect": {
+				"ip": "120.79.54.128",
+				"port": 21
+			},
+			"login": {
+				"username": "administrator",
+				"password": "lujun19900105?"
+			}
+		},
+        "dataroot": "/gamedata",
+        "gameconf": "gameconfig.json",
+        "zlibmaxsize": 3145728,
+		"completenum": 3
+    },
+    "pack": {
+		"dopacks":[
+			"*"
+		],
+        "packdir": false,
+        "cryptodir": true,
+        "ignores": [
+            "origins",
+            "*.ccs",
+            "*.cfg",
+            "*.udf",
+            "*.csd",
+			"*_PList.Dir"
+        ],
+        "ignorefile": "pack.ignore",
+        "rootversion": 1000000,
+        "luacompile": false,
+		"luajit": true,
+        "lua32": true,
+        "lua64": true,
+        "cryptos": [
+            "*.lua",
+            "*.json",
+            "*.tmx",
+            "*.tsx",
+            "*.fnt",
+			"*.pem"
+        ],
+        "compresses": [
+            {
+                "file": "*.mp3",
+                "size": 1048576
+            },
+			{
+				"file": "*.ttf",
+                "size": 1048576
+			},
+            {
+                "file": "*",
+                "size": 10485760
+            }
+        ],
+        "patchsize": 1048576,
+        "randaeskey": false,
+        "aeshash": 777888999
+    },
+	"update":{
+		"dopacks":[
+			"*"
+		],
+		"proto_opt":true
+	},
+    "aes": {
+        "confindex": 24,
+        "keys": [
+            {
+                "key": "9FB28B75DB73574159A508FDB2918940",
+                "iv": "FBEF8ABED413CFA0E674EF9B710030A0"
+            },
+            {
+                "key": "1134FD0929F151D85DA77E333495007F",
+                "iv": "E71A7582A7849DB1B828AF3B5BFB67EA"
+            },
+            {
+                "key": "6BFEBB93F26B6C0497402C54AD0C2CE3",
+                "iv": "8E3942BE4EEF4B3DD24451BA77B0CE59"
+            },
+            {
+                "key": "43D8E4D77E60B768BB165C399C8AC14B",
+                "iv": "33F72FA5B33B3DFC5028FDA70D341865"
+            },
+            {
+                "key": "83412296666BE20EDD6E97FD8F8648C5",
+                "iv": "898CBF3EE30DB60EC31AAD66DDC20DC1"
+            },
+            {
+                "key": "CAE9DDE9E3F712E49302F3C9E544F2B1",
+                "iv": "3400A5E168F6BEC417EEAC2F4E59A973"
+            },
+            {
+                "key": "16C3E82308E905EF53FA82CC1B14FD90",
+                "iv": "44B93E5B97BEDAFF82F55454FEC63A0F"
+            },
+            {
+                "key": "136A2B77B83B54A769CD51C3655E0235",
+                "iv": "A9B843B914C27E6FDDF553C84BE88CA7"
+            },
+            {
+                "key": "2448C5C716EA2D03FED1D74EEF37A3FE",
+                "iv": "969FBC8C5E8818D1A93D362B3850B885"
+            },
+            {
+                "key": "4848E2D56C132C245A40A1559F4CF573",
+                "iv": "992AEA52FA908D4F0D7D9EA02702D37F"
+            },
+            {
+                "key": "C99474893437BF4CC840751941A16088",
+                "iv": "675FF346BC4431379A7500C90A00F85A"
+            },
+            {
+                "key": "872E314B0972CC5E65D3A0923FEEE92F",
+                "iv": "143592A82898E5968755350439F4AACD"
+            },
+            {
+                "key": "A4DE6C473E53CEE6971D982BCA4831F3",
+                "iv": "9C6BFB0E92FD361C54F79490DB030417"
+            },
+            {
+                "key": "9A974ABF4BDC1A11568F450F6563EF79",
+                "iv": "E4FC74E5559DF76ADE489E6F8DC4507A"
+            },
+            {
+                "key": "88B788B4A22D7A98BDE14D610395F125",
+                "iv": "B17A3F82573060A2D343400DD306E497"
+            },
+            {
+                "key": "817FA8D26C170B24BCD27745814A1339",
+                "iv": "27A16E38EC57E30B4B256C89EBEB0F90"
+            },
+            {
+                "key": "D417BBB112413F1236001CD9F0475CF5",
+                "iv": "40E0E91A4CC9CA7C4AAF4B1F564F197F"
+            },
+            {
+                "key": "87CF1C44847D568183C13FE74DEBA01C",
+                "iv": "FC085C53B9C09E901F0B95952EB05193"
+            },
+            {
+                "key": "EE87B34403629FF731854E5D4A7748F3",
+                "iv": "DEB60338B893D2CD1E20FFC523FC41DA"
+            },
+            {
+                "key": "6F22B4F12CCC469B37F33F2DF81CC1BB",
+                "iv": "AB129E7FDAF053564859E527BE9AC26F"
+            },
+            {
+                "key": "F8F45596F25A910B258604435A7623B7",
+                "iv": "E9A37665082458647AAE386D68D3F430"
+            },
+            {
+                "key": "1D32513788BC3E69EC42F158A32D9F92",
+                "iv": "0C837B7758A21282A30A17F8AC7937EC"
+            },
+            {
+                "key": "6A476DF0CCF1009287409C9A8EE9C885",
+                "iv": "D3993F765F49F36F88172C59BACB359D"
+            },
+            {
+                "key": "0E175B36563D64F8ACA0873F58F802E1",
+                "iv": "AD011F9CBAD35982BD6B1FE44FC2F49E"
+            },
+            {
+                "key": "41C61ED9F6EA3B49B713FD9BBB542D0E",
+                "iv": "D05B40EF5F655087FEFDB7402876CC62"
+            },
+            {
+                "key": "FB5951C06C2EC86A602E2D01256193D9",
+                "iv": "26080D17F5803CD5DA69CED7D0C75753"
+            },
+            {
+                "key": "4E421D26CB0F9B738A8FFC208F0969EE",
+                "iv": "670287FFE79DF9081144A6737067F691"
+            },
+            {
+                "key": "72C697B18672C7C1DB12FA4CC9A011F5",
+                "iv": "B1D65FE34B13AC33E451988ECEE46245"
+            },
+            {
+                "key": "187FCE22AC03E64B8D488FD4EB4D0247",
+                "iv": "E9D0393836AD1278CE279085732FC140"
+            },
+            {
+                "key": "AF505C78E6183054CF7D4734FB340524",
+                "iv": "0CE88E12B2AA95B21F891AA7012A0422"
+            },
+            {
+                "key": "D9DB6D2EEFF9191E35D99E5A2C3DA9EA",
+                "iv": "33618C6AB3352E129BECF64240027132"
+            },
+            {
+                "key": "105F12E9BA0968B91D317FC7BF1EDD00",
+                "iv": "DCDAB766D66F6196EB217666B0A45AE1"
+            },
+            {
+                "key": "D3D2AF6DFDDE02492DEADC5F967F8187",
+                "iv": "50549445D75954AD4AA679FAA0C19873"
+            },
+            {
+                "key": "41A45C57DD47CE2F656450D82E764AEB",
+                "iv": "C660087B2910FEA83D1CBC2BFBACF5D7"
+            },
+            {
+                "key": "420ED37793EC4AB2AE66E763E83CE40C",
+                "iv": "14D894D53DA1714ED67FFDED86F74236"
+            },
+            {
+                "key": "977F7C774F5E20B28E5A0F4113F10055",
+                "iv": "FE588C50601E1D65953491A1DC002533"
+            },
+            {
+                "key": "C5C531C0CA2934A0ABA53A8568410B4B",
+                "iv": "3419AECE5A66E843A375062D7C792550"
+            },
+            {
+                "key": "6EF1E555E2C644AB1F9BD6D2919B02BB",
+                "iv": "055AA600CD8677E0F44BF8F252D6F612"
+            },
+            {
+                "key": "962B2410D2F7C0163EC667F33DBC3411",
+                "iv": "326F26FE0638F4EB0322FFAECBEF4EF6"
+            },
+            {
+                "key": "A0E078610A29533F0FC4DDD18B2DBF6D",
+                "iv": "1D29B1DD0F10D94E8ABF3FD105E547EB"
+            },
+            {
+                "key": "B8338633D89681383A34B17A2D049450",
+                "iv": "EAD224079B8706172DE74EE7C4052BC0"
+            },
+            {
+                "key": "CCAB6FA301B816B5E11D4C0F0616EE62",
+                "iv": "4900483D60E9563312308E0E63955012"
+            },
+            {
+                "key": "86F60ED71C7B61528984D4279755D1E5",
+                "iv": "D14431554BEB0C3DD9035938AA0ECDB8"
+            },
+            {
+                "key": "6F7772DC0B013AD2525C3E022A3FEC51",
+                "iv": "E70DC48862D658782FDB6CFFFDDC7162"
+            },
+            {
+                "key": "F6B9172A62A16BA6116D4C4D8540BB21",
+                "iv": "5A9C807A4EA05702FF1C86883E695544"
+            },
+            {
+                "key": "F799A2905FFDDF3C8EF0F4E53F9389CE",
+                "iv": "A33FEA087C9E9C27CCCCDB8C8568064F"
+            },
+            {
+                "key": "550D6EB7E45DCE6C606E6EB5AD639F0D",
+                "iv": "82F3D2A6AECFF177E69A9903C15AF3C7"
+            },
+            {
+                "key": "30729055809E0A89B7448FDC3794877B",
+                "iv": "5215692CA3B5ADE739CC374FC386A4ED"
+            },
+            {
+                "key": "1C8C256D47FE0C044C826028D6975D51",
+                "iv": "E74BCA87EEA3E9D64A9B04F1A843545B"
+            },
+            {
+                "key": "66F0770537435E2091AF6F35F6B8BC95",
+                "iv": "F3704FF30A197A31F95DA99281A0E473"
+            }
+        ]
+    }
+}

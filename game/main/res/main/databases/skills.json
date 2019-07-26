@@ -1,0 +1,382 @@
+{
+    "S1": {
+        "name": "练火计",
+        "type": "F",
+        "sp": 2,
+        "power": 100,
+        "level": 1,
+        "map": false,
+        "battle": true,
+        "script_action": "actions.SelectTarget",
+        "param_action": {
+            "toenemy": true,
+            "multisel": true,
+            "role_normal": true,
+            "role_dead": false
+        },
+        "script_effect": "effects.skill.Attack",
+        "se_use": "recovery",
+        "effect_use": "skill_fire1"
+    },
+    "S2": {
+        "name": "赤心计",
+        "type": "H",
+        "sp": 3,
+        "power": 100,
+        "level": 2,
+        "map": true,
+        "battle": true,
+        "script_action": "actions.SelectTarget",
+        "param_action": {
+            "toenemy": false,
+            "multisel": true,
+            "role_normal": true,
+            "role_dead": false
+        },
+        "script_effect": "effects.skill.Recovery",
+        "se_use": "recovery",
+        "effect_use": "skill_recovery"
+    },
+    "S3": {
+        "name": "水途计",
+        "type": "W",
+        "sp": 3,
+        "power": 100,
+        "level": 3,
+        "map": false,
+        "battle": true,
+        "script_action": "actions.SelectTarget",
+        "param_action": {
+            "toenemy": true,
+            "multisel": true,
+            "role_normal": true,
+            "role_dead": false
+        },
+        "script_effect": "effects.skill.Attack",
+        "se_use": "recovery",
+        "effect_use": "skill_water1"
+    },
+    "S4": {
+        "name": "落木计",
+        "type": "S",
+        "sp": 2,
+        "power": 100,
+        "level": 4,
+        "map": false,
+        "battle": true,
+        "script_action": "actions.SelectTarget",
+        "param_action": {
+            "toenemy": true,
+            "multisel": true,
+            "role_normal": true,
+            "role_dead": false
+        },
+        "script_effect": "effects.skill.Attack",
+        "se_use": "recovery",
+        "effect_use": "skill_fallwood"
+    },
+    "S9": {
+        "name": "业火计",
+        "type": "F",
+        "sp": 4,
+        "power": 500,
+        "level": 11,
+        "map": false,
+        "battle": true,
+        "script_action": "actions.SelectTarget",
+        "param_action": {
+            "toenemy": true,
+            "multisel": true,
+            "role_normal": true,
+            "role_dead": false
+        },
+        "script_effect": "effects.skill.Attack",
+        "se_use": "recovery",
+        "effect_use": "skill_fire1"
+    },
+    "S10": {
+        "name": "水星计",
+        "type": "W",
+        "sp": 5,
+        "power": 500,
+        "level": 12,
+        "map": false,
+        "battle": true,
+        "script_action": "actions.SelectTarget",
+        "param_action": {
+            "toenemy": true,
+            "multisel": true,
+            "role_normal": true,
+            "role_dead": false
+        },
+        "script_effect": "effects.skill.Attack",
+        "se_use": "recovery",
+        "effect_use": "skill_water1"
+    },
+    "S11": {
+        "name": "流木计",
+        "type": "S",
+        "sp": 4,
+        "power": 500,
+        "level": 13,
+        "map": false,
+        "battle": true,
+        "script_action": "actions.SelectTarget",
+        "param_action": {
+            "toenemy": true,
+            "multisel": true,
+            "role_normal": true,
+            "role_dead": false
+        },
+        "script_effect": "effects.skill.Attack",
+        "se_use": "recovery",
+        "effect_use": "skill_fallwood"
+    },
+    "S14": {
+        "name": "铜仙计",
+        "type": "H",
+        "sp": 5,
+        "power": 500,
+        "level": 17,
+        "map": true,
+        "battle": true,
+        "script_action": "actions.SelectTarget",
+        "param_action": {
+            "toenemy": false,
+            "multisel": true,
+            "role_normal": true,
+            "role_dead": false
+        },
+        "script_effect": "effects.skill.Recovery",
+        "se_use": "recovery",
+        "effect_use": "skill_recovery"
+    },
+    "S17": {
+        "name": "炎热计",
+        "type": "F",
+        "sp": 5,
+        "power": 1000,
+        "level": 20,
+        "map": false,
+        "battle": true,
+        "script_action": "actions.SelectTarget",
+        "param_action": {
+            "toenemy": true,
+            "multisel": true,
+            "role_normal": true,
+            "role_dead": false
+        },
+        "script_effect": "effects.skill.Attack",
+        "se_use": "recovery",
+        "effect_use": "skill_fire2"
+    },
+    "S18": {
+        "name": "水雷计",
+        "type": "W",
+        "sp": 6,
+        "power": 1000,
+        "level": 22,
+        "map": false,
+        "battle": true,
+        "script_action": "actions.SelectTarget",
+        "param_action": {
+            "toenemy": true,
+            "multisel": true,
+            "role_normal": true,
+            "role_dead": false
+        },
+        "script_effect": "effects.skill.Attack",
+        "se_use": "recovery",
+        "effect_use": "skill_water2"
+    },
+    "S20": {
+        "name": "落石计",
+        "type": "S",
+        "sp": 5,
+        "power": 1000,
+        "level": 24,
+        "map": false,
+        "battle": true,
+        "script_action": "actions.SelectTarget",
+        "param_action": {
+            "toenemy": true,
+            "multisel": true,
+            "role_normal": true,
+            "role_dead": false
+        },
+        "script_effect": "effects.skill.Attack",
+        "se_use": "recovery",
+        "effect_use": "skill_fallstone1"
+    },
+    "S23": {
+        "name": "银仙计",
+        "type": "H",
+        "sp": 6,
+        "power": 1000,
+        "level": 28,
+        "map": true,
+        "battle": true,
+        "script_action": "actions.SelectTarget",
+        "param_action": {
+            "toenemy": false,
+            "multisel": true,
+            "role_normal": true,
+            "role_dead": false
+        },
+        "script_effect": "effects.skill.Recovery",
+        "se_use": "recovery",
+        "effect_use": "skill_recovery"
+    },
+    "S27": {
+        "name": "大热计",
+        "type": "F",
+        "sp": 6,
+        "power": 2500,
+        "level": 32,
+        "map": false,
+        "battle": true,
+        "script_action": "actions.SelectTarget",
+        "param_action": {
+            "toenemy": true,
+            "multisel": true,
+            "role_normal": true,
+            "role_dead": false
+        },
+        "script_effect": "effects.skill.Attack",
+        "se_use": "recovery",
+        "effect_use": "skill_fire2"
+    },
+    "S29": {
+        "name": "洪水计",
+        "type": "W",
+        "sp": 8,
+        "power": 2500,
+        "level": 34,
+        "map": false,
+        "battle": true,
+        "script_action": "actions.SelectTarget",
+        "param_action": {
+            "toenemy": true,
+            "multisel": true,
+            "role_normal": true,
+            "role_dead": false
+        },
+        "script_effect": "effects.skill.Attack",
+        "se_use": "recovery",
+        "effect_use": "skill_water2"
+    },
+    "S30": {
+        "name": "投石计",
+        "type": "S",
+        "sp": 6,
+        "power": 2500,
+        "level": 35,
+        "map": false,
+        "battle": true,
+        "script_action": "actions.SelectTarget",
+        "param_action": {
+            "toenemy": true,
+            "multisel": true,
+            "role_normal": true,
+            "role_dead": false
+        },
+        "script_effect": "effects.skill.Attack",
+        "se_use": "recovery",
+        "effect_use": "skill_fallstone1"
+    },
+    "S32": {
+        "name": "完复计",
+        "type": "H",
+        "sp": 8,
+        "power": 2500,
+        "level": 38,
+        "map": true,
+        "battle": true,
+        "script_action": "actions.SelectTarget",
+        "param_action": {
+            "toenemy": false,
+            "multisel": true,
+            "role_normal": true,
+            "role_dead": false
+        },
+        "script_effect": "effects.skill.Recovery",
+        "se_use": "recovery",
+        "effect_use": "skill_recovery"
+    },
+    "S34": {
+        "name": "火神计",
+        "type": "F",
+        "sp": 8,
+        "power": 4500,
+        "level": 40,
+        "map": false,
+        "battle": true,
+        "script_action": "actions.SelectTarget",
+        "param_action": {
+            "toenemy": true,
+            "multisel": true,
+            "role_normal": true,
+            "role_dead": false
+        },
+        "script_effect": "effects.skill.Attack",
+        "se_use": "recovery",
+        "effect_use": "skill_fire2"
+    },
+    "S36": {
+        "name": "水龙计",
+        "type": "W",
+        "sp": 10,
+        "power": 4500,
+        "level": 42,
+        "map": false,
+        "battle": true,
+        "script_action": "actions.SelectTarget",
+        "param_action": {
+            "toenemy": true,
+            "multisel": true,
+            "role_normal": true,
+            "role_dead": false
+        },
+        "script_effect": "effects.skill.Attack",
+        "se_use": "recovery",
+        "effect_use": "skill_water2"
+    },
+    "S37": {
+        "name": "激石计",
+        "type": "S",
+        "sp": 8,
+        "power": 4500,
+        "level": 44,
+        "map": false,
+        "battle": true,
+        "script_action": "actions.SelectTarget",
+        "param_action": {
+            "toenemy": true,
+            "multisel": true,
+            "role_normal": true,
+            "role_dead": false
+        },
+        "script_effect": "effects.skill.Attack",
+        "se_use": "recovery",
+        "effect_use": "skill_fallstone1"
+    },
+    "S38": {
+        "name": "金仙计",
+        "type": "H",
+        "sp": 10,
+        "power": 4500,
+        "level": 46,
+        "map": true,
+        "battle": true,
+        "script_action": "actions.SelectTarget",
+        "param_action": {
+            "toenemy": false,
+            "multisel": true,
+            "role_normal": true,
+            "role_dead": false
+        },
+        "script_effect": "effects.skill.Recovery",
+        "se_use": "recovery",
+        "effect_use": "skill_recovery"
+    }
+}

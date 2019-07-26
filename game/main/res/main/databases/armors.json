@@ -1,0 +1,98 @@
+{
+    "I46": {
+        "atype": "A",
+        "defense": 5
+    },
+    "I47": {
+        "atype": "A",
+        "defense": 10
+    },
+    "I48": {
+        "atype": "A",
+        "defense": 15
+    },
+    "I49": {
+        "atype": "A",
+        "defense": 25
+    },
+    "I50": {
+        "atype": "A",
+        "defense": 40
+    },
+    "I51": {
+        "atype": "A",
+        "defense": 60
+    },
+    "I52": {
+        "atype": "A",
+        "defense": 65
+    },
+    "I53": {
+        "atype": "A",
+        "defense": 75
+    },
+    "I54": {
+        "atype": "H",
+        "defense": 5
+    },
+    "I55": {
+        "atype": "H",
+        "defense": 10
+    },
+    "I56": {
+        "atype": "H",
+        "defense": 15
+    },
+    "I57": {
+        "atype": "H",
+        "defense": 20
+    },
+    "I58": {
+        "atype": "H",
+        "defense": 30
+    },
+    "I59": {
+        "atype": "H",
+        "defense": 40
+    },
+    "I60": {
+        "atype": "H",
+        "defense": 50
+    },
+    "I61": {
+        "atype": "S",
+        "defense": 5
+    },
+    "I62": {
+        "atype": "S",
+        "defense": 10
+    },
+    "I63": {
+        "atype": "S",
+        "defense": 15
+    },
+    "I64": {
+        "atype": "S",
+        "defense": 25
+    },
+    "I65": {
+        "atype": "S",
+        "defense": 40
+    },
+    "I66": {
+        "atype": "S",
+        "defense": 50
+    },
+    "I67": {
+        "atype": "S",
+        "defense": 60
+    },
+    "I68": {
+        "atype": "S",
+        "defense": 80
+    },
+    "I69": {
+        "atype": "S",
+        "defense": 110
+    }
+}
