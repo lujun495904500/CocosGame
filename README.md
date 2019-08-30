@@ -1,1 +1,1 @@
-# CocosGame
+# CocosGame v1.0
