@@ -72,11 +72,11 @@ end
 	content		日志内容
 ]]
 function LogManager:_defaultLogFormat(config, content)
-	return string.format("%s %s %s%s - " .. content, 
+	return string.format("%s %s %s%s - ", 
 		os.date("%m-%d %H:%M:%S"), 
 		config.thread or "[MAIN]", 
 		C_LFLAG[config.level], 
-		config.tag and ("/" .. config.tag) or "")
+		config.tag and ("/" .. config.tag) or "") .. content
 end
 
 -- 设置日志输出等级
