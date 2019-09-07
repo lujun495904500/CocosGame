@@ -9,6 +9,14 @@
 
 项目以复刻FC游戏![](https://raw.githubusercontent.com/lujun495904500/CocosGame/master/game/boot/res/boot/graphics/images/gameicon.png)《吞食天地2》为模板，向初入cocos2dx的开发者展示了如何设计游戏框架结构，以便于在学习完cocos2dx后，能更合理、更高效的开发游戏。`publish/`目录有编译好的发布Demo游戏。
 
+![](https://raw.githubusercontent.com/lujun495904500/CocosGame/master/scripts/publish/windows/游戏截图/QQ截图20190202160517.png)
+
+![](https://raw.githubusercontent.com/lujun495904500/CocosGame/master/scripts/publish/windows/游戏截图/QQ截图20190202160538.png)
+
+![](https://raw.githubusercontent.com/lujun495904500/CocosGame/master/scripts/publish/windows/游戏截图/QQ截图20190202160619.png)
+
+![](https://raw.githubusercontent.com/lujun495904500/CocosGame/master/scripts/publish/windows/游戏截图/QQ截图20190202160730.png)
+
 ## 上手指南
 项目主要以lua语言为主，因为cocos2dx的跨平台特性，所以还会涉及到C/C++、安卓java和object-c。游戏工具链主要使用的是python3.x（NOT python2.x）。所以你最好是会cocos2dx的，并且比较熟悉lua语言，最好了解python语言。由于框架比较复杂，下面将给出具体安装步骤，框架说明文档会另外给出。
 
