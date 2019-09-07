@@ -1,7 +1,7 @@
 {
-    "remoteconfig": "http://120.79.54.128:8848/gameconfig.json",
+    "remoteconfig": "http://[ip]:[端口]/gameconfig.json",
     "enableremote": false,
-    "enableupdate": true,
+    "enableupdate": false,
     "development": true,
     "enablenetwork": true,
     "plays": {
