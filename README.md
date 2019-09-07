@@ -51,8 +51,11 @@
 服务器配置完成后需要，修改本地`localconfig.json`文件
 
     1.进入目录 `runtime/data/`
-    2.由于配置文件是经过加密处理的，所以需要通过`scripts/cryptoConfig.py`进行解密操作。(可以在命令行进入当前目录，然后执行 `../../../scripts/cryptoConfig.py localconfig.json`。当然也可以直接把配置文件拖到cryptoConfig.py文件上进行解密)会生成localconfig_dec.json解密配置文件
-    3.修改localconfig_dec.json配置文件，remoteconfig中的IP端口修改为你自己的文件服务器的IP端口，enableremote和enableupdate都设置为true。
+    2.由于配置文件是经过加密处理的，所以需要通过`scripts/cryptoConfig.py`进行解密操作。  
+    (可以在命令行进入当前目录，然后执行 `../../../scripts/cryptoConfig.py localconfig.json`。当然也可以直接把配置文件拖到cryptoConfig.py文件上进行解密)  
+    会生成localconfig_dec.json解密配置文件
+    3.修改localconfig_dec.json配置文件，remoteconfig中的IP端口修改为你自己的文件服务器的IP端口，  
+    enableremote和enableupdate都设置为true。
     4.加密localconfig_dec.json配置文件，按照2中的步骤把文件换成localconfig_dec.json执行加密配置文件操作
 
 本地配置修改完成后，需要`修改上传工具配置`，并`上传资源包`
