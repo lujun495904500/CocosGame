@@ -30,12 +30,12 @@
     "sync": {
 		"ftp": {
 			"connect": {
-				"ip": "120.79.54.128",
+				"ip": "",
 				"port": 21
 			},
 			"login": {
-				"username": "administrator",
-				"password": "lujun19900105?"
+				"username": "",
+				"password": ""
 			}
 		},
         "dataroot": "/gamedata",
