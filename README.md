@@ -10,13 +10,11 @@
 项目以复刻FC游戏![](https://raw.githubusercontent.com/lujun495904500/CocosGame/master/game/boot/res/boot/graphics/images/gameicon.png)《吞食天地2》为模板，向初入cocos2dx的开发者展示了如何设计游戏框架结构，以便于在学习完cocos2dx后，能更合理、更高效的开发游戏。`publish/`目录有编译好的发布Demo游戏。
 
 <figure class="half">
-    <img src="https://raw.githubusercontent.com/lujun495904500/CocosGame/master/scripts/publish/windows/游戏截图/QQ截图20190202160517.png" width="300">
-    <img src="https://raw.githubusercontent.com/lujun495904500/CocosGame/master/scripts/publish/windows/游戏截图/QQ截图20190202160538.png" width="300">
+    <img src="https://raw.githubusercontent.com/lujun495904500/CocosGame/master/scripts/publish/windows/游戏截图/QQ截图20190202160517.png" width="300"><img src="https://raw.githubusercontent.com/lujun495904500/CocosGame/master/scripts/publish/windows/游戏截图/QQ截图20190202160538.png" width="300">
 </figure>
 
 <figure class="half">
-    <img src="https://raw.githubusercontent.com/lujun495904500/CocosGame/master/scripts/publish/windows/游戏截图/QQ截图20190202160619.png" width="300">
-    <img src="https://raw.githubusercontent.com/lujun495904500/CocosGame/master/scripts/publish/windows/游戏截图/QQ截图20190202160730.png" width="300">
+    <img src="https://raw.githubusercontent.com/lujun495904500/CocosGame/master/scripts/publish/windows/游戏截图/QQ截图20190202160619.png" width="300"><img src="https://raw.githubusercontent.com/lujun495904500/CocosGame/master/scripts/publish/windows/游戏截图/QQ截图20190202160730.png" width="300">
 </figure>
 
 ## 上手指南
