@@ -52,7 +52,8 @@
 
     1.进入目录 `runtime/data/`
     2.由于配置文件是经过加密处理的，所以需要通过`scripts/cryptoConfig.py`进行解密操作。  
-    (可以在命令行进入当前目录，然后执行 `../../../scripts/cryptoConfig.py localconfig.json`。当然也可以直接把配置文件拖到cryptoConfig.py文件上进行解密)  
+    (可以在命令行进入当前目录，然后执行 `../../../scripts/cryptoConfig.py localconfig.json`。  
+    当然也可以直接把配置文件拖到cryptoConfig.py文件上进行解密)  
     会生成localconfig_dec.json解密配置文件
     3.修改localconfig_dec.json配置文件，remoteconfig中的IP端口修改为你自己的文件服务器的IP端口，  
     enableremote和enableupdate都设置为true。
