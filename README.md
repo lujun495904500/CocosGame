@@ -25,8 +25,12 @@
 <img src="https://raw.githubusercontent.com/lujun495904500/CocosGame/master/scripts/publish/windows/游戏截图/QQ截图20190202160730.png" width="600"/>
 </center>
 
+## 框架设计文档
+
+   1.[**框架文件目录结构**](https://github.com/lujun495904500/CocosGame/blob/master/docs/1.框架文件目录结构.md "1.框架文件目录结构")
+
 ## 上手指南
-项目主要以lua语言为主，因为cocos2dx的跨平台特性，所以还会涉及到C/C++、安卓java和object-c。游戏工具链主要使用的是python3.x（NOT python2.x）。所以你最好是会cocos2dx的，并且比较熟悉lua语言，最好了解python语言。由于框架比较复杂，下面将给出具体安装步骤，框架说明文档会另外给出。
+项目主要以lua语言为主，因为cocos2dx的跨平台特性，所以还会涉及到C/C++、安卓java和object-c。游戏工具链主要使用的是python3.x（NOT python2.x）。所以你最好是会cocos2dx的，并且比较熟悉lua语言，最好了解python语言。由于框架比较复杂，下面将给出具体安装步骤。
 
 ## 安装步骤
 
