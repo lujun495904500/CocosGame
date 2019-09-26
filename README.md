@@ -34,7 +34,9 @@
 3. [**游戏启动设计**](https://github.com/lujun495904500/CocosGame/blob/master/docs/游戏启动设计.md "游戏启动设计")
 4. [**游戏包结构设计**](https://github.com/lujun495904500/CocosGame/blob/master/docs/游戏包结构设计.md "游戏包结构设计")
 5. [**游戏索引模块设计**](https://github.com/lujun495904500/CocosGame/blob/master/docs/游戏索引模块设计.md "游戏索引模块设计")
-6. [**游戏网络模块设计**](https://github.com/lujun495904500/CocosGame/blob/master/docs/游戏网络模块设计.md "游戏网络模块设计")
+6. [**游戏元数据模块设计**](https://github.com/lujun495904500/CocosGame/blob/master/docs/游戏元数据模块设计.md "游戏元数据模块设计")
+7. [**游戏数据库模块设计**](https://github.com/lujun495904500/CocosGame/blob/master/docs/游戏数据库模块设计.md "游戏数据库模块设计")
+8. [**游戏网络模块设计**](https://github.com/lujun495904500/CocosGame/blob/master/docs/游戏网络模块设计.md "游戏网络模块设计")
 
 ## 上手指南
 项目主要以lua语言为主，因为cocos2dx的跨平台特性，所以还会涉及到C/C++、安卓java和object-c。游戏工具链主要使用的是python3.x（NOT python2.x）。所以你最好是会cocos2dx的，并且比较熟悉lua语言，最好了解python语言。由于框架比较复杂，下面将给出具体安装步骤。
