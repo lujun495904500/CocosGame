@@ -608,7 +608,6 @@ bool FileManager::setupPackFile(int pindex, FILE *pfile) {
 	switch (version) {
 	case 1:
 	{
-		std::vector<std::string> filepaths;
 		{
 			size_t headsize = preader.readLong();
 			unsigned char hkeyindex = preader.readByte();
@@ -624,39 +623,34 @@ bool FileManager::setupPackFile(int pindex, FILE *pfile) {
 				return false;
 			}
 
+			size_t offest = preader.getOffest();
 			BufferReader hreader(headdata.getBytes(), headdata.getSize());
 			size_t filecount = hreader.readLong();
 			for (int i = 0; i < filecount; ++i) {
-				filepaths.push_back(hreader.readString());
+				std::string fpath = hreader.readString();
+				if (m_fileMap.find(fpath) != m_fileMap.end()) {
+					CCLOG("Error:pack file %s conflict", fpath.c_str());
+					return false;
+				}
+				FileConfig fconfig;
+				fconfig.isdir = hreader.readByte();
+				if (fconfig.isdir) {
+					fconfig.u.d.flag = hreader.readShort();
+					fconfig.u.d.keyindex = hreader.readByte();
+				}
+				else {
+					fconfig.u.f.filesize = hreader.readLong();
+					fconfig.u.f.flag = hreader.readShort();
+					fconfig.u.f.keyindex = hreader.readByte();
+				}
+				fconfig.packindex = pindex;
+				fconfig.contentsize = hreader.readLong();
+				fconfig.offest = offest;
+				offest += fconfig.contentsize;
+				m_fileMap[fpath] = fconfig;
 			}
 		}
 
-		// ��ȡ����
-		for (std::string &fpath : filepaths) {
-			if (m_fileMap.find(fpath) != m_fileMap.end()) {
-				CCLOG("Error:pack file %s conflict", fpath.c_str());
-				return false;
-			}
-			FileConfig fconfig;
-			fconfig.isdir = preader.readByte();
-			if (fconfig.isdir) {
-				fconfig.u.d.flag = preader.readShort();
-				fconfig.u.d.keyindex = preader.readByte();
-			} else {
-				fconfig.u.f.filesize = preader.readLong();
-				fconfig.u.f.flag = preader.readShort();
-				fconfig.u.f.keyindex = preader.readByte();
-			}
-			fconfig.packindex = pindex;
-			fconfig.contentsize = preader.readLong();
-			fconfig.offest = preader.getOffest();
-			if (!preader.skip(fconfig.contentsize)) {
-				CCLOG("Error:pack file %s content end", fpath.c_str());
-				return false;
-			}
-			m_fileMap[fpath] = fconfig;
-		}
-		
 		return true;
 	}
 	default:
