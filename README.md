@@ -60,7 +60,7 @@
 游戏开发脚本使用的是**python3**，不是python2,安装完python后你需要安装如下库
 * **xlrd** (Excel表格读取库，可以使用命令 `pip install xlrd` 安装)
 * **Pillow** (强大PIL图像处理库，可以使用命令 `pip install Pillow` 安装)
-* **HDiffPatch** (开源补丁程序，可以直接双击 `scripts/toolkits/PyHDiffPatch/setup.py` 安装)
+* **HDiffPatch** (开源补丁程序，可以进入目录 `scripts/toolkits/PyHDiffPatch/`，执行命令`setup.py install`安装)
   
 ### 4.使用VS2015编译cocos2dx程序
     [1].进入目录 `frameworks/runtime-src/proj.win32/`
