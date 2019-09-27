@@ -1,12 +1,12 @@
 /**
- *	@file	LUtils.cpp
- *	@date	2018/12/17
- *
- * 	@author lujun
- *	Contact:(QQ:495904500)
- *	
- *	@brief	工具类
- */
+*	@file	LUtils.cpp
+*	@date	2018/12/17
+*
+* 	@author lujun
+*	Contact:(QQ:495904500)
+*
+*	@brief	工具类
+*/
 
 #include "LUtils.h"
 #include <openssl/aes.h>
@@ -105,7 +105,7 @@ PathSplit::PathSplit(const char *path) :
 	m_endpos = m_path.c_str() + m_path.size();
 	if (*m_cursor == '\\' || *m_cursor == '/')
 		m_isabsolute = true;
-	if (*(m_endpos-1) == '\\' || *(m_endpos - 1) == '/')
+	if (*(m_endpos - 1) == '\\' || *(m_endpos - 1) == '/')
 		m_isendsepa = true;
 	std::replace(m_path.begin(), m_path.end(), '\\', '\0');		// 替换分割符
 	std::replace(m_path.begin(), m_path.end(), '/', '\0');
@@ -140,13 +140,15 @@ std::string L::standardPath(const std::string &path) {
 		if (ch == '\\' || ch == '.') {
 			should = true;
 			break;
-		}else if (ch == '/'){
+		}
+		else if (ch == '/') {
 			if (issplit) {
 				should = true;
 				break;
 			}
 			issplit = true;
-		} else {
+		}
+		else {
 			issplit = false;
 		}
 	}
@@ -157,15 +159,16 @@ std::string L::standardPath(const std::string &path) {
 		PathSplit pathsplit(path.c_str());
 
 		while (spname = pathsplit.get_next()) {
-			if (!strcmp(spname,"..")) {
+			if (!strcmp(spname, "..")) {
 				splits.pop_back();
-			}else if (strcmp(spname, ".")){
+			}
+			else if (strcmp(spname, ".")) {
 				splits.push_back(spname);
 			}
 		}
 
 		std::string newpath;
-		if (pathsplit.is_absolute_path()){
+		if (pathsplit.is_absolute_path()) {
 			newpath += '/';
 		}
 		for (int i = 0; i < splits.size(); ++i) {
@@ -174,12 +177,13 @@ std::string L::standardPath(const std::string &path) {
 			}
 			newpath += splits[i];
 		}
-		if (pathsplit.is_end_separate()){
+		if (pathsplit.is_end_separate()) {
 			newpath += '/';
 		}
 
 		return newpath;
-	} else {
+	}
+	else {
 		return path;
 	}
 }
@@ -189,7 +193,7 @@ void L::XOR_encrypt(std::string &data, const std::string &xorkey) {
 	for (int i = 0; i < data.size(); i++) {
 		data[i] ^= xorkey[ki];
 		++ki;
-		if (ki >= xorkey.size()){
+		if (ki >= xorkey.size()) {
 			ki = 0;
 		}
 	}
@@ -219,7 +223,7 @@ bool L::AES_decrypt(const unsigned char* aeskey, const unsigned char* aesiv, con
 	AES_KEY key;
 	if (AES_set_decrypt_key(aeskey, 128, &key)) return false;
 	std::string iv((char*)aesiv, 16);
-	
+
 	AES_cbc_encrypt(inbuff, outbuff, insize, &key, (unsigned char *)iv.c_str(), AES_DECRYPT);
 
 	// 处理padding
@@ -236,19 +240,20 @@ bool L::RSA_publicEncrypt(const unsigned char* data, int dlen, std::string &encd
 	BIO* bp = BIO_new(BIO_s_mem());
 	BIO_puts(bp, (const char *)(pubdata.getBytes()));
 	RSA* rsaK = NULL;
-	if (0 == strncmp(pkcs1_header.c_str(), (const char *)pubdata.getBytes(), pkcs1_header.size())){
+	if (0 == strncmp(pkcs1_header.c_str(), (const char *)pubdata.getBytes(), pkcs1_header.size())) {
 		rsaK = PEM_read_bio_RSAPublicKey(bp, NULL, NULL, NULL);
-	}else if(0 == strncmp(pkcs8_header.c_str(), (const char *)pubdata.getBytes(), pkcs8_header.size())) {
+	}
+	else if (0 == strncmp(pkcs8_header.c_str(), (const char *)pubdata.getBytes(), pkcs8_header.size())) {
 		rsaK = PEM_read_bio_RSA_PUBKEY(bp, NULL, NULL, NULL);
 	}
-	if (NULL == rsaK){
+	if (NULL == rsaK) {
 		CCLOG("read rsa public key file [%s] fail", pubfile.c_str());
 		return false;
 	}
 	int nLen = RSA_size(rsaK);
 	encdata.resize(nLen + 1);
 	int ret = RSA_public_encrypt(dlen, data, (unsigned char *)encdata.c_str(), rsaK, RSA_PKCS1_PADDING);
-	if (ret == -1){
+	if (ret == -1) {
 		CCLOG("rsa public encrypt fail");
 		return false;
 	}
@@ -265,7 +270,8 @@ bool L::RSA_publicDecrypt(const unsigned char* data, int dlen, std::string &decd
 	RSA* rsaK = NULL;
 	if (0 == strncmp(pkcs1_header.c_str(), (const char *)pubdata.getBytes(), pkcs1_header.size())) {
 		rsaK = PEM_read_bio_RSAPublicKey(bp, NULL, NULL, NULL);
-	} else if (0 == strncmp(pkcs8_header.c_str(), (const char *)pubdata.getBytes(), pkcs8_header.size())) {
+	}
+	else if (0 == strncmp(pkcs8_header.c_str(), (const char *)pubdata.getBytes(), pkcs8_header.size())) {
 		rsaK = PEM_read_bio_RSA_PUBKEY(bp, NULL, NULL, NULL);
 	}
 	if (NULL == rsaK) {
@@ -345,17 +351,18 @@ void L::mergeFile(const std::string &indir_, const std::string &outpath_, const 
 	std::string indir = FileManager::getInstance()->removeNativeFlag(indir_);
 	std::string outpath = FileManager::getInstance()->removeNativeFlag(outpath_);
 	size_t filecount = 0;
-	FILE *outfile = fopen(outpath.c_str(),"wb");
-	if (outfile){
+	FILE *outfile = fopen(outpath.c_str(), "wb");
+	if (outfile) {
 		while (true) {
 			char buff[BUFFSIZE];
 			sprintf(buff, infmt.c_str(), filecount);
 			std::string inpath = indir + "/" + buff;
 			FILE *infile = fopen(inpath.c_str(), "rb");
 			if (!infile) break;
-			if (iszlib){
+			if (iszlib) {
 				zlib_inflate(infile, outfile);
-			} else {
+			}
+			else {
 				int readsize = 0;
 				do {
 					readsize = fread(buff, 1, BUFFSIZE, infile);
@@ -433,14 +440,14 @@ static bool unzipFile(const std::string &zipPath, const std::string &filePath, c
 		return false;
 	}
 
-	if (UNZ_OK != unzOpenCurrentFile(zfile)){
+	if (UNZ_OK != unzOpenCurrentFile(zfile)) {
 		unzClose(zfile);
 		return false;
 	}
 
 	FileUtils::getInstance()->createDirectory(FileManager::getInstance()->getFileDirectory(outPath));
 	FILE *ofile = fopen(_normalOpenPath(outPath).c_str(), "wb");
-	if (!ofile){
+	if (!ofile) {
 		unzCloseCurrentFile(zfile);
 		unzClose(zfile);
 		return false;
@@ -453,9 +460,11 @@ static bool unzipFile(const std::string &zipPath, const std::string &filePath, c
 		if (size < 0) {
 			result = false;
 			break;
-		} else if(size == 0) {
+		}
+		else if (size == 0) {
 			break;
-		} else {
+		}
+		else {
 			if (size != fwrite(buff, 1, size, ofile)) {
 				result = false;
 				break;
@@ -481,11 +490,12 @@ static bool unzipDirectory(const std::string &zipPath, const std::string &filePa
 				unzClose(zfile);
 				return false;
 			}
-			if (!strncmp(filename, filePath.c_str(), filePath.size())){
-				if (filename[strlen(filename)-1] == '/') {
+			if (!strncmp(filename, filePath.c_str(), filePath.size())) {
+				if (filename[strlen(filename) - 1] == '/') {
 					FileUtils::getInstance()->createDirectory(outPath + "/" + std::string(filename + filePath.size()));
-				} else {
-					if (!unzipFile(zipPath, filename, outPath + "/" + std::string(filename + filePath.size()))){
+				}
+				else {
+					if (!unzipFile(zipPath, filename, outPath + "/" + std::string(filename + filePath.size()))) {
 						unzClose(zfile);
 						return false;
 					}
@@ -499,9 +509,10 @@ static bool unzipDirectory(const std::string &zipPath, const std::string &filePa
 }
 
 bool L::unzip(const std::string &zipPath, const std::string &filePath, const std::string &outPath) {
-	if (filePath[filePath.size() - 1] == '/'){
+	if (filePath[filePath.size() - 1] == '/') {
 		return unzipDirectory(zipPath, filePath, outPath);
-	} else {
+	}
+	else {
 		return unzipFile(zipPath, filePath, outPath);
 	}
 }
