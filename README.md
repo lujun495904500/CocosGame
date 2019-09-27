@@ -50,25 +50,31 @@
 * NDK r16+ is required to build Android games
 * Android Studio 3.0.0+ to build Android games(tested with 3.0.0)
 
-### 2.安装python3.6+脚本工具
+### 2.安装辅助软件
+
+1. [**TexturePacker 5.0+**](https://www.codeandweb.com/texturepacker/download)  图片打包工具
+2. [**Tiled 1.2+**](https://www.mapeditor.org) 瓦片地图编辑器，如果你修改修改地图
+3. [**behavior3editor**](https://github.com/behavior3/behavior3editor) 行为树编辑器，如果你需要编辑行为树
+
+### 3.安装python3.6+脚本工具
 游戏开发脚本使用的是**python3**，不是python2,安装完python后你需要安装如下库
 * **xlrd** (Excel表格读取库，可以使用命令 `pip install xlrd` 安装)
 * **Pillow** (强大PIL图像处理库，可以使用命令 `pip install Pillow` 安装)
 * **HDiffPatch** (开源补丁程序，可以直接双击 `scripts/toolkits/PyHDiffPatch/setup.py` 安装)
   
-### 3.使用VS2015编译cocos2dx程序
+### 4.使用VS2015编译cocos2dx程序
     [1].进入目录 `frameworks/runtime-src/proj.win32/`
     [2].双击 CocosGame.sln, 使用VS2015打开工程
     [3].在VS22015菜单栏中点击 生成 - 生成解决方案
     [4].等到exe程序生成完成
 
-### 4.使用脚本工具链更新、打包及安装资源
+### 5.使用脚本工具链更新、打包及安装资源
     [1].进入目录 `scripts/`
     [2].双击 updateAll.py 以更新游戏所有资源，等待完成
     [2].双击 packRes.py 以打包游戏资源，等待完成
     [3].双击 installRes.py 以安装游戏资源，等待完成
 
-### 5.测试游戏运行
+### 6.测试游戏运行
 双击根目录中 `run.bat` ,如果出现游戏窗口，则游戏运行成功
 
 ## 游戏资源更新
