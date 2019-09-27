@@ -53,7 +53,7 @@
 
 ### 2.安装辅助软件
 
-1. [**TexturePacker 5.0+**](https://www.codeandweb.com/texturepacker/download)  图片打包工具
+1. [**TexturePacker 4.9+**](https://www.codeandweb.com/texturepacker/download)  图片打包工具
 2. [**Tiled 1.2+**](https://www.mapeditor.org) 瓦片地图编辑器，如果你修改修改地图
 3. [**behavior3editor**](https://github.com/behavior3/behavior3editor) 行为树编辑器，如果你需要编辑行为树
 
