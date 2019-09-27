@@ -216,7 +216,6 @@ FileUtils::Status FileManager::getContents(const std::string& filename, Resizabl
 			return Status::OpenFailed;
 		}
 		
-		// ����ѹ��
 		if (fconfig->u.f.flag & FileConfig::FF_COMPRESS) {
 			std::swap(pdestbuff, ptempbuff);	// ����
 			uLongf uncompsize = BufferReader(ptempbuff->buffer(), contentsize).readLong();
@@ -227,14 +226,13 @@ FileUtils::Status FileManager::getContents(const std::string& filename, Resizabl
 			contentsize = uncompsize;
 		}
 
-		// �������
 		if (fconfig->u.f.flag & FileConfig::FF_CRYPTO) {
 			std::swap(pdestbuff, ptempbuff);
 			if (!FM_AES_decrypt(fconfig->u.f.keyindex, ptempbuff, contentsize, pdestbuff)) {
 				return Status::ReadFailed;
 			}
 		}
-
+		
 		return Status::OK;
 	} else {
 		return Status::NotExists;
