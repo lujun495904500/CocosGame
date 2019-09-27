@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-import os,struct,getopt,sys,random,zlib,math,copy
+import os,struct,getopt,sys,random,zlib,math,copy,traceback
 from toolkits import tools
 
 CURPATH = os.path.split(os.path.realpath(__file__))[0]
@@ -93,35 +93,50 @@ class ResourcePacker:
 			return hash % len(self.config["aes"]["keys"])
 		
 	def writePackFile(self,pfile,nodename,verscode,filelist):
-		pfile.write(tools.getLongBlock(verscode))
-		pfile.write(tools.getShortBlock(BUILDVERSION))
+		self.handleFileList(filelist, nodename)
 		
+		# 写内容文件
+		contentfile = self.temppath + "/" + nodename + ".content"
+		with open(contentfile, 'wb') as cfile:
+			contentsize,filesizes = self.writeContentFile(cfile,filelist,nodename)
+		
+		self.writeLog("build content %s\n" % contentfile)
+		self.writeLog("Content Size : %s\n\n" % tools.format_filesize(contentsize))
+		
+		# 写头文件
 		headfile = self.temppath + "/" + nodename + ".head"
 		with open(headfile, 'wb') as hfile:
-			self.writeHeadFile(hfile,filelist)
+			self.writeHeadFile(hfile, filelist, filesizes)
+			
 		self.writeLog("build head %s\n" % headfile)
 		
 		aeskeys = self.config["aes"]["keys"]
 		kidx = self.getAESKey("pack_head")
 		crypfile = headfile + "_en"
 		tools.encrypto_aes(aeskeys[kidx]["key"],aeskeys[kidx]["iv"],headfile,crypfile)
+		
 		self.writeLog("encrypto head %s\n" % crypfile)
 		
 		headsize = os.path.getsize(crypfile)
+		pfile.write(tools.getLongBlock(verscode))
+		pfile.write(tools.getShortBlock(BUILDVERSION))
 		pfile.write(tools.getLongBlock(headsize))
 		pfile.write(tools.getByteBlock(kidx))
-		with open(crypfile,"rb") as file:
-			pfile.write(file.read())
+		
+		with open(crypfile,"rb") as hfile:
+			pfile.write(hfile.read())
 		headsize += 11
+		
 		self.writeLog("Head Size : %s\n\n" % tools.format_filesize(headsize))
 		
-		contentsize = self.writeContentFile(pfile,nodename,filelist)
-		self.writeLog("Content Size : %s\n" % tools.format_filesize(contentsize))
+		with open(contentfile,"rb") as cfile:
+			pfile.write(cfile.read())
 		
 		return headsize + contentsize
 		
-	def writeHeadFile(self,hfile,filelist):
-		# 处理文件
+	# 处理文件列表
+	def handleFileList(self,filelist, nodename):
+		# 额外文件
 		extfiles = []
 		for fconf in filelist:
 			fpath = fconf["path"]
@@ -142,28 +157,56 @@ class ResourcePacker:
 				fconf["wpath"] = fpath
 		filelist.extend(extfiles)
 		
-		# 写入文件头
-		hfile.write(tools.getLongBlock(len(filelist)))
+		# 处理文件
 		for fconf in filelist:
-			hfile.write(tools.getStringBlock(fconf["wpath"]))
-	
-	def writeContentFile(self,cfile,nodename,filelist):
-		contentsize = 0
-		for fconf in filelist:
-			fblock = self.buildFileConfig(nodename,fconf)
-			cblock = self.buildFileContent(nodename,fconf)
-			cfile.write(fblock)
-			cfile.write(tools.getLongBlock(len(cblock)))
-			cfile.write(cblock)
+			if fconf["type"] == "FILE":
+				filepath = self.nodespath + "/" + nodename + fconf["path"]
+				fconf["flag"] = 0
+				fconf["keyindex"] = 0
+				
+				if self.shouldCrypto(filepath):
+					fconf["flag"] |= FILEFLAG["CRYPTO"]	
+					fconf["keyindex"] = self.getAESKey(fconf["path"])
+					
+				if self.shouldCompress(filepath):
+					fconf["flag"] |= FILEFLAG["COMPRESS"]
+			else:	# directory
+				fconf["flag"] = 0
+				fconf["keyindex"] = 0
+				
+				if self.config["pack"]["cryptodir"]:
+					fconf["flag"] |= FILEFLAG["CRYPTO"]	
+					fconf["keyindex"] = self.getAESKey(fconf["path"])
 			
-			fwsize = (4 + len(fblock) + len(cblock))
-			contentsize += fwsize
+	# 写内容文件
+	def writeContentFile(self, cfile, filelist, nodename):
+		contentsize = 0
+		filesizes = []
+		for fconf in filelist:
+			cblock = self.buildFileContent(nodename,fconf)
+			fsize = len(cblock)
+			contentsize += fsize
+			filesizes.append(fsize)
+			cfile.write(cblock)
 			self.writeLog("packing [%s.pack] <<< %s | %s | %s\n" % (nodename,
-				tools.format_filesize(fwsize),
+				tools.format_filesize(fsize),
 				self.getConfigString(fconf),
 				fconf["wpath"]))
-		return contentsize
-		
+		return (contentsize, filesizes)
+	
+	# 写头文件
+	def writeHeadFile(self, hfile, filelist, filesizes):
+		hfile.write(tools.getLongBlock(len(filelist)))
+		for i in range(len(filelist)):
+			fconf = filelist[i]
+			hfile.write(tools.getStringBlock(fconf["wpath"]))
+			if fconf["type"] == "FILE":
+				hblock = struct.pack("<BIHB",0,fconf["filesize"],fconf["flag"],fconf["keyindex"])
+			else:	# directory
+				hblock = struct.pack("<BHB",1,fconf["flag"],fconf["keyindex"])
+			hfile.write(hblock)
+			hfile.write(tools.getLongBlock(filesizes[i]))
+			
 	def getConfigString(self,fconf):
 		ftype = "F" if fconf["type"] == "FILE" else "D"
 		crypto = "E" if fconf["flag"] & FILEFLAG["CRYPTO"] != 0 else "_"
@@ -190,31 +233,7 @@ class ResourcePacker:
 			if tools.wildcard_match(comps["file"],filename) and filesize >= comps["size"]:
 				return True
 		return False
-		
-	def buildFileConfig(self,nodename,fconf):
-		if fconf["type"] == "FILE":
-			filepath = self.nodespath + "/" + nodename + fconf["path"]
-			fconf["flag"] = 0
-			fconf["keyindex"] = 0
-			
-			if self.shouldCrypto(filepath):
-				fconf["flag"] |= FILEFLAG["CRYPTO"]	
-				fconf["keyindex"] = self.getAESKey(fconf["path"])
-				
-			if self.shouldCompress(filepath):
-				fconf["flag"] |= FILEFLAG["COMPRESS"]
-			
-			return struct.pack("<BIHB",0,fconf["filesize"],fconf["flag"],fconf["keyindex"])
-		else:	# directory
-			fconf["flag"] = 0
-			fconf["keyindex"] = 0
-			
-			if self.config["pack"]["cryptodir"]:
-				fconf["flag"] |= FILEFLAG["CRYPTO"]	
-				fconf["keyindex"] = self.getAESKey(fconf["path"])
-			
-			return struct.pack("<BHB",1,fconf["flag"],fconf["keyindex"])
-		
+	
 	def buildFileContent(self,nodename,fconf):
 		if fconf["type"] == "FILE":
 			filecontent = None
@@ -318,5 +337,5 @@ if __name__ == "__main__":
 		}).pack()
 		print("资源打包完成")
 	except Exception as e:
-		print(e)
+		print(traceback.format_exc())
 	os.system("pause")
