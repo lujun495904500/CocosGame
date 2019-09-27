@@ -35,7 +35,7 @@ def relpath(p1,p2, sep=os.path.sep, pardir=os.path.pardir):
     return sep.join([pardir] * len(u1) + u2) 
 
 def read_json(jfile):
-	with open(jfile, 'r') as f:
+	with open(jfile, 'r', encoding='utf-8') as f:
 		return json.load(f)
 		
 def write_json(jobj,jfile,debug=False):
