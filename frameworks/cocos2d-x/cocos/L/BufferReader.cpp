@@ -5,22 +5,29 @@
  * 	@author lujun
  *	Contact:(QQ:495904500)
  *	
- *	@brief	»º³å¶ÁÈ¡Æ÷
+ *	@brief	ç¼“å†²è¯»å–å™¨
  */
 
 #include "BufferReader.h"
 
 using namespace L;
 
+char BufferReader::readByte() {
+	assert(m_cursor + 1 <= m_size);
+	char value = m_buff[m_cursor];
+	m_cursor += 1;
+	return value;
+}
+
 short BufferReader::readShort() {
-	assert(m_cursor + 2 < m_size);
+	assert(m_cursor + 2 <= m_size);
 	short value = m_buff[m_cursor + 1] << 8 | m_buff[m_cursor];
 	m_cursor += 2;
 	return value;
 }
 
 long BufferReader::readLong() {
-	assert(m_cursor + 4 < m_size);
+	assert(m_cursor + 4 <= m_size);
 	long value = m_buff[m_cursor + 3] << 24 | m_buff[m_cursor + 2] << 16 | m_buff[m_cursor + 1] << 8 | m_buff[m_cursor];
 	m_cursor += 4;
 	return value;
