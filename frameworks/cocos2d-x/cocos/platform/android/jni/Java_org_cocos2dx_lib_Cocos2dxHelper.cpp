@@ -31,6 +31,7 @@ THE SOFTWARE.
 #include "platform/android/CCFileUtils-android.h"
 #include "android/asset_manager_jni.h"
 #include "platform/android/jni/Java_org_cocos2dx_lib_Cocos2dxHelper.h"
+#include "L/FileManager.h"
 
 #include "base/ccUTF8.h"
 
@@ -82,6 +83,11 @@ extern "C" {
         }
     }
 
+	JNIEXPORT jint JNICALL Java_org_cocos2dx_lib_Cocos2dxHelper_nativeLookPackVersion(JNIEnv * env, jclass, jstring jpackpath){
+		const char* packpath = env->GetStringUTFChars(jpackpath, 0);
+		jint packver = L::FileManager::getInstance()->lookPackVersion(packpath);
+		return packver;
+	}
 }
 
 const char * getApkPath() {
