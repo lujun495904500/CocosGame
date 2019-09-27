@@ -5,7 +5,7 @@
  * 	@author lujun
  *	Contact:(QQ:495904500)
  *	
- *	@brief	»º³å¶ÁÈ¡Æ÷
+ *	@brief	ç¼“å†²è¯»å–å™¨
  */
 
 #ifndef __BUFFERREADER_20181215214456_H
@@ -22,7 +22,7 @@ public:
 		m_buff((unsigned char*)buff), 
 		m_size(size), 
 		m_cursor(0){}
-
+	char readByte();
 	short readShort();
 	long readLong();
 	std::string readString();
