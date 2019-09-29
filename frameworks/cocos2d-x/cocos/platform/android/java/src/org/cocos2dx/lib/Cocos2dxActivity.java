@@ -30,6 +30,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
+import android.content.res.AssetManager;
 import android.graphics.PixelFormat;
 import android.media.AudioManager;
 import android.opengl.GLSurfaceView;
@@ -62,6 +63,7 @@ import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 import java.io.UnsupportedEncodingException;
+import java.util.Iterator;
 
 import javax.microedition.khronos.egl.EGL10;
 import javax.microedition.khronos.egl.EGLConfig;
@@ -136,12 +138,14 @@ public abstract class Cocos2dxActivity extends Activity implements Cocos2dxHelpe
         }
     }
 
-    private static final String RESOURCE_CONFIG = "config.json";
+    private static final String UNZIP_CONFIG = "unzipconfig.json";
     private static final String BOOT_PACK = "boot.pack";
+    private static final String APKRES_VERSION = "resversion.json";
 
-    JSONObject readResuorceConfig(){
+    // 读取解压版本
+    JSONObject readUnzipConfig(){
         StringBuffer strbuf = new StringBuffer();
-        File confile = new File(Cocos2dxHelper.getCocos2dxWritablePath(),RESOURCE_CONFIG);
+        File confile = new File(Cocos2dxHelper.getCocos2dxWritablePath(),UNZIP_CONFIG);
         if (confile.exists()){
             BufferedReader reader = null;
             try {
@@ -151,11 +155,15 @@ public abstract class Cocos2dxActivity extends Activity implements Cocos2dxHelpe
                     strbuf.append(line);
                 }
                 reader.close();
+
+                return new JSONObject(strbuf.toString());
             } catch (FileNotFoundException e) {
                 e.printStackTrace();
             } catch (IOException e) {
                 e.printStackTrace();
-            }finally {
+            } catch (JSONException e) {
+                e.printStackTrace();
+            } finally {
                 if (reader != null){
                     try {
                         reader.close();
@@ -165,17 +173,14 @@ public abstract class Cocos2dxActivity extends Activity implements Cocos2dxHelpe
                 }
             }
         }
-        try {
-            return new JSONObject(strbuf.toString());
-        } catch (JSONException e) {
-            e.printStackTrace();
-        }
         return new JSONObject();
     }
-    void writeResuorceConfig(JSONObject json){
+
+    // 写入解压版本
+    void writeUnzipConfig(JSONObject json){
         if (json != null){
             BufferedWriter writer = null;
-            File confile = new File(Cocos2dxHelper.getCocos2dxWritablePath(),RESOURCE_CONFIG);
+            File confile = new File(Cocos2dxHelper.getCocos2dxWritablePath(),UNZIP_CONFIG);
             confile.deleteOnExit();
             try {
                 writer = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(confile,false), "UTF-8"));
@@ -198,9 +203,42 @@ public abstract class Cocos2dxActivity extends Activity implements Cocos2dxHelpe
         }
     }
 
+    // 读取APK资源版本
+    JSONObject readApkResVersion(){
+        try {
+            BufferedReader bf = new BufferedReader(new InputStreamReader(
+                    sContext.getAssets().open(APKRES_VERSION)));
+
+            String line;
+            StringBuilder strbuf = new StringBuilder();
+            while ((line = bf.readLine()) != null) {
+                strbuf.append(line);
+            }
+
+            return new JSONObject(strbuf.toString());
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        return new JSONObject();
+    }
+
+    // 解压boot.pack
     void unzipBootPack(){
         File bootpack = new File(Cocos2dxHelper.getCocos2dxWritablePath() , BOOT_PACK);
-        bootpack.deleteOnExit();
+
+        // 检查解压的boot.pack版本号是否小于APK中的版本号
+        if (bootpack.exists()){
+            JSONObject apkresver = readApkResVersion();
+            int resbootver = Cocos2dxHelper.nativeLookPackVersion(bootpack.getPath());
+            if (resbootver >= apkresver.optInt("boot", 0)){
+                return;
+            }
+            bootpack.delete();
+        }
+
+        // 执行解压操作
         try {
             InputStream ins = sContext.getAssets().open(BOOT_PACK);
             OutputStream outs = new FileOutputStream(bootpack);
@@ -243,18 +281,18 @@ public abstract class Cocos2dxActivity extends Activity implements Cocos2dxHelpe
         
         Cocos2dxHelper.init(this);
 
-        // ��ѹ������
-        JSONObject resconf = readResuorceConfig();
-        String version = Cocos2dxHelper.getVersion();
-        if (!resconf.optString("bootvers","").equals(version)){
+        // 解压boot包
+        JSONObject unzipconf = readUnzipConfig();
+        int version = Cocos2dxHelper.getVersionCode();
+        if (unzipconf.optInt("bootvers",0) != version){
             Log.i(TAG, "unzip boot pack");
             unzipBootPack();
             try {
-                resconf.put("bootvers",version);
+                unzipconf.put("bootvers",version);
             } catch (JSONException e) {
                 e.printStackTrace();
             }
-            writeResuorceConfig(resconf);
+            writeUnzipConfig(unzipconf);
         }
 
         this.mGLContextAttrs = getGLContextAttrs();
@@ -363,8 +401,11 @@ public abstract class Cocos2dxActivity extends Activity implements Cocos2dxHelpe
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data)
     {
-        for (OnActivityResultListener listener : Cocos2dxHelper.getOnActivityResultListeners()) {
-            listener.onActivityResult(requestCode, resultCode, data);
+        Iterator<OnActivityResultListener> it = Cocos2dxHelper.getOnActivityResultListeners().iterator();
+        while (it.hasNext()){
+            if (it.next().onActivityResult(requestCode,resultCode,data)){
+                it.remove();
+            }
         }
 
         super.onActivityResult(requestCode, resultCode, data);
