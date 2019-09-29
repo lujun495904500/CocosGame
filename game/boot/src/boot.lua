@@ -26,14 +26,18 @@ cc.exports.packUpdater = require("app.boot.modules.pack.PackUpdater"):getInstanc
 
 if device.IS_WINDOWS then
 	LOCALCONFIG = "~/localconfig.json"							-- 本地配置
-	PACKSPATH = "~/packs"										-- 包目录
+	PACKSPATH = "~/packs/"										-- 包目录
 	BOOTPACK = "~/boot.pack"									-- boot包路径
 elseif device.IS_ANDROID then
 	LOCALCONFIG = "~/assets/localconfig.json"
-	PACKSPATH = fileMgr:getWritablePath() .. "/packs"
+	PACKSPATH = fileMgr:getWritablePath() .. "/packs/"
 	BOOTPACK = fileMgr:getWritablePath() .. "/boot.pack"
 	UNZIPCONF = fileMgr:getWritablePath() .. "/unzipconfig.json"	-- 安卓解压配置
 	APKRESVERS = "~/assets/resversion.json"							-- APK资源版本
+elseif device.IS_MAC then
+	LOCALCONFIG = "~/localconfig.json"							-- 本地配置
+	PACKSPATH = "~/"											-- 包目录
+	BOOTPACK = "~/boot.pack"									-- boot包路径
 end
 
 logMgr:info(C_LOGTAG, "local config file : %s", LOCALCONFIG)
@@ -124,9 +128,9 @@ function UpdateScene:beginUpdate()
 			end
 			for pname, apkpver in pairs(apkresconf) do
 				if pname ~= "boot" then
-					if fileMgr:lookPackVersion(PACKSPATH .. "/" .. pname .. ".pack") < apkpver then
+					if fileMgr:lookPackVersion(PACKSPATH .. pname .. ".pack") < apkpver then
 						local unzipfile = "assets/packs/" .. pname .. ".pack"
-						local destfile = PACKSPATH .. "/" .. pname .. ".pack"
+						local destfile = PACKSPATH .. pname .. ".pack"
 						if utils.unzip(utils.getAssetsPath(), unzipfile, destfile) then
 							logMgr:info(C_LOGTAG, "unzip %s -> %s", unzipfile, destfile)
 						else
@@ -168,7 +172,7 @@ function UpdateScene:beginUpdate()
 
 				-- 加载基础包
 				for i,packname in ipairs(PACK.BASES) do
-					local packpath = PACKSPATH .. "/" .. packname .. PACK.FORMAT
+					local packpath = PACKSPATH .. packname .. PACK.FORMAT
 					if not fileMgr:loadFilePack(packpath) then
 						return self:setUpdateText(self:getText("PACK_LOAD_FAILURE",packname),cc.c4b(255,0,0,255))
 					else
