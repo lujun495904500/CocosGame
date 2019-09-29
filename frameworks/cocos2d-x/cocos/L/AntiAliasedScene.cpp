@@ -5,7 +5,7 @@
  * 	@author lujun
  *	Contact:(QQ:495904500)
  *	
- *	@brief	·´¾â³Ý³¡¾°
+ *	@brief	Â·Â´Â¾Ã¢Â³ÃÂ³Â¡Â¾Â°
  */
 
 #include "L/AntiAliasedScene.h"
@@ -58,10 +58,14 @@ AntiAliasedScene::AntiAliasedScene():
 	auto glview = Director::getInstance()->getOpenGLView();
 
 	auto designsize = glview->getDesignResolutionSize();
-#if CC_TARGET_PLATFORM == CC_PLATFORM_WIN32 
+#if CC_TARGET_PLATFORM == CC_PLATFORM_WIN32
 	renderCache = RenderTexture::create(designsize.width, designsize.height, Texture2D::PixelFormat::BGRA8888, CC_GL_DEPTH24_STENCIL8);
-#else
+#elif CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID
 	renderCache = RenderTexture::create(designsize.width, designsize.height, Texture2D::PixelFormat::BGRA8888, GL_DEPTH24_STENCIL8_OES);
+#elif CC_TARGET_PLATFORM == CC_PLATFORM_MAC || CC_TARGET_PLATFORM == CC_PLATFORM_IOS
+    	renderCache = RenderTexture::create(designsize.width, designsize.height, Texture2D::PixelFormat::BGRA8888, CC_GL_DEPTH24_STENCIL8);
+#else
+#error("unsuport os")
 #endif
 	CC_SAFE_RETAIN(renderCache);
 
