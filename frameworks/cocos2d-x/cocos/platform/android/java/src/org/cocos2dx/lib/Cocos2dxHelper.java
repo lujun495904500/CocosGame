@@ -269,8 +269,8 @@ public class Cocos2dxHelper {
 
     private static native void nativeSetAudioDeviceInfo(boolean isSupportLowLatency, int deviceSampleRate, int audioBufferSizeInFames);
 
-    public static native int nativeLookPackVersion(String packpath);
-	
+	public static native int nativeLookPackVersion(String packpath);
+
     public static String getCocos2dxPackageName() {
         return Cocos2dxHelper.sPackageName;
     }
@@ -319,12 +319,19 @@ public class Cocos2dxHelper {
 
  	public static String getVersion() {
  		try {
- 			String version = Cocos2dxActivity.getContext().getPackageManager().getPackageInfo(Cocos2dxActivity.getContext().getPackageName(), 0).versionCode + "";
- 			return version;
+ 			return Cocos2dxActivity.getContext().getPackageManager().getPackageInfo(Cocos2dxActivity.getContext().getPackageName(), 0).versionName;
  		} catch(Exception e) {
  			return "";
  		}
  	}
+
+    public static int getVersionCode() {
+        try {
+            return Cocos2dxActivity.getContext().getPackageManager().getPackageInfo(Cocos2dxActivity.getContext().getPackageName(), 0).versionCode;
+        } catch(Exception e) {
+            return 0;
+        }
+    }
 
     public static boolean openURL(String url) { 
         boolean ret = false;
