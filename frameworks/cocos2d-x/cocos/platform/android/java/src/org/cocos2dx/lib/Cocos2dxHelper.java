@@ -269,6 +269,8 @@ public class Cocos2dxHelper {
 
     private static native void nativeSetAudioDeviceInfo(boolean isSupportLowLatency, int deviceSampleRate, int audioBufferSizeInFames);
 
+    public static native int nativeLookPackVersion(String packpath);
+	
     public static String getCocos2dxPackageName() {
         return Cocos2dxHelper.sPackageName;
     }
