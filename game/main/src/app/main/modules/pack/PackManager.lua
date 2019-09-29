@@ -32,7 +32,7 @@ end
 function PackManager:loadPack(packname)
     local pack = PACK.LOADED[packname]
     if not pack then
-        local packpath = PACKSPATH .. "/" .. packname .. PACK.FORMAT
+        local packpath = PACKSPATH .. packname .. PACK.FORMAT
         if fileMgr:loadFilePack(packpath) then
             pack = {
                 name = packname,
