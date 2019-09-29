@@ -95,6 +95,7 @@ android.applicationVariants.all { variant ->
 			into "${buildDir}/intermediates/assets/${variant.dirName}"
 			include "**/boot.pack"
             include "**/localconfig.json"
+			include "**/resversion.json"
         }
         copy {
 			from "${buildDir}/../../../../../packs/publish"
