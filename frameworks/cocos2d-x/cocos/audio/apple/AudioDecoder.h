@@ -26,6 +26,7 @@
 #pragma once
 
 #include <stdint.h>
+#include "cocos/platform/CCFileUtils.h"
 #import <AudioToolbox/ExtendedAudioFile.h>
 
 namespace cocos2d { namespace experimental {
@@ -108,6 +109,8 @@ public:
 
 private:
     bool _isOpened;
+    File *_audfile;
+    AudioFileID _audid;
     ExtAudioFileRef _extRef;
     uint32_t _totalFrames;
     uint32_t _bytesPerFrame;
