@@ -29,6 +29,7 @@ THE SOFTWARE.
 #include "json/document-wrapper.h"
 #include "json/filereadstream.h"
 #include "json/stringbuffer.h"
+#include "L/FileManager.h"
 
 #include "RuntimeProtocol.h"
 #include "cocos2d.h"
@@ -255,7 +256,7 @@ void ConsoleCommand::onSendCommand(int fd, const std::string &args)
                 if (dArgParse.HasMember("path"))
                 {
                     const rapidjson::Value& objectPath = dArgParse["path"];
-                    FileUtils::getInstance()->setDefaultResourceRootPath(objectPath.GetString());
+                    L::FileManager::getInstance()->getNativeFileUtils()->setDefaultResourceRootPath(objectPath.GetString());
                     
                     rapidjson::Value bodyvalue(rapidjson::kObjectType);
                     bodyvalue.AddMember("path", rapidjson::Value(objectPath.GetString(), allocator)
