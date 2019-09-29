@@ -214,6 +214,7 @@ void FileUtilsApple::setBundle(void* bundle) {
 
 #pragma mark - FileUtils
 
+/*
 static NSFileManager* s_fileManager = [NSFileManager defaultManager];
 
 FileUtils* FileUtils::getInstance()
@@ -230,6 +231,7 @@ FileUtils* FileUtils::getInstance()
     }
     return s_sharedFileUtils;
 }
+*/
 
 
 std::string FileUtilsApple::getWritablePath() const
