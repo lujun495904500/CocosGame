@@ -218,7 +218,7 @@ function UpdateScene:beginUpdate()
 
 								printInfo("reboot ...")
 					
-								utils.remove_module("config", "cocos[.]*", "app[.]*")
+								utils.remove_module("^config$", "^cocos[.].*$", "^app[.].*$")
 								dofile("boot.lua", true)
 							else
 								local config = ...
