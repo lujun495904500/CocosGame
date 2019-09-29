@@ -353,44 +353,6 @@ ValueVector FileUtils::getValueVectorFromFile(const std::string& filename) const
 static tinyxml2::XMLElement* generateElementForArray(const ValueVector& array, tinyxml2::XMLDocument *doc);
 static tinyxml2::XMLElement* generateElementForDict(const ValueMap& dict, tinyxml2::XMLDocument *doc);
 
-class DefaultFile : public cocos2d::File {
-public:
-	DefaultFile(FILE *file) :
-		m_file(file) {}
-
-	~DefaultFile() {
-		if (m_file) {
-			fclose(m_file);
-			m_file = 0;
-		}
-	}
-
-	ssize_t read(void *buf, size_t count) {
-		return fread(buf, 1, count, m_file);
-	}
-	size_t write(const void *buf, size_t count) {
-		return fwrite(buf, 1, count, m_file);
-	}
-	off_t seek(off_t offset, int whence) {
-		size_t lastcur = ftell(m_file);
-		fseek(m_file, offset, whence);
-		return lastcur;
-	}
-	size_t tell() {
-		return ftell(m_file);
-	}
-private:
-	FILE	*m_file;
-};
-
-File* FileUtils::open(const std::string& filename, const std::string &mode) {
-	if (filename.empty()) return nullptr;
-	std::string fullPath = fullPathForFilename(filename);
-	FILE *file = fopen(fullPath.c_str(), mode.c_str());
-	if (!file) return nullptr;
-	return new DefaultFile(file);
-}
-
 /*
  * Use tinyxml2 to write plist files
  */
@@ -593,6 +555,44 @@ FileUtils::FileUtils()
 
 FileUtils::~FileUtils()
 {
+}
+
+class DefaultFile : public cocos2d::File {
+public:
+	DefaultFile(FILE *file) :
+		m_file(file) {}
+
+	~DefaultFile() {
+		if (m_file) {
+			fclose(m_file);
+			m_file = 0;
+		}
+	}
+
+	ssize_t read(void *buf, size_t count) {
+		return fread(buf, 1, count, m_file);
+	}
+	size_t write(const void *buf, size_t count) {
+		return fwrite(buf, 1, count, m_file);
+	}
+	off_t seek(off_t offset, int whence) {
+		size_t lastcur = ftell(m_file);
+		fseek(m_file, offset, whence);
+		return lastcur;
+	}
+	size_t tell() {
+		return ftell(m_file);
+	}
+private:
+	FILE	*m_file;
+};
+
+File* FileUtils::open(const std::string& filename, const std::string &mode) {
+	if (filename.empty()) return nullptr;
+	std::string fullPath = fullPathForFilename(filename);
+	FILE *file = fopen(fullPath.c_str(), mode.c_str());
+	if (!file) return nullptr;
+	return new DefaultFile(file);
 }
 
 bool FileUtils::writeStringToFile(const std::string& dataStr, const std::string& fullPath) const
