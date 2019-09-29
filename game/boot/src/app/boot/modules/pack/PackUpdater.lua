@@ -167,7 +167,7 @@ end
 function PackUpdater:checkUpdate(packname,packpath)
 	local rmpack = gameConfig.packs[packname]
 	if rmpack then
-		packpath = packpath or (PACKSPATH .. "/" .. packname .. PACK.FORMAT)
+		packpath = packpath or (PACKSPATH .. packname .. PACK.FORMAT)
 		local lcvers = fileMgr:lookPackVersion(packpath) 
 		if rmpack.verscode > lcvers then	-- 远程版本号 > 本地版本号
 			local compsize = rmpack.complete.size
