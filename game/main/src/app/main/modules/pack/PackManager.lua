@@ -57,7 +57,7 @@ function PackManager:releasePack(packname)
 		pack.loader:onRelease()
         fileMgr:releaseFilePack(packname)
 		PACK.LOADED[packname] = nil
-		utils.remove_module("app." .. packname .. ".[.]*")
+		utils.remove_module("^app[.]" .. packname .. "[.].*$")
 		logMgr:info(C_LOGTAG, "RELEASED PACK { name=%s, version=%s }", pack.name, utils.get_version_name(pack.version))
         self._identify = os.time()
     end
