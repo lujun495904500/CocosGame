@@ -44,7 +44,7 @@ function BootScene:setupBoot()
 	uiMgr:attach(self)
 
 	-- 添加控制层
-	if not device.IS_WINDOWS then
+	if not device.IS_DESKTOP then
 		ctrlMgr:attachGamePad(self)
 	end
 
