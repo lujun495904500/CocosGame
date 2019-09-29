@@ -128,6 +128,10 @@ std::string Application::getVersion()
     return JniHelper::callStaticStringMethod(helperClassName, "getVersion");
 }
 
+int Application::getVersionCode() {
+	return JniHelper::callStaticIntMethod(helperClassName, "getVersionCode");
+}
+
 bool Application::openURL(const std::string &url)
 {
     return JniHelper::callStaticBooleanMethod(helperClassName, "openURL", url);
