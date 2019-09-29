@@ -5,6 +5,7 @@ from toolkits import tools
 
 CURPATH = os.path.split(os.path.realpath(__file__))[0]
 LOCALCONFIG = "localconfig.json"
+RESVERSION = "resversion.json"
 
 # 构建发布
 def build():
@@ -24,6 +25,7 @@ def build():
 		os.makedirs(tempdir)
 	
 	playpacks = []
+	resversion = {}
 	
 	# 搜索剧本依赖与所属包
 	localconfig = config["publish"]["localconfig"]
@@ -42,13 +44,23 @@ def build():
 				addplay(play["prefix"])
 	for pname in config["publish"]["preplays"]:
 		addplay(pname)
-	tools.write_json(localconfig,tempdir + "/" + LOCALCONFIG,True)
+	tools.write_json(localconfig,tempdir + "/" + LOCALCONFIG,config['debug'])
 	cryptoConfig.do_crypto("E",tempdir + "/" + LOCALCONFIG,configdir + "/" + LOCALCONFIG)
 	
 	# 生成pack目录
 	allpacks = config["publish"]["basepacks"] + playpacks
 	for pack in allpacks:
 		shutil.copyfile(compackdir + "/" + pack + ".pack", pubpackdir + "/" + pack + ".pack")
+		packvers = 0
+		with open(compackdir + "/" + pack + ".pack","rb") as f:
+			packvers = tools.getLongValue(f.read(4))
+		resversion[pack] = packvers
+		
+	# 生成资源版本文件
+	with open(compackdir + "/boot.pack","rb") as f:
+		packvers = tools.getLongValue(f.read(4))
+	resversion['boot'] = packvers
+	tools.write_json(resversion,configdir + "/" + RESVERSION, config['debug'])
 	
 if __name__ == "__main__":
 	try:
