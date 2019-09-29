@@ -91,6 +91,11 @@ public:
      */
     virtual std::string getVersion() override;
 
+	/**
+	@brief  获得安卓VersionCode
+	*/
+	virtual int getVersionCode();
+
     /**
      @brief Open url in default browser
      @param String with url to open.
