@@ -32,8 +32,36 @@
 
 namespace cocos2d { namespace experimental {
 
+    OSStatus AudioFileReadProc(void *inClientData, SInt64 inPosition,
+                               UInt32 requestCount, void * buffer, UInt32 * actualCount){
+        File *afile = (File*)inClientData;
+        afile->seek(inPosition, SEEK_SET);
+        size_t readc = afile->read(buffer, requestCount);
+        *actualCount = (UInt32)readc;
+        return 0;
+    }
+    
+    OSStatus AudioFileWriteProc(void *inClientData,SInt64 inPosition,
+                                UInt32 requestCount, const void *buffer,  UInt32 * actualCount){
+        return -1;
+    }
+    
+    SInt64 AudioFileGetSizeProc(void *inClientData){
+        File *afile = (File*)inClientData;
+        SInt64 curpos = afile->tell();
+        afile->seek(0, SEEK_END);
+        SInt64 retsize = afile->tell();
+        afile->seek(curpos, SEEK_SET);
+        return retsize;
+    }
+    OSStatus AudioFileSetSizeProc(void *inClientData,SInt64 inSize){
+        return -1;
+    }
+
     AudioDecoder::AudioDecoder()
     : _isOpened(false)
+    , _audfile(nullptr)
+    , _audid(nullptr)
     , _extRef(nullptr)
     , _totalFrames(0)
     , _bytesPerFrame(0)
@@ -51,17 +79,24 @@ namespace cocos2d { namespace experimental {
     bool AudioDecoder::open(const char* path)
     {
         bool ret = false;
-        CFURLRef fileURL = nil;
+        //CFURLRef fileURL = nil;
         do
         {
             BREAK_IF_ERR_LOG(path == nullptr || strlen(path) == 0, "Invalid path!");
-
+            
+            /*
             NSString *fileFullPath = [[NSString alloc] initWithCString:path encoding:NSUTF8StringEncoding];
             fileURL = (CFURLRef)[[NSURL alloc] initFileURLWithPath:fileFullPath];
             [fileFullPath release];
             BREAK_IF_ERR_LOG(fileURL == nil, "Converting path to CFURLRef failed!");
-
-            OSStatus status = ExtAudioFileOpenURL(fileURL, &_extRef);
+            */
+            _audfile = FileUtils::getInstance()->open(path, "rb");
+            BREAK_IF_ERR_LOG(_audfile == nullptr, "FileUtils file not found : %s", path);
+            
+            OSStatus status = AudioFileOpenWithCallbacks(_audfile, &AudioFileReadProc, &AudioFileWriteProc, &AudioFileGetSizeProc, &AudioFileSetSizeProc, 0, &_audid);
+            BREAK_IF_ERR_LOG(status != noErr, "AudioFileOpenWithCallbacks FAILED, Error = %d", status);
+            
+            status = ExtAudioFileWrapAudioFileID(_audid, false, &_extRef);
             BREAK_IF_ERR_LOG(status != noErr, "ExtAudioFileOpenURL FAILED, Error = %d", status);
 
             AudioStreamBasicDescription	fileFormat;
@@ -102,10 +137,12 @@ namespace cocos2d { namespace experimental {
 
             ret = true;
         } while (false);
-
+        
+        /*
         if (fileURL != nil)
             CFRelease(fileURL);
-
+        */
+        
         if (!ret)
         {
             close();
@@ -125,6 +162,14 @@ namespace cocos2d { namespace experimental {
             _bytesPerFrame = 0;
             _sampleRate = 0;
             _channelCount = 0;
+        }
+        if (_audid != nullptr) {
+            AudioFileClose(_audid);
+            _audid = nullptr;
+        }
+        if (_audfile != nullptr) {
+            FileUtils::getInstance()->close(_audfile);
+            _audfile = nullptr;
         }
     }
 
