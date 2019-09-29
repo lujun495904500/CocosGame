@@ -43,7 +43,7 @@
 #include "platform/mac/PlayerMac.h"
 #include "AppEvent.h"
 #include "AppLang.h"
-
+#include "L/FileManager.h"
 
 #if (GLFW_VERSION_MAJOR >= 3) && (GLFW_VERSION_MINOR >= 1)
 #define PLAYER_SUPPORT_DROP 1
@@ -170,7 +170,7 @@ static void glfwDropFunc(GLFWwindow *window, int count, const char **files)
     }
 
     // set project directory as search root path
-    FileUtils::getInstance()->setDefaultResourceRootPath(tmpConfig.getProjectDir());
+    L::FileManager::getInstance()->getNativeFileUtils()->setDefaultResourceRootPath(tmpConfig.getProjectDir());
 
     // parse config.json
     auto parser = ConfigParser::getInstance();
