@@ -214,9 +214,9 @@ void FileUtilsApple::setBundle(void* bundle) {
 
 #pragma mark - FileUtils
 
-/*
 static NSFileManager* s_fileManager = [NSFileManager defaultManager];
 
+/*
 FileUtils* FileUtils::getInstance()
 {
     if (s_sharedFileUtils == nullptr)
