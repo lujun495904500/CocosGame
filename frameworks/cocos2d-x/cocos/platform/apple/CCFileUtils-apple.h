@@ -58,7 +58,7 @@ public:
 
     virtual ValueVector getValueVectorFromFile(const std::string& filename) const override;
 #if CC_FILEUTILS_APPLE_ENABLE_OBJC
-    void setBundle(NSBundle* bundle);
+    void setBundle(void* bundle);
 #endif
     
     virtual bool createDirectory(const std::string& path) const override;
