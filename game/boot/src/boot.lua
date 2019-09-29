@@ -31,14 +31,18 @@ elseif device.IS_ANDROID then
 	LOCALCONFIG = "~/assets/localconfig.json"
 	PACKSPATH = fileMgr:getWritablePath() .. "/packs"
 	BOOTPACK = fileMgr:getWritablePath() .. "/boot.pack"
-	ANDROIDCONF = fileMgr:getWritablePath() .. "/config.json"	-- 安卓配置文件
+	UNZIPCONF = fileMgr:getWritablePath() .. "/unzipconfig.json"	-- 安卓解压配置
+	APKRESVERS = "~/assets/resversion.json"							-- APK资源版本
 end
 
 logMgr:info(C_LOGTAG, "local config file : %s", LOCALCONFIG)
 logMgr:info(C_LOGTAG, "resource pack path : %s", PACKSPATH)
 logMgr:info(C_LOGTAG, "boot pack file : %s", BOOTPACK)
-if ANDROIDCONF then
-	logMgr:info(C_LOGTAG, "android config file : %s", ANDROIDCONF)
+if UNZIPCONF then
+	logMgr:info(C_LOGTAG, "unzip config file : %s", UNZIPCONF)
+end
+if APKRESVERS then
+	logMgr:info(C_LOGTAG, "apk resource version : %s", APKRESVERS)
 end
 
 ------------------------------UpdateScene--------------------------------
@@ -104,21 +108,34 @@ function UpdateScene:beginUpdate()
 
 	-- 解压安卓资源包,如果未解包过或者安装新APK
 	if device.IS_ANDROID then
-		local resconf = {}
-		if fileMgr:isFileExist(ANDROIDCONF) then 
-			resconf = cjson.decode(fileMgr:getDataFromFile(ANDROIDCONF))
+		local unzipconf = {}
+		if fileMgr:isFileExist(UNZIPCONF) then 
+			unzipconf = cjson.decode(fileMgr:getDataFromFile(UNZIPCONF))
 		end
-		local version = cc.Application:getInstance():getVersion()
-		logMgr:info(C_LOGTAG, "android resources version : %s", resconf.packvers or "")
-		logMgr:info(C_LOGTAG, "android application version : %s", version or "")
-		if resconf.packvers ~= version then
+		local version = app:getVersionCode()
+		logMgr:info(C_LOGTAG, "android resources version : %d", unzipconf.packvers or 0)
+		logMgr:info(C_LOGTAG, "android application version : %d", version or 0)
+		if unzipconf.packvers ~= version then
 			self:setUpdateText(self:getText("UNZIP_ASSETS"))
-			if utils.unzip(utils.getAssetsPath(),"assets/packs/",PACKSPATH) then
-				resconf.packvers = version
-				fileMgr:writeStringToFile(cjson.encode(resconf),ANDROIDCONF)
-			else
-				error("android resources unzip failure")
+			local apkresconf = {}
+			if fileMgr:isFileExist(APKRESVERS) then 
+				apkresconf = cjson.decode(fileMgr:getDataFromFile(APKRESVERS))
 			end
+			for pname, apkpver in pairs(apkresconf) do
+				if pname ~= "boot" then
+					if fileMgr:lookPackVersion(PACKSPATH .. "/" .. pname .. ".pack") < apkpver then
+						local unzipfile = "assets/packs/" .. pname .. ".pack"
+						local destfile = PACKSPATH .. "/" .. pname .. ".pack"
+						if utils.unzip(utils.getAssetsPath(), unzipfile, destfile) then
+							logMgr:info(C_LOGTAG, "unzip %s -> %s", unzipfile, destfile)
+						else
+							error("android resources unzip failure : " .. unzipfile)
+						end
+					end
+				end
+			end
+			unzipconf.packvers = version
+			fileMgr:writeStringToFile(cjson.encode(unzipconf),UNZIPCONF)
 			self:setUpdateText(self:getText("UNZIP_ASSETS_END"))
 		end
 	end
