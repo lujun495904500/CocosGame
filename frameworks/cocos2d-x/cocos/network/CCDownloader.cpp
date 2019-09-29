@@ -24,6 +24,7 @@
  ****************************************************************************/
 
 #include "network/CCDownloader.h"
+#include "L/FileManager.h"
 
 // include platform specific implement class
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_MAC || CC_TARGET_PLATFORM == CC_PLATFORM_IOS)
@@ -155,7 +156,7 @@ namespace cocos2d { namespace network {
         do
         {
             task_->requestURL    = srcUrl;
-            task_->storagePath   = storagePath;
+            task_->storagePath   = L::FileManager::getInstance()->removeNativeFlag(storagePath);
             task_->identifier    = identifier;
             if (0 == srcUrl.length() || 0 == storagePath.length())
             {
