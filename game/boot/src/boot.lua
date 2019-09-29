@@ -2,6 +2,7 @@ local reboot = ...
 local C_LOGTAG = "boot"
 
 cc.FileUtils:getInstance():setPopupNotify(false)
+local app = cc.Application:getInstance()
 
 if cc.enable_global then
 	cc.enable_global(true)
