@@ -52,11 +52,6 @@ public:
     virtual std::string getWritablePath() const override;
     virtual std::string getFullPathForFilenameWithinDirectory(const std::string& directory, const std::string& filename) const override;
 
-    virtual ValueMap getValueMapFromFile(const std::string& filename) const override;
-    virtual ValueMap getValueMapFromData(const char* filedata, int filesize) const override;
-    virtual bool writeToFile(const ValueMap& dict, const std::string& fullPath) const override;
-
-    virtual ValueVector getValueVectorFromFile(const std::string& filename) const override;
 #if CC_FILEUTILS_APPLE_ENABLE_OBJC
     void setBundle(void* bundle);
 #endif
