@@ -36,7 +36,7 @@ function ArchiveManager:ctor()
 	self._info = nil		 -- 存档信息
 	self._slot = nil		 -- 存档插槽
 
-	self._savepath = fileUtils:getWritablePath() .. "/" .. DIRECTORY.ARCHIVE .. "/"
+	self._savepath = fileUtils:getWritablePath() .. DIRECTORY.ARCHIVE .. "/"
 	fileUtils:createDirectory(self._savepath)
 end
 
