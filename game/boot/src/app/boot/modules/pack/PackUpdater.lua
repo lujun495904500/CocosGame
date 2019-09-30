@@ -23,9 +23,9 @@ end
 
 -- 构造函数
 function PackUpdater:ctor()
-	self._downpath = fileMgr:getWritablePath() .. "/" .. DIRECTORY.DOWNLOAD .. "/"
+	self._downpath = fileMgr:getWritablePath() .. DIRECTORY.DOWNLOAD .. "/"
 	self._downinfo = self._downpath .. "/" .. C_DOWNINFO
-	self._temppath = fileMgr:getWritablePath() .. "/" .. DIRECTORY.TEMP .. "/"
+	self._temppath = fileMgr:getWritablePath() .. DIRECTORY.TEMP .. "/"
 	fileMgr:removeDirectory(self._temppath)
 	fileMgr:createDirectory(self._temppath)
 end
