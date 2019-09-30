@@ -27,10 +27,6 @@
 #ifndef _DIVSUFSORT_PRIVATE_H
 #define _DIVSUFSORT_PRIVATE_H 1
 
-#ifdef __cplusplus
-extern "C" {
-#endif /* __cplusplus */
-
 #if HAVE_CONFIG_H
 # include "config.h"
 #endif
@@ -199,9 +195,5 @@ sssort(const sauchar_t *Td, const saidx_t *PA,
 void
 trsort(saidx_t *ISA, saidx_t *SA, saidx_t n, saidx_t depth);
 
-
-#ifdef __cplusplus
-} /* extern "C" */
-#endif /* __cplusplus */
 
 #endif /* _DIVSUFSORT_PRIVATE_H */
