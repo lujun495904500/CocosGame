@@ -30,10 +30,6 @@
 #define HPatch_patch_h
 #include "patch_types.h"
 
-#ifdef __cplusplus
-extern "C" {
-#endif
-
 //  all patch*() functions do not allocate memory
 
 //generate newData by patch(oldData + diff)
@@ -145,9 +141,5 @@ void        hpatch_coverList_close(hpatch_TCoverList* coverList) {
                                    if ((coverList!=0)&&(coverList->ICovers)){
                                        coverList->ICovers->close(coverList->ICovers);
                                        hpatch_coverList_init(coverList); } }
-
-#ifdef __cplusplus
-}
-#endif
 
 #endif
