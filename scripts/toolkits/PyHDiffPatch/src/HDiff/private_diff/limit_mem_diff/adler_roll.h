@@ -33,10 +33,7 @@
 #ifndef adler_roll_h
 #define adler_roll_h
 #include <stddef.h> //for size_t
-#ifdef __cplusplus
-extern "C" {
-#endif
-    
+ 
 #ifndef adler_data_t
 #   define adler_data_t unsigned char
 #endif
@@ -111,7 +108,4 @@ uint64_t fast_adler64_by_combine(uint64_t adler_left,uint64_t adler_right,uint64
 
 #endif //_IS_NEED_ADLER64
 
-#ifdef __cplusplus
-}
-#endif
 #endif
