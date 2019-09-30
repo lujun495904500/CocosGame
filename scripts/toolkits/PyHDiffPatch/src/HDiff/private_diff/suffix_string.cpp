@@ -128,9 +128,9 @@ namespace {
     #ifdef _SA_SORTBY_DIVSUFSORT
         saint_t rt=-1;
         if (sizeof(TSAInt)==8)
-            rt=divsufsort64(src,(saidx64_t*)&out_sstring[0],(saidx64_t)size);
+            rt=::divsufsort64(src,(saidx64_t*)&out_sstring[0],(saidx64_t)size);
         else if (sizeof(TSAInt)==4)
-            rt=divsufsort(src,(saidx_t*)&out_sstring[0],(saidx_t)size);
+            rt=::divsufsort(src,(saidx_t*)&out_sstring[0],(saidx_t)size);
     #endif
        if (rt!=0)
             throw std::runtime_error("suffixString_create() error.");
