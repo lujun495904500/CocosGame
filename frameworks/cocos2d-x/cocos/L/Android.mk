@@ -7,7 +7,7 @@ LOCAL_ARM_MODE := arm
 LOCAL_MODULE_FILENAME := libcocosL
 
 LOCAL_SRC_FILES := \
-HPatch/patch.c \
+HPatch/patch.cpp \
 aeskeys.cpp \
 AntiAliasedScene.cpp \
 BufferReader.cpp \
