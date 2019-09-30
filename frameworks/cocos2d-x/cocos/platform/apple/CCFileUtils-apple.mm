@@ -215,7 +215,6 @@ void FileUtilsApple::setBundle(void* bundle) {
 #pragma mark - FileUtils
 
 static NSFileManager* s_fileManager = [NSFileManager defaultManager];
-
 /*
 FileUtils* FileUtils::getInstance()
 {
@@ -233,7 +232,6 @@ FileUtils* FileUtils::getInstance()
 }
 */
 
-
 std::string FileUtilsApple::getWritablePath() const
 {
     DECLARE_GUARD;
@@ -243,11 +241,15 @@ std::string FileUtilsApple::getWritablePath() const
     }
 
     // save to document folder
+#if CC_TARGET_PLATFORM == CC_PLATFORM_MAC
+    return "";
+#else
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *documentsDirectory = [paths objectAtIndex:0];
     std::string strRet = [documentsDirectory UTF8String];
     strRet.append("/");
     return strRet;
+#endif
 }
 
 bool FileUtilsApple::isFileExistInternal(const std::string& filePath) const
