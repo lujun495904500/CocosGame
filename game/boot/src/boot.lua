@@ -30,9 +30,9 @@ if device.IS_WINDOWS then
 	BOOTPACK = "~/boot.pack"									-- boot包路径
 elseif device.IS_ANDROID then
 	LOCALCONFIG = "~/assets/localconfig.json"
-	PACKSPATH = fileMgr:getWritablePath() .. "/packs/"
-	BOOTPACK = fileMgr:getWritablePath() .. "/boot.pack"
-	UNZIPCONF = fileMgr:getWritablePath() .. "/unzipconfig.json"	-- 安卓解压配置
+	PACKSPATH = fileMgr:getWritablePath() .. "packs/"
+	BOOTPACK = fileMgr:getWritablePath() .. "boot.pack"
+	UNZIPCONF = fileMgr:getWritablePath() .. "unzipconfig.json"	-- 安卓解压配置
 	APKRESVERS = "~/assets/resversion.json"							-- APK资源版本
 elseif device.IS_MAC then
 	LOCALCONFIG = "~/localconfig.json"							-- 本地配置
