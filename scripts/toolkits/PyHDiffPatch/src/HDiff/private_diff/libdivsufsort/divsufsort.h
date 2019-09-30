@@ -39,10 +39,6 @@
 #   endif
 #endif
 
-#ifdef __cplusplus
-extern "C" {
-#endif /* __cplusplus */
-
 #ifndef PRId32
 #   define PRId32 "d"
 #endif
@@ -186,9 +182,5 @@ sa_simplesearch(const sauchar_t *T, saidx_t Tsize,
                 const saidx_t *SA, saidx_t SAsize,
                 saint_t c, saidx_t *left);
 
-
-#ifdef __cplusplus
-} /* extern "C" */
-#endif /* __cplusplus */
 
 #endif /* _DIVSUFSORT_H */
