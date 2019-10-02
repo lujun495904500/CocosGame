@@ -428,6 +428,244 @@
 		566F016019B5EB0F00FCA620 /* CustomGUIReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 566F015D19B5EB0F00FCA620 /* CustomGUIReader.cpp */; };
 		566F016119B5EB0F00FCA620 /* CustomGUIReader.h in Headers */ = {isa = PBXBuildFile; fileRef = 566F015E19B5EB0F00FCA620 /* CustomGUIReader.h */; };
 		566F016219B5EB0F00FCA620 /* CustomGUIReader.h in Headers */ = {isa = PBXBuildFile; fileRef = 566F015E19B5EB0F00FCA620 /* CustomGUIReader.h */; };
+		777EFBC72342500D003724EA /* fpconv.c in Sources */ = {isa = PBXBuildFile; fileRef = 777EFBC12342500D003724EA /* fpconv.c */; };
+		777EFBC82342500D003724EA /* fpconv.c in Sources */ = {isa = PBXBuildFile; fileRef = 777EFBC12342500D003724EA /* fpconv.c */; };
+		777EFBC92342500D003724EA /* fpconv.h in Headers */ = {isa = PBXBuildFile; fileRef = 777EFBC22342500D003724EA /* fpconv.h */; };
+		777EFBCA2342500D003724EA /* fpconv.h in Headers */ = {isa = PBXBuildFile; fileRef = 777EFBC22342500D003724EA /* fpconv.h */; };
+		777EFBCB2342500D003724EA /* lua_cjson.c in Sources */ = {isa = PBXBuildFile; fileRef = 777EFBC32342500D003724EA /* lua_cjson.c */; };
+		777EFBCC2342500D003724EA /* lua_cjson.c in Sources */ = {isa = PBXBuildFile; fileRef = 777EFBC32342500D003724EA /* lua_cjson.c */; };
+		777EFBCD2342500D003724EA /* lua_cjson.h in Headers */ = {isa = PBXBuildFile; fileRef = 777EFBC42342500D003724EA /* lua_cjson.h */; };
+		777EFBCE2342500D003724EA /* lua_cjson.h in Headers */ = {isa = PBXBuildFile; fileRef = 777EFBC42342500D003724EA /* lua_cjson.h */; };
+		777EFBCF2342500D003724EA /* strbuf.c in Sources */ = {isa = PBXBuildFile; fileRef = 777EFBC52342500D003724EA /* strbuf.c */; };
+		777EFBD02342500D003724EA /* strbuf.c in Sources */ = {isa = PBXBuildFile; fileRef = 777EFBC52342500D003724EA /* strbuf.c */; };
+		777EFBD12342500D003724EA /* strbuf.h in Headers */ = {isa = PBXBuildFile; fileRef = 777EFBC62342500D003724EA /* strbuf.h */; };
+		777EFBD22342500D003724EA /* strbuf.h in Headers */ = {isa = PBXBuildFile; fileRef = 777EFBC62342500D003724EA /* strbuf.h */; };
+		777EFBEB23425017003724EA /* channel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 777EFBD423425016003724EA /* channel.cpp */; };
+		777EFBEC23425017003724EA /* channel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 777EFBD423425016003724EA /* channel.cpp */; };
+		777EFBED23425017003724EA /* channel.h in Headers */ = {isa = PBXBuildFile; fileRef = 777EFBD523425016003724EA /* channel.h */; };
+		777EFBEE23425017003724EA /* channel.h in Headers */ = {isa = PBXBuildFile; fileRef = 777EFBD523425016003724EA /* channel.h */; };
+		777EFBEF23425017003724EA /* function.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 777EFBD623425016003724EA /* function.cpp */; };
+		777EFBF023425017003724EA /* function.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 777EFBD623425016003724EA /* function.cpp */; };
+		777EFBF123425017003724EA /* function.h in Headers */ = {isa = PBXBuildFile; fileRef = 777EFBD723425016003724EA /* function.h */; };
+		777EFBF223425017003724EA /* function.h in Headers */ = {isa = PBXBuildFile; fileRef = 777EFBD723425016003724EA /* function.h */; };
+		777EFBF323425017003724EA /* garbage-collector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 777EFBD823425016003724EA /* garbage-collector.cpp */; };
+		777EFBF423425017003724EA /* garbage-collector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 777EFBD823425016003724EA /* garbage-collector.cpp */; };
+		777EFBF523425017003724EA /* garbage-collector.h in Headers */ = {isa = PBXBuildFile; fileRef = 777EFBD923425016003724EA /* garbage-collector.h */; };
+		777EFBF623425017003724EA /* garbage-collector.h in Headers */ = {isa = PBXBuildFile; fileRef = 777EFBD923425016003724EA /* garbage-collector.h */; };
+		777EFBF723425017003724EA /* gc-data.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 777EFBDA23425016003724EA /* gc-data.cpp */; };
+		777EFBF823425017003724EA /* gc-data.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 777EFBDA23425016003724EA /* gc-data.cpp */; };
+		777EFBF923425017003724EA /* gc-data.h in Headers */ = {isa = PBXBuildFile; fileRef = 777EFBDB23425016003724EA /* gc-data.h */; };
+		777EFBFA23425017003724EA /* gc-data.h in Headers */ = {isa = PBXBuildFile; fileRef = 777EFBDB23425016003724EA /* gc-data.h */; };
+		777EFBFB23425017003724EA /* gc-object.h in Headers */ = {isa = PBXBuildFile; fileRef = 777EFBDC23425016003724EA /* gc-object.h */; };
+		777EFBFC23425017003724EA /* gc-object.h in Headers */ = {isa = PBXBuildFile; fileRef = 777EFBDC23425016003724EA /* gc-object.h */; };
+		777EFBFD23425017003724EA /* logger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 777EFBDD23425016003724EA /* logger.cpp */; };
+		777EFBFE23425017003724EA /* logger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 777EFBDD23425016003724EA /* logger.cpp */; };
+		777EFBFF23425017003724EA /* logger.h in Headers */ = {isa = PBXBuildFile; fileRef = 777EFBDE23425016003724EA /* logger.h */; };
+		777EFC0023425017003724EA /* logger.h in Headers */ = {isa = PBXBuildFile; fileRef = 777EFBDE23425016003724EA /* logger.h */; };
+		777EFC0123425017003724EA /* lua-helpers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 777EFBDF23425016003724EA /* lua-helpers.cpp */; };
+		777EFC0223425017003724EA /* lua-helpers.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 777EFBDF23425016003724EA /* lua-helpers.cpp */; };
+		777EFC0323425017003724EA /* lua-helpers.h in Headers */ = {isa = PBXBuildFile; fileRef = 777EFBE023425016003724EA /* lua-helpers.h */; };
+		777EFC0423425017003724EA /* lua-helpers.h in Headers */ = {isa = PBXBuildFile; fileRef = 777EFBE023425016003724EA /* lua-helpers.h */; };
+		777EFC0523425017003724EA /* lua-module.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 777EFBE123425016003724EA /* lua-module.cpp */; };
+		777EFC0623425017003724EA /* lua-module.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 777EFBE123425016003724EA /* lua-module.cpp */; };
+		777EFC0723425017003724EA /* notifier.h in Headers */ = {isa = PBXBuildFile; fileRef = 777EFBE223425016003724EA /* notifier.h */; };
+		777EFC0823425017003724EA /* notifier.h in Headers */ = {isa = PBXBuildFile; fileRef = 777EFBE223425016003724EA /* notifier.h */; };
+		777EFC0923425017003724EA /* shared-table.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 777EFBE323425016003724EA /* shared-table.cpp */; };
+		777EFC0A23425017003724EA /* shared-table.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 777EFBE323425016003724EA /* shared-table.cpp */; };
+		777EFC0B23425017003724EA /* shared-table.h in Headers */ = {isa = PBXBuildFile; fileRef = 777EFBE423425016003724EA /* shared-table.h */; };
+		777EFC0C23425017003724EA /* shared-table.h in Headers */ = {isa = PBXBuildFile; fileRef = 777EFBE423425016003724EA /* shared-table.h */; };
+		777EFC0D23425017003724EA /* spin-mutex.h in Headers */ = {isa = PBXBuildFile; fileRef = 777EFBE523425016003724EA /* spin-mutex.h */; };
+		777EFC0E23425017003724EA /* spin-mutex.h in Headers */ = {isa = PBXBuildFile; fileRef = 777EFBE523425016003724EA /* spin-mutex.h */; };
+		777EFC0F23425017003724EA /* stored-object.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 777EFBE623425016003724EA /* stored-object.cpp */; };
+		777EFC1023425017003724EA /* stored-object.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 777EFBE623425016003724EA /* stored-object.cpp */; };
+		777EFC1123425017003724EA /* stored-object.h in Headers */ = {isa = PBXBuildFile; fileRef = 777EFBE723425016003724EA /* stored-object.h */; };
+		777EFC1223425017003724EA /* stored-object.h in Headers */ = {isa = PBXBuildFile; fileRef = 777EFBE723425016003724EA /* stored-object.h */; };
+		777EFC1323425017003724EA /* threading.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 777EFBE823425016003724EA /* threading.cpp */; };
+		777EFC1423425017003724EA /* threading.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 777EFBE823425016003724EA /* threading.cpp */; };
+		777EFC1523425017003724EA /* threading.h in Headers */ = {isa = PBXBuildFile; fileRef = 777EFBE923425016003724EA /* threading.h */; };
+		777EFC1623425017003724EA /* threading.h in Headers */ = {isa = PBXBuildFile; fileRef = 777EFBE923425016003724EA /* threading.h */; };
+		777EFC1723425017003724EA /* utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 777EFBEA23425016003724EA /* utils.h */; };
+		777EFC1823425017003724EA /* utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 777EFBEA23425016003724EA /* utils.h */; };
+		777EFC1C23425021003724EA /* lua_i64.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 777EFC1A23425021003724EA /* lua_i64.cpp */; };
+		777EFC1D23425021003724EA /* lua_i64.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 777EFC1A23425021003724EA /* lua_i64.cpp */; };
+		777EFC1E23425021003724EA /* lua_i64.h in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC1B23425021003724EA /* lua_i64.h */; };
+		777EFC1F23425021003724EA /* lua_i64.h in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC1B23425021003724EA /* lua_i64.h */; };
+		777EFC6E23425037003724EA /* as_args.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC2223425037003724EA /* as_args.hpp */; };
+		777EFC6F23425037003724EA /* as_args.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC2223425037003724EA /* as_args.hpp */; };
+		777EFC7023425037003724EA /* bind_traits.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC2323425037003724EA /* bind_traits.hpp */; };
+		777EFC7123425037003724EA /* bind_traits.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC2323425037003724EA /* bind_traits.hpp */; };
+		777EFC7223425037003724EA /* call.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC2423425037003724EA /* call.hpp */; };
+		777EFC7323425037003724EA /* call.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC2423425037003724EA /* call.hpp */; };
+		777EFC7423425037003724EA /* 5.0.0.h in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC2623425037003724EA /* 5.0.0.h */; };
+		777EFC7523425037003724EA /* 5.0.0.h in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC2623425037003724EA /* 5.0.0.h */; };
+		777EFC7623425037003724EA /* 5.1.0.h in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC2723425037003724EA /* 5.1.0.h */; };
+		777EFC7723425037003724EA /* 5.1.0.h in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC2723425037003724EA /* 5.1.0.h */; };
+		777EFC7823425037003724EA /* 5.2.0.h in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC2823425037003724EA /* 5.2.0.h */; };
+		777EFC7923425037003724EA /* 5.2.0.h in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC2823425037003724EA /* 5.2.0.h */; };
+		777EFC7A23425037003724EA /* 5.x.x.h in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC2923425037003724EA /* 5.x.x.h */; };
+		777EFC7B23425037003724EA /* 5.x.x.h in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC2923425037003724EA /* 5.x.x.h */; };
+		777EFC7C23425037003724EA /* version.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC2B23425037003724EA /* version.hpp */; };
+		777EFC7D23425037003724EA /* version.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC2B23425037003724EA /* version.hpp */; };
+		777EFC7E23425037003724EA /* compatibility.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC2C23425037003724EA /* compatibility.hpp */; };
+		777EFC7F23425037003724EA /* compatibility.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC2C23425037003724EA /* compatibility.hpp */; };
+		777EFC8023425037003724EA /* container_traits.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC2D23425037003724EA /* container_traits.hpp */; };
+		777EFC8123425037003724EA /* container_traits.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC2D23425037003724EA /* container_traits.hpp */; };
+		777EFC8223425037003724EA /* container_usertype_metatable.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC2E23425037003724EA /* container_usertype_metatable.hpp */; };
+		777EFC8323425037003724EA /* container_usertype_metatable.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC2E23425037003724EA /* container_usertype_metatable.hpp */; };
+		777EFC8423425037003724EA /* coroutine.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC2F23425037003724EA /* coroutine.hpp */; };
+		777EFC8523425037003724EA /* coroutine.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC2F23425037003724EA /* coroutine.hpp */; };
+		777EFC8623425037003724EA /* debug.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC3023425037003724EA /* debug.hpp */; };
+		777EFC8723425037003724EA /* debug.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC3023425037003724EA /* debug.hpp */; };
+		777EFC8823425037003724EA /* demangle.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC3123425037003724EA /* demangle.hpp */; };
+		777EFC8923425037003724EA /* demangle.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC3123425037003724EA /* demangle.hpp */; };
+		777EFC8A23425037003724EA /* deprecate.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC3223425037003724EA /* deprecate.hpp */; };
+		777EFC8B23425037003724EA /* deprecate.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC3223425037003724EA /* deprecate.hpp */; };
+		777EFC8C23425037003724EA /* environment.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC3323425037003724EA /* environment.hpp */; };
+		777EFC8D23425037003724EA /* environment.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC3323425037003724EA /* environment.hpp */; };
+		777EFC8E23425037003724EA /* error.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC3423425037003724EA /* error.hpp */; };
+		777EFC8F23425037003724EA /* error.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC3423425037003724EA /* error.hpp */; };
+		777EFC9023425037003724EA /* feature_test.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC3523425037003724EA /* feature_test.hpp */; };
+		777EFC9123425037003724EA /* feature_test.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC3523425037003724EA /* feature_test.hpp */; };
+		777EFC9223425037003724EA /* function.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC3623425037003724EA /* function.hpp */; };
+		777EFC9323425037003724EA /* function.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC3623425037003724EA /* function.hpp */; };
+		777EFC9423425037003724EA /* function_result.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC3723425037003724EA /* function_result.hpp */; };
+		777EFC9523425037003724EA /* function_result.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC3723425037003724EA /* function_result.hpp */; };
+		777EFC9623425037003724EA /* function_types.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC3823425037003724EA /* function_types.hpp */; };
+		777EFC9723425037003724EA /* function_types.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC3823425037003724EA /* function_types.hpp */; };
+		777EFC9823425037003724EA /* function_types_core.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC3923425037003724EA /* function_types_core.hpp */; };
+		777EFC9923425037003724EA /* function_types_core.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC3923425037003724EA /* function_types_core.hpp */; };
+		777EFC9A23425037003724EA /* function_types_overloaded.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC3A23425037003724EA /* function_types_overloaded.hpp */; };
+		777EFC9B23425037003724EA /* function_types_overloaded.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC3A23425037003724EA /* function_types_overloaded.hpp */; };
+		777EFC9C23425037003724EA /* function_types_stateful.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC3B23425037003724EA /* function_types_stateful.hpp */; };
+		777EFC9D23425037003724EA /* function_types_stateful.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC3B23425037003724EA /* function_types_stateful.hpp */; };
+		777EFC9E23425037003724EA /* function_types_stateless.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC3C23425037003724EA /* function_types_stateless.hpp */; };
+		777EFC9F23425037003724EA /* function_types_stateless.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC3C23425037003724EA /* function_types_stateless.hpp */; };
+		777EFCA023425037003724EA /* function_types_templated.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC3D23425037003724EA /* function_types_templated.hpp */; };
+		777EFCA123425037003724EA /* function_types_templated.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC3D23425037003724EA /* function_types_templated.hpp */; };
+		777EFCA223425037003724EA /* in_place.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC3E23425037003724EA /* in_place.hpp */; };
+		777EFCA323425037003724EA /* in_place.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC3E23425037003724EA /* in_place.hpp */; };
+		777EFCA423425037003724EA /* inheritance.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC3F23425037003724EA /* inheritance.hpp */; };
+		777EFCA523425037003724EA /* inheritance.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC3F23425037003724EA /* inheritance.hpp */; };
+		777EFCA623425037003724EA /* load_result.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC4023425037003724EA /* load_result.hpp */; };
+		777EFCA723425037003724EA /* load_result.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC4023425037003724EA /* load_result.hpp */; };
+		777EFCA823425037003724EA /* object.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC4123425037003724EA /* object.hpp */; };
+		777EFCA923425037003724EA /* object.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC4123425037003724EA /* object.hpp */; };
+		777EFCAA23425037003724EA /* object_base.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC4223425037003724EA /* object_base.hpp */; };
+		777EFCAB23425037003724EA /* object_base.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC4223425037003724EA /* object_base.hpp */; };
+		777EFCAC23425037003724EA /* optional.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC4323425037003724EA /* optional.hpp */; };
+		777EFCAD23425037003724EA /* optional.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC4323425037003724EA /* optional.hpp */; };
+		777EFCAE23425037003724EA /* optional_implementation.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC4423425037003724EA /* optional_implementation.hpp */; };
+		777EFCAF23425037003724EA /* optional_implementation.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC4423425037003724EA /* optional_implementation.hpp */; };
+		777EFCB023425037003724EA /* overload.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC4523425037003724EA /* overload.hpp */; };
+		777EFCB123425037003724EA /* overload.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC4523425037003724EA /* overload.hpp */; };
+		777EFCB223425037003724EA /* property.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC4623425037003724EA /* property.hpp */; };
+		777EFCB323425037003724EA /* property.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC4623425037003724EA /* property.hpp */; };
+		777EFCB423425037003724EA /* protect.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC4723425037003724EA /* protect.hpp */; };
+		777EFCB523425037003724EA /* protect.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC4723425037003724EA /* protect.hpp */; };
+		777EFCB623425037003724EA /* protected_function.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC4823425037003724EA /* protected_function.hpp */; };
+		777EFCB723425037003724EA /* protected_function.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC4823425037003724EA /* protected_function.hpp */; };
+		777EFCB823425037003724EA /* protected_function_result.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC4923425037003724EA /* protected_function_result.hpp */; };
+		777EFCB923425037003724EA /* protected_function_result.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC4923425037003724EA /* protected_function_result.hpp */; };
+		777EFCBA23425037003724EA /* proxy.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC4A23425037003724EA /* proxy.hpp */; };
+		777EFCBB23425037003724EA /* proxy.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC4A23425037003724EA /* proxy.hpp */; };
+		777EFCBC23425037003724EA /* proxy_base.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC4B23425037003724EA /* proxy_base.hpp */; };
+		777EFCBD23425037003724EA /* proxy_base.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC4B23425037003724EA /* proxy_base.hpp */; };
+		777EFCBE23425037003724EA /* raii.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC4C23425037003724EA /* raii.hpp */; };
+		777EFCBF23425037003724EA /* raii.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC4C23425037003724EA /* raii.hpp */; };
+		777EFCC023425037003724EA /* reference.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC4D23425037003724EA /* reference.hpp */; };
+		777EFCC123425037003724EA /* reference.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC4D23425037003724EA /* reference.hpp */; };
+		777EFCC223425037003724EA /* resolve.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC4E23425037003724EA /* resolve.hpp */; };
+		777EFCC323425037003724EA /* resolve.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC4E23425037003724EA /* resolve.hpp */; };
+		777EFCC423425037003724EA /* simple_usertype_metatable.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC4F23425037003724EA /* simple_usertype_metatable.hpp */; };
+		777EFCC523425037003724EA /* simple_usertype_metatable.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC4F23425037003724EA /* simple_usertype_metatable.hpp */; };
+		777EFCC623425037003724EA /* stack.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC5023425037003724EA /* stack.hpp */; };
+		777EFCC723425037003724EA /* stack.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC5023425037003724EA /* stack.hpp */; };
+		777EFCC823425037003724EA /* stack_check.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC5123425037003724EA /* stack_check.hpp */; };
+		777EFCC923425037003724EA /* stack_check.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC5123425037003724EA /* stack_check.hpp */; };
+		777EFCCA23425037003724EA /* stack_check_get.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC5223425037003724EA /* stack_check_get.hpp */; };
+		777EFCCB23425037003724EA /* stack_check_get.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC5223425037003724EA /* stack_check_get.hpp */; };
+		777EFCCC23425037003724EA /* stack_core.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC5323425037003724EA /* stack_core.hpp */; };
+		777EFCCD23425037003724EA /* stack_core.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC5323425037003724EA /* stack_core.hpp */; };
+		777EFCCE23425037003724EA /* stack_field.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC5423425037003724EA /* stack_field.hpp */; };
+		777EFCCF23425037003724EA /* stack_field.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC5423425037003724EA /* stack_field.hpp */; };
+		777EFCD023425037003724EA /* stack_get.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC5523425037003724EA /* stack_get.hpp */; };
+		777EFCD123425037003724EA /* stack_get.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC5523425037003724EA /* stack_get.hpp */; };
+		777EFCD223425037003724EA /* stack_guard.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC5623425037003724EA /* stack_guard.hpp */; };
+		777EFCD323425037003724EA /* stack_guard.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC5623425037003724EA /* stack_guard.hpp */; };
+		777EFCD423425037003724EA /* stack_pop.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC5723425037003724EA /* stack_pop.hpp */; };
+		777EFCD523425037003724EA /* stack_pop.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC5723425037003724EA /* stack_pop.hpp */; };
+		777EFCD623425037003724EA /* stack_probe.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC5823425037003724EA /* stack_probe.hpp */; };
+		777EFCD723425037003724EA /* stack_probe.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC5823425037003724EA /* stack_probe.hpp */; };
+		777EFCD823425037003724EA /* stack_proxy.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC5923425037003724EA /* stack_proxy.hpp */; };
+		777EFCD923425037003724EA /* stack_proxy.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC5923425037003724EA /* stack_proxy.hpp */; };
+		777EFCDA23425037003724EA /* stack_push.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC5A23425037003724EA /* stack_push.hpp */; };
+		777EFCDB23425037003724EA /* stack_push.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC5A23425037003724EA /* stack_push.hpp */; };
+		777EFCDC23425037003724EA /* stack_reference.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC5B23425037003724EA /* stack_reference.hpp */; };
+		777EFCDD23425037003724EA /* stack_reference.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC5B23425037003724EA /* stack_reference.hpp */; };
+		777EFCDE23425037003724EA /* state.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC5C23425037003724EA /* state.hpp */; };
+		777EFCDF23425037003724EA /* state.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC5C23425037003724EA /* state.hpp */; };
+		777EFCE023425037003724EA /* state_view.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC5D23425037003724EA /* state_view.hpp */; };
+		777EFCE123425037003724EA /* state_view.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC5D23425037003724EA /* state_view.hpp */; };
+		777EFCE223425037003724EA /* string_shim.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC5E23425037003724EA /* string_shim.hpp */; };
+		777EFCE323425037003724EA /* string_shim.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC5E23425037003724EA /* string_shim.hpp */; };
+		777EFCE423425037003724EA /* table.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC5F23425037003724EA /* table.hpp */; };
+		777EFCE523425037003724EA /* table.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC5F23425037003724EA /* table.hpp */; };
+		777EFCE623425037003724EA /* table_core.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC6023425037003724EA /* table_core.hpp */; };
+		777EFCE723425037003724EA /* table_core.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC6023425037003724EA /* table_core.hpp */; };
+		777EFCE823425037003724EA /* table_iterator.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC6123425037003724EA /* table_iterator.hpp */; };
+		777EFCE923425037003724EA /* table_iterator.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC6123425037003724EA /* table_iterator.hpp */; };
+		777EFCEA23425037003724EA /* thread.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC6223425037003724EA /* thread.hpp */; };
+		777EFCEB23425037003724EA /* thread.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC6223425037003724EA /* thread.hpp */; };
+		777EFCEC23425037003724EA /* tie.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC6323425037003724EA /* tie.hpp */; };
+		777EFCED23425037003724EA /* tie.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC6323425037003724EA /* tie.hpp */; };
+		777EFCEE23425037003724EA /* traits.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC6423425037003724EA /* traits.hpp */; };
+		777EFCEF23425037003724EA /* traits.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC6423425037003724EA /* traits.hpp */; };
+		777EFCF023425037003724EA /* tuple.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC6523425037003724EA /* tuple.hpp */; };
+		777EFCF123425037003724EA /* tuple.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC6523425037003724EA /* tuple.hpp */; };
+		777EFCF223425037003724EA /* types.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC6623425037003724EA /* types.hpp */; };
+		777EFCF323425037003724EA /* types.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC6623425037003724EA /* types.hpp */; };
+		777EFCF423425037003724EA /* userdata.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC6723425037003724EA /* userdata.hpp */; };
+		777EFCF523425037003724EA /* userdata.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC6723425037003724EA /* userdata.hpp */; };
+		777EFCF623425037003724EA /* usertype.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC6823425037003724EA /* usertype.hpp */; };
+		777EFCF723425037003724EA /* usertype.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC6823425037003724EA /* usertype.hpp */; };
+		777EFCF823425037003724EA /* usertype_metatable.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC6923425037003724EA /* usertype_metatable.hpp */; };
+		777EFCF923425037003724EA /* usertype_metatable.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC6923425037003724EA /* usertype_metatable.hpp */; };
+		777EFCFA23425037003724EA /* usertype_traits.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC6A23425037003724EA /* usertype_traits.hpp */; };
+		777EFCFB23425037003724EA /* usertype_traits.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC6A23425037003724EA /* usertype_traits.hpp */; };
+		777EFCFC23425037003724EA /* variadic_args.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC6B23425037003724EA /* variadic_args.hpp */; };
+		777EFCFD23425037003724EA /* variadic_args.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC6B23425037003724EA /* variadic_args.hpp */; };
+		777EFCFE23425037003724EA /* wrapper.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC6C23425037003724EA /* wrapper.hpp */; };
+		777EFCFF23425037003724EA /* wrapper.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC6C23425037003724EA /* wrapper.hpp */; };
+		777EFD0023425037003724EA /* sol.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC6D23425037003724EA /* sol.hpp */; };
+		777EFD0123425037003724EA /* sol.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 777EFC6D23425037003724EA /* sol.hpp */; };
+		777EFD0523425041003724EA /* lua_struct.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 777EFD0323425041003724EA /* lua_struct.cpp */; };
+		777EFD0623425041003724EA /* lua_struct.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 777EFD0323425041003724EA /* lua_struct.cpp */; };
+		777EFD0723425041003724EA /* lua_struct.h in Headers */ = {isa = PBXBuildFile; fileRef = 777EFD0423425041003724EA /* lua_struct.h */; };
+		777EFD0823425041003724EA /* lua_struct.h in Headers */ = {isa = PBXBuildFile; fileRef = 777EFD0423425041003724EA /* lua_struct.h */; };
+		777EFD0C2342504D003724EA /* lutf8lib.c in Sources */ = {isa = PBXBuildFile; fileRef = 777EFD0A2342504C003724EA /* lutf8lib.c */; };
+		777EFD0D2342504D003724EA /* lutf8lib.c in Sources */ = {isa = PBXBuildFile; fileRef = 777EFD0A2342504C003724EA /* lutf8lib.c */; };
+		777EFD0E2342504D003724EA /* lutf8lib.h in Headers */ = {isa = PBXBuildFile; fileRef = 777EFD0B2342504C003724EA /* lutf8lib.h */; };
+		777EFD0F2342504D003724EA /* lutf8lib.h in Headers */ = {isa = PBXBuildFile; fileRef = 777EFD0B2342504C003724EA /* lutf8lib.h */; };
+		777EFD1323425054003724EA /* lua_utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 777EFD1123425053003724EA /* lua_utils.cpp */; };
+		777EFD1423425054003724EA /* lua_utils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 777EFD1123425053003724EA /* lua_utils.cpp */; };
+		777EFD1523425054003724EA /* lua_utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 777EFD1223425053003724EA /* lua_utils.h */; };
+		777EFD1623425054003724EA /* lua_utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 777EFD1223425053003724EA /* lua_utils.h */; };
+		777EFD202342507F003724EA /* lua_cocos2dx_L_manual.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 777EFD182342507F003724EA /* lua_cocos2dx_L_manual.cpp */; };
+		777EFD212342507F003724EA /* lua_cocos2dx_L_manual.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 777EFD182342507F003724EA /* lua_cocos2dx_L_manual.cpp */; };
+		777EFD222342507F003724EA /* lua_cocos2dx_L_manual.h in Headers */ = {isa = PBXBuildFile; fileRef = 777EFD192342507F003724EA /* lua_cocos2dx_L_manual.h */; };
+		777EFD232342507F003724EA /* lua_cocos2dx_L_manual.h in Headers */ = {isa = PBXBuildFile; fileRef = 777EFD192342507F003724EA /* lua_cocos2dx_L_manual.h */; };
+		777EFD242342507F003724EA /* lua_L_filemanager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 777EFD1A2342507F003724EA /* lua_L_filemanager.cpp */; };
+		777EFD252342507F003724EA /* lua_L_filemanager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 777EFD1A2342507F003724EA /* lua_L_filemanager.cpp */; };
+		777EFD262342507F003724EA /* lua_L_filemanager.h in Headers */ = {isa = PBXBuildFile; fileRef = 777EFD1B2342507F003724EA /* lua_L_filemanager.h */; };
+		777EFD272342507F003724EA /* lua_L_filemanager.h in Headers */ = {isa = PBXBuildFile; fileRef = 777EFD1B2342507F003724EA /* lua_L_filemanager.h */; };
+		777EFD282342507F003724EA /* lua_L_scene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 777EFD1C2342507F003724EA /* lua_L_scene.cpp */; };
+		777EFD292342507F003724EA /* lua_L_scene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 777EFD1C2342507F003724EA /* lua_L_scene.cpp */; };
+		777EFD2A2342507F003724EA /* lua_L_scene.h in Headers */ = {isa = PBXBuildFile; fileRef = 777EFD1D2342507F003724EA /* lua_L_scene.h */; };
+		777EFD2B2342507F003724EA /* lua_L_scene.h in Headers */ = {isa = PBXBuildFile; fileRef = 777EFD1D2342507F003724EA /* lua_L_scene.h */; };
+		777EFD2C2342507F003724EA /* lua_L_tmxmap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 777EFD1E2342507F003724EA /* lua_L_tmxmap.cpp */; };
+		777EFD2D2342507F003724EA /* lua_L_tmxmap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 777EFD1E2342507F003724EA /* lua_L_tmxmap.cpp */; };
+		777EFD2E2342507F003724EA /* lua_L_tmxmap.h in Headers */ = {isa = PBXBuildFile; fileRef = 777EFD1F2342507F003724EA /* lua_L_tmxmap.h */; };
+		777EFD2F2342507F003724EA /* lua_L_tmxmap.h in Headers */ = {isa = PBXBuildFile; fileRef = 777EFD1F2342507F003724EA /* lua_L_tmxmap.h */; };
 		ADAC23ED1C2044A60049A6A2 /* lua_module_register.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADD1C0D21C196B9500733781 /* lua_module_register.cpp */; };
 		ADD1C0D51C196B9500733781 /* lua_module_register.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ADD1C0D21C196B9500733781 /* lua_module_register.cpp */; };
 		ADD1C0D61C196B9500733781 /* lua_module_register.h in Headers */ = {isa = PBXBuildFile; fileRef = ADD1C0D31C196B9500733781 /* lua_module_register.h */; };
@@ -601,6 +839,126 @@
 		507B43531C31FA0C0067B53E /* libluacocos2d tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libluacocos2d tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		566F015D19B5EB0F00FCA620 /* CustomGUIReader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CustomGUIReader.cpp; sourceTree = "<group>"; };
 		566F015E19B5EB0F00FCA620 /* CustomGUIReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomGUIReader.h; sourceTree = "<group>"; };
+		777EFBC12342500D003724EA /* fpconv.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fpconv.c; sourceTree = "<group>"; };
+		777EFBC22342500D003724EA /* fpconv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fpconv.h; sourceTree = "<group>"; };
+		777EFBC32342500D003724EA /* lua_cjson.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lua_cjson.c; sourceTree = "<group>"; };
+		777EFBC42342500D003724EA /* lua_cjson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lua_cjson.h; sourceTree = "<group>"; };
+		777EFBC52342500D003724EA /* strbuf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = strbuf.c; sourceTree = "<group>"; };
+		777EFBC62342500D003724EA /* strbuf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = strbuf.h; sourceTree = "<group>"; };
+		777EFBD423425016003724EA /* channel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = channel.cpp; sourceTree = "<group>"; };
+		777EFBD523425016003724EA /* channel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = channel.h; sourceTree = "<group>"; };
+		777EFBD623425016003724EA /* function.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = function.cpp; sourceTree = "<group>"; };
+		777EFBD723425016003724EA /* function.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = function.h; sourceTree = "<group>"; };
+		777EFBD823425016003724EA /* garbage-collector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "garbage-collector.cpp"; sourceTree = "<group>"; };
+		777EFBD923425016003724EA /* garbage-collector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "garbage-collector.h"; sourceTree = "<group>"; };
+		777EFBDA23425016003724EA /* gc-data.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "gc-data.cpp"; sourceTree = "<group>"; };
+		777EFBDB23425016003724EA /* gc-data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "gc-data.h"; sourceTree = "<group>"; };
+		777EFBDC23425016003724EA /* gc-object.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "gc-object.h"; sourceTree = "<group>"; };
+		777EFBDD23425016003724EA /* logger.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = logger.cpp; sourceTree = "<group>"; };
+		777EFBDE23425016003724EA /* logger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = logger.h; sourceTree = "<group>"; };
+		777EFBDF23425016003724EA /* lua-helpers.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "lua-helpers.cpp"; sourceTree = "<group>"; };
+		777EFBE023425016003724EA /* lua-helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "lua-helpers.h"; sourceTree = "<group>"; };
+		777EFBE123425016003724EA /* lua-module.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "lua-module.cpp"; sourceTree = "<group>"; };
+		777EFBE223425016003724EA /* notifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = notifier.h; sourceTree = "<group>"; };
+		777EFBE323425016003724EA /* shared-table.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "shared-table.cpp"; sourceTree = "<group>"; };
+		777EFBE423425016003724EA /* shared-table.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "shared-table.h"; sourceTree = "<group>"; };
+		777EFBE523425016003724EA /* spin-mutex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "spin-mutex.h"; sourceTree = "<group>"; };
+		777EFBE623425016003724EA /* stored-object.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "stored-object.cpp"; sourceTree = "<group>"; };
+		777EFBE723425016003724EA /* stored-object.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "stored-object.h"; sourceTree = "<group>"; };
+		777EFBE823425016003724EA /* threading.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = threading.cpp; sourceTree = "<group>"; };
+		777EFBE923425016003724EA /* threading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = threading.h; sourceTree = "<group>"; };
+		777EFBEA23425016003724EA /* utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utils.h; sourceTree = "<group>"; };
+		777EFC1A23425021003724EA /* lua_i64.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = lua_i64.cpp; sourceTree = "<group>"; };
+		777EFC1B23425021003724EA /* lua_i64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lua_i64.h; sourceTree = "<group>"; };
+		777EFC2223425037003724EA /* as_args.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = as_args.hpp; sourceTree = "<group>"; };
+		777EFC2323425037003724EA /* bind_traits.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = bind_traits.hpp; sourceTree = "<group>"; };
+		777EFC2423425037003724EA /* call.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = call.hpp; sourceTree = "<group>"; };
+		777EFC2623425037003724EA /* 5.0.0.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = 5.0.0.h; sourceTree = "<group>"; };
+		777EFC2723425037003724EA /* 5.1.0.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = 5.1.0.h; sourceTree = "<group>"; };
+		777EFC2823425037003724EA /* 5.2.0.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = 5.2.0.h; sourceTree = "<group>"; };
+		777EFC2923425037003724EA /* 5.x.x.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = 5.x.x.h; sourceTree = "<group>"; };
+		777EFC2A23425037003724EA /* 5.x.x.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 5.x.x.inl; sourceTree = "<group>"; };
+		777EFC2B23425037003724EA /* version.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = version.hpp; sourceTree = "<group>"; };
+		777EFC2C23425037003724EA /* compatibility.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = compatibility.hpp; sourceTree = "<group>"; };
+		777EFC2D23425037003724EA /* container_traits.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = container_traits.hpp; sourceTree = "<group>"; };
+		777EFC2E23425037003724EA /* container_usertype_metatable.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = container_usertype_metatable.hpp; sourceTree = "<group>"; };
+		777EFC2F23425037003724EA /* coroutine.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = coroutine.hpp; sourceTree = "<group>"; };
+		777EFC3023425037003724EA /* debug.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = debug.hpp; sourceTree = "<group>"; };
+		777EFC3123425037003724EA /* demangle.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = demangle.hpp; sourceTree = "<group>"; };
+		777EFC3223425037003724EA /* deprecate.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = deprecate.hpp; sourceTree = "<group>"; };
+		777EFC3323425037003724EA /* environment.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = environment.hpp; sourceTree = "<group>"; };
+		777EFC3423425037003724EA /* error.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = error.hpp; sourceTree = "<group>"; };
+		777EFC3523425037003724EA /* feature_test.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = feature_test.hpp; sourceTree = "<group>"; };
+		777EFC3623425037003724EA /* function.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = function.hpp; sourceTree = "<group>"; };
+		777EFC3723425037003724EA /* function_result.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = function_result.hpp; sourceTree = "<group>"; };
+		777EFC3823425037003724EA /* function_types.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = function_types.hpp; sourceTree = "<group>"; };
+		777EFC3923425037003724EA /* function_types_core.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = function_types_core.hpp; sourceTree = "<group>"; };
+		777EFC3A23425037003724EA /* function_types_overloaded.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = function_types_overloaded.hpp; sourceTree = "<group>"; };
+		777EFC3B23425037003724EA /* function_types_stateful.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = function_types_stateful.hpp; sourceTree = "<group>"; };
+		777EFC3C23425037003724EA /* function_types_stateless.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = function_types_stateless.hpp; sourceTree = "<group>"; };
+		777EFC3D23425037003724EA /* function_types_templated.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = function_types_templated.hpp; sourceTree = "<group>"; };
+		777EFC3E23425037003724EA /* in_place.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = in_place.hpp; sourceTree = "<group>"; };
+		777EFC3F23425037003724EA /* inheritance.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = inheritance.hpp; sourceTree = "<group>"; };
+		777EFC4023425037003724EA /* load_result.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = load_result.hpp; sourceTree = "<group>"; };
+		777EFC4123425037003724EA /* object.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = object.hpp; sourceTree = "<group>"; };
+		777EFC4223425037003724EA /* object_base.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = object_base.hpp; sourceTree = "<group>"; };
+		777EFC4323425037003724EA /* optional.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = optional.hpp; sourceTree = "<group>"; };
+		777EFC4423425037003724EA /* optional_implementation.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = optional_implementation.hpp; sourceTree = "<group>"; };
+		777EFC4523425037003724EA /* overload.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = overload.hpp; sourceTree = "<group>"; };
+		777EFC4623425037003724EA /* property.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = property.hpp; sourceTree = "<group>"; };
+		777EFC4723425037003724EA /* protect.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = protect.hpp; sourceTree = "<group>"; };
+		777EFC4823425037003724EA /* protected_function.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = protected_function.hpp; sourceTree = "<group>"; };
+		777EFC4923425037003724EA /* protected_function_result.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = protected_function_result.hpp; sourceTree = "<group>"; };
+		777EFC4A23425037003724EA /* proxy.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = proxy.hpp; sourceTree = "<group>"; };
+		777EFC4B23425037003724EA /* proxy_base.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = proxy_base.hpp; sourceTree = "<group>"; };
+		777EFC4C23425037003724EA /* raii.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = raii.hpp; sourceTree = "<group>"; };
+		777EFC4D23425037003724EA /* reference.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = reference.hpp; sourceTree = "<group>"; };
+		777EFC4E23425037003724EA /* resolve.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = resolve.hpp; sourceTree = "<group>"; };
+		777EFC4F23425037003724EA /* simple_usertype_metatable.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = simple_usertype_metatable.hpp; sourceTree = "<group>"; };
+		777EFC5023425037003724EA /* stack.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = stack.hpp; sourceTree = "<group>"; };
+		777EFC5123425037003724EA /* stack_check.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = stack_check.hpp; sourceTree = "<group>"; };
+		777EFC5223425037003724EA /* stack_check_get.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = stack_check_get.hpp; sourceTree = "<group>"; };
+		777EFC5323425037003724EA /* stack_core.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = stack_core.hpp; sourceTree = "<group>"; };
+		777EFC5423425037003724EA /* stack_field.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = stack_field.hpp; sourceTree = "<group>"; };
+		777EFC5523425037003724EA /* stack_get.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = stack_get.hpp; sourceTree = "<group>"; };
+		777EFC5623425037003724EA /* stack_guard.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = stack_guard.hpp; sourceTree = "<group>"; };
+		777EFC5723425037003724EA /* stack_pop.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = stack_pop.hpp; sourceTree = "<group>"; };
+		777EFC5823425037003724EA /* stack_probe.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = stack_probe.hpp; sourceTree = "<group>"; };
+		777EFC5923425037003724EA /* stack_proxy.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = stack_proxy.hpp; sourceTree = "<group>"; };
+		777EFC5A23425037003724EA /* stack_push.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = stack_push.hpp; sourceTree = "<group>"; };
+		777EFC5B23425037003724EA /* stack_reference.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = stack_reference.hpp; sourceTree = "<group>"; };
+		777EFC5C23425037003724EA /* state.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = state.hpp; sourceTree = "<group>"; };
+		777EFC5D23425037003724EA /* state_view.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = state_view.hpp; sourceTree = "<group>"; };
+		777EFC5E23425037003724EA /* string_shim.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = string_shim.hpp; sourceTree = "<group>"; };
+		777EFC5F23425037003724EA /* table.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = table.hpp; sourceTree = "<group>"; };
+		777EFC6023425037003724EA /* table_core.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = table_core.hpp; sourceTree = "<group>"; };
+		777EFC6123425037003724EA /* table_iterator.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = table_iterator.hpp; sourceTree = "<group>"; };
+		777EFC6223425037003724EA /* thread.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = thread.hpp; sourceTree = "<group>"; };
+		777EFC6323425037003724EA /* tie.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = tie.hpp; sourceTree = "<group>"; };
+		777EFC6423425037003724EA /* traits.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = traits.hpp; sourceTree = "<group>"; };
+		777EFC6523425037003724EA /* tuple.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = tuple.hpp; sourceTree = "<group>"; };
+		777EFC6623425037003724EA /* types.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = types.hpp; sourceTree = "<group>"; };
+		777EFC6723425037003724EA /* userdata.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = userdata.hpp; sourceTree = "<group>"; };
+		777EFC6823425037003724EA /* usertype.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = usertype.hpp; sourceTree = "<group>"; };
+		777EFC6923425037003724EA /* usertype_metatable.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = usertype_metatable.hpp; sourceTree = "<group>"; };
+		777EFC6A23425037003724EA /* usertype_traits.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = usertype_traits.hpp; sourceTree = "<group>"; };
+		777EFC6B23425037003724EA /* variadic_args.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = variadic_args.hpp; sourceTree = "<group>"; };
+		777EFC6C23425037003724EA /* wrapper.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = wrapper.hpp; sourceTree = "<group>"; };
+		777EFC6D23425037003724EA /* sol.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = sol.hpp; sourceTree = "<group>"; };
+		777EFD0323425041003724EA /* lua_struct.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = lua_struct.cpp; sourceTree = "<group>"; };
+		777EFD0423425041003724EA /* lua_struct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lua_struct.h; sourceTree = "<group>"; };
+		777EFD0A2342504C003724EA /* lutf8lib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lutf8lib.c; sourceTree = "<group>"; };
+		777EFD0B2342504C003724EA /* lutf8lib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lutf8lib.h; sourceTree = "<group>"; };
+		777EFD1123425053003724EA /* lua_utils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = lua_utils.cpp; sourceTree = "<group>"; };
+		777EFD1223425053003724EA /* lua_utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lua_utils.h; sourceTree = "<group>"; };
+		777EFD182342507F003724EA /* lua_cocos2dx_L_manual.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = lua_cocos2dx_L_manual.cpp; sourceTree = "<group>"; };
+		777EFD192342507F003724EA /* lua_cocos2dx_L_manual.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lua_cocos2dx_L_manual.h; sourceTree = "<group>"; };
+		777EFD1A2342507F003724EA /* lua_L_filemanager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = lua_L_filemanager.cpp; sourceTree = "<group>"; };
+		777EFD1B2342507F003724EA /* lua_L_filemanager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lua_L_filemanager.h; sourceTree = "<group>"; };
+		777EFD1C2342507F003724EA /* lua_L_scene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = lua_L_scene.cpp; sourceTree = "<group>"; };
+		777EFD1D2342507F003724EA /* lua_L_scene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lua_L_scene.h; sourceTree = "<group>"; };
+		777EFD1E2342507F003724EA /* lua_L_tmxmap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = lua_L_tmxmap.cpp; sourceTree = "<group>"; };
+		777EFD1F2342507F003724EA /* lua_L_tmxmap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lua_L_tmxmap.h; sourceTree = "<group>"; };
 		ADD1C0D21C196B9500733781 /* lua_module_register.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = lua_module_register.cpp; sourceTree = "<group>"; };
 		ADD1C0D31C196B9500733781 /* lua_module_register.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lua_module_register.h; sourceTree = "<group>"; };
 		ADD1C0D41C196B9500733781 /* Lua-BindingsExport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Lua-BindingsExport.h"; sourceTree = "<group>"; };
@@ -840,6 +1198,7 @@
 		1AACE75B18BC45C200215002 /* manual */ = {
 			isa = PBXGroup;
 			children = (
+				777EFD172342507F003724EA /* L */,
 				150983D41B1C3F2D007F3818 /* navmesh */,
 				15A561E91B00A3D0005D4720 /* physics3d */,
 				3E2BDB0719C5E6100055CDCD /* audioengine */,
@@ -897,6 +1256,13 @@
 		1ABCA1E218CD8F230087CE3A /* external */ = {
 			isa = PBXGroup;
 			children = (
+				777EFD1023425053003724EA /* utils */,
+				777EFD092342504C003724EA /* utf8 */,
+				777EFD0223425041003724EA /* struct */,
+				777EFC2023425037003724EA /* sol2 */,
+				777EFC1923425021003724EA /* i64 */,
+				777EFBD323425016003724EA /* effil */,
+				777EFBC02342500D003724EA /* cjson */,
 				1ABCA1E318CD8F2D0087CE3A /* luajit */,
 				1ABCA20E18CD8F7D0087CE3A /* luasocket */,
 				1ABCA1E418CD8F330087CE3A /* tolua */,
@@ -1008,6 +1374,205 @@
 			path = audioengine;
 			sourceTree = "<group>";
 		};
+		777EFBC02342500D003724EA /* cjson */ = {
+			isa = PBXGroup;
+			children = (
+				777EFBC12342500D003724EA /* fpconv.c */,
+				777EFBC22342500D003724EA /* fpconv.h */,
+				777EFBC32342500D003724EA /* lua_cjson.c */,
+				777EFBC42342500D003724EA /* lua_cjson.h */,
+				777EFBC52342500D003724EA /* strbuf.c */,
+				777EFBC62342500D003724EA /* strbuf.h */,
+			);
+			name = cjson;
+			path = ../../../../external/lua/cjson;
+			sourceTree = "<group>";
+		};
+		777EFBD323425016003724EA /* effil */ = {
+			isa = PBXGroup;
+			children = (
+				777EFBD423425016003724EA /* channel.cpp */,
+				777EFBD523425016003724EA /* channel.h */,
+				777EFBD623425016003724EA /* function.cpp */,
+				777EFBD723425016003724EA /* function.h */,
+				777EFBD823425016003724EA /* garbage-collector.cpp */,
+				777EFBD923425016003724EA /* garbage-collector.h */,
+				777EFBDA23425016003724EA /* gc-data.cpp */,
+				777EFBDB23425016003724EA /* gc-data.h */,
+				777EFBDC23425016003724EA /* gc-object.h */,
+				777EFBDD23425016003724EA /* logger.cpp */,
+				777EFBDE23425016003724EA /* logger.h */,
+				777EFBDF23425016003724EA /* lua-helpers.cpp */,
+				777EFBE023425016003724EA /* lua-helpers.h */,
+				777EFBE123425016003724EA /* lua-module.cpp */,
+				777EFBE223425016003724EA /* notifier.h */,
+				777EFBE323425016003724EA /* shared-table.cpp */,
+				777EFBE423425016003724EA /* shared-table.h */,
+				777EFBE523425016003724EA /* spin-mutex.h */,
+				777EFBE623425016003724EA /* stored-object.cpp */,
+				777EFBE723425016003724EA /* stored-object.h */,
+				777EFBE823425016003724EA /* threading.cpp */,
+				777EFBE923425016003724EA /* threading.h */,
+				777EFBEA23425016003724EA /* utils.h */,
+			);
+			name = effil;
+			path = ../../../../external/lua/effil;
+			sourceTree = "<group>";
+		};
+		777EFC1923425021003724EA /* i64 */ = {
+			isa = PBXGroup;
+			children = (
+				777EFC1A23425021003724EA /* lua_i64.cpp */,
+				777EFC1B23425021003724EA /* lua_i64.h */,
+			);
+			name = i64;
+			path = ../../../../external/lua/i64;
+			sourceTree = "<group>";
+		};
+		777EFC2023425037003724EA /* sol2 */ = {
+			isa = PBXGroup;
+			children = (
+				777EFC2123425037003724EA /* sol */,
+				777EFC6D23425037003724EA /* sol.hpp */,
+			);
+			name = sol2;
+			path = ../../../../external/lua/sol2;
+			sourceTree = "<group>";
+		};
+		777EFC2123425037003724EA /* sol */ = {
+			isa = PBXGroup;
+			children = (
+				777EFC2223425037003724EA /* as_args.hpp */,
+				777EFC2323425037003724EA /* bind_traits.hpp */,
+				777EFC2423425037003724EA /* call.hpp */,
+				777EFC2523425037003724EA /* compatibility */,
+				777EFC2C23425037003724EA /* compatibility.hpp */,
+				777EFC2D23425037003724EA /* container_traits.hpp */,
+				777EFC2E23425037003724EA /* container_usertype_metatable.hpp */,
+				777EFC2F23425037003724EA /* coroutine.hpp */,
+				777EFC3023425037003724EA /* debug.hpp */,
+				777EFC3123425037003724EA /* demangle.hpp */,
+				777EFC3223425037003724EA /* deprecate.hpp */,
+				777EFC3323425037003724EA /* environment.hpp */,
+				777EFC3423425037003724EA /* error.hpp */,
+				777EFC3523425037003724EA /* feature_test.hpp */,
+				777EFC3623425037003724EA /* function.hpp */,
+				777EFC3723425037003724EA /* function_result.hpp */,
+				777EFC3823425037003724EA /* function_types.hpp */,
+				777EFC3923425037003724EA /* function_types_core.hpp */,
+				777EFC3A23425037003724EA /* function_types_overloaded.hpp */,
+				777EFC3B23425037003724EA /* function_types_stateful.hpp */,
+				777EFC3C23425037003724EA /* function_types_stateless.hpp */,
+				777EFC3D23425037003724EA /* function_types_templated.hpp */,
+				777EFC3E23425037003724EA /* in_place.hpp */,
+				777EFC3F23425037003724EA /* inheritance.hpp */,
+				777EFC4023425037003724EA /* load_result.hpp */,
+				777EFC4123425037003724EA /* object.hpp */,
+				777EFC4223425037003724EA /* object_base.hpp */,
+				777EFC4323425037003724EA /* optional.hpp */,
+				777EFC4423425037003724EA /* optional_implementation.hpp */,
+				777EFC4523425037003724EA /* overload.hpp */,
+				777EFC4623425037003724EA /* property.hpp */,
+				777EFC4723425037003724EA /* protect.hpp */,
+				777EFC4823425037003724EA /* protected_function.hpp */,
+				777EFC4923425037003724EA /* protected_function_result.hpp */,
+				777EFC4A23425037003724EA /* proxy.hpp */,
+				777EFC4B23425037003724EA /* proxy_base.hpp */,
+				777EFC4C23425037003724EA /* raii.hpp */,
+				777EFC4D23425037003724EA /* reference.hpp */,
+				777EFC4E23425037003724EA /* resolve.hpp */,
+				777EFC4F23425037003724EA /* simple_usertype_metatable.hpp */,
+				777EFC5023425037003724EA /* stack.hpp */,
+				777EFC5123425037003724EA /* stack_check.hpp */,
+				777EFC5223425037003724EA /* stack_check_get.hpp */,
+				777EFC5323425037003724EA /* stack_core.hpp */,
+				777EFC5423425037003724EA /* stack_field.hpp */,
+				777EFC5523425037003724EA /* stack_get.hpp */,
+				777EFC5623425037003724EA /* stack_guard.hpp */,
+				777EFC5723425037003724EA /* stack_pop.hpp */,
+				777EFC5823425037003724EA /* stack_probe.hpp */,
+				777EFC5923425037003724EA /* stack_proxy.hpp */,
+				777EFC5A23425037003724EA /* stack_push.hpp */,
+				777EFC5B23425037003724EA /* stack_reference.hpp */,
+				777EFC5C23425037003724EA /* state.hpp */,
+				777EFC5D23425037003724EA /* state_view.hpp */,
+				777EFC5E23425037003724EA /* string_shim.hpp */,
+				777EFC5F23425037003724EA /* table.hpp */,
+				777EFC6023425037003724EA /* table_core.hpp */,
+				777EFC6123425037003724EA /* table_iterator.hpp */,
+				777EFC6223425037003724EA /* thread.hpp */,
+				777EFC6323425037003724EA /* tie.hpp */,
+				777EFC6423425037003724EA /* traits.hpp */,
+				777EFC6523425037003724EA /* tuple.hpp */,
+				777EFC6623425037003724EA /* types.hpp */,
+				777EFC6723425037003724EA /* userdata.hpp */,
+				777EFC6823425037003724EA /* usertype.hpp */,
+				777EFC6923425037003724EA /* usertype_metatable.hpp */,
+				777EFC6A23425037003724EA /* usertype_traits.hpp */,
+				777EFC6B23425037003724EA /* variadic_args.hpp */,
+				777EFC6C23425037003724EA /* wrapper.hpp */,
+			);
+			path = sol;
+			sourceTree = "<group>";
+		};
+		777EFC2523425037003724EA /* compatibility */ = {
+			isa = PBXGroup;
+			children = (
+				777EFC2623425037003724EA /* 5.0.0.h */,
+				777EFC2723425037003724EA /* 5.1.0.h */,
+				777EFC2823425037003724EA /* 5.2.0.h */,
+				777EFC2923425037003724EA /* 5.x.x.h */,
+				777EFC2A23425037003724EA /* 5.x.x.inl */,
+				777EFC2B23425037003724EA /* version.hpp */,
+			);
+			path = compatibility;
+			sourceTree = "<group>";
+		};
+		777EFD0223425041003724EA /* struct */ = {
+			isa = PBXGroup;
+			children = (
+				777EFD0323425041003724EA /* lua_struct.cpp */,
+				777EFD0423425041003724EA /* lua_struct.h */,
+			);
+			name = struct;
+			path = ../../../../external/lua/struct;
+			sourceTree = "<group>";
+		};
+		777EFD092342504C003724EA /* utf8 */ = {
+			isa = PBXGroup;
+			children = (
+				777EFD0A2342504C003724EA /* lutf8lib.c */,
+				777EFD0B2342504C003724EA /* lutf8lib.h */,
+			);
+			name = utf8;
+			path = ../../../../external/lua/utf8;
+			sourceTree = "<group>";
+		};
+		777EFD1023425053003724EA /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				777EFD1123425053003724EA /* lua_utils.cpp */,
+				777EFD1223425053003724EA /* lua_utils.h */,
+			);
+			name = utils;
+			path = ../../../../external/lua/utils;
+			sourceTree = "<group>";
+		};
+		777EFD172342507F003724EA /* L */ = {
+			isa = PBXGroup;
+			children = (
+				777EFD182342507F003724EA /* lua_cocos2dx_L_manual.cpp */,
+				777EFD192342507F003724EA /* lua_cocos2dx_L_manual.h */,
+				777EFD1A2342507F003724EA /* lua_L_filemanager.cpp */,
+				777EFD1B2342507F003724EA /* lua_L_filemanager.h */,
+				777EFD1C2342507F003724EA /* lua_L_scene.cpp */,
+				777EFD1D2342507F003724EA /* lua_L_scene.h */,
+				777EFD1E2342507F003724EA /* lua_L_tmxmap.cpp */,
+				777EFD1F2342507F003724EA /* lua_L_tmxmap.h */,
+			);
+			path = L;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -1015,43 +1580,94 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				777EFC7A23425037003724EA /* 5.x.x.h in Headers */,
+				777EFCDC23425037003724EA /* stack_reference.hpp in Headers */,
 				15EFA1F71989E582000C57D3 /* lua_cocos2dx_experimental_auto.hpp in Headers */,
 				15415AA719A71A53004F1E71 /* auxiliar.h in Headers */,
+				777EFCD223425037003724EA /* stack_guard.hpp in Headers */,
+				777EFCA823425037003724EA /* object.hpp in Headers */,
+				777EFD262342507F003724EA /* lua_L_filemanager.h in Headers */,
+				777EFC9423425037003724EA /* function_result.hpp in Headers */,
 				155C7E1019A71C9D00F08B25 /* lua_extensions.h in Headers */,
 				15A561E71B00A09A005D4720 /* lua_cocos2dx_physics3d_auto.hpp in Headers */,
+				777EFC0323425017003724EA /* lua-helpers.h in Headers */,
 				15415ABF19A71A53004F1E71 /* mime.h in Headers */,
 				15AC69E21987712500D17520 /* tolua_event.h in Headers */,
+				777EFCDA23425037003724EA /* stack_push.hpp in Headers */,
 				15415AD719A71A53004F1E71 /* udp.h in Headers */,
+				777EFCFA23425037003724EA /* usertype_traits.hpp in Headers */,
+				777EFC9023425037003724EA /* feature_test.hpp in Headers */,
+				777EFC7823425037003724EA /* 5.2.0.h in Headers */,
 				15AC69E31987712500D17520 /* tolua++.h in Headers */,
 				15415ADB19A71A53004F1E71 /* unix.h in Headers */,
 				155C7DF419A71C3700F08B25 /* lua_cocos2dx_3d_manual.h in Headers */,
 				15415ABB19A71A53004F1E71 /* luasocket.h in Headers */,
+				777EFC7423425037003724EA /* 5.0.0.h in Headers */,
 				159552421A25E4B8001E9FC9 /* lua_cocos2dx_csloader_manual.hpp in Headers */,
+				777EFC8623425037003724EA /* debug.hpp in Headers */,
 				155C7E2419A71CD800F08B25 /* lua_cocos2dx_experimental_video_manual.hpp in Headers */,
 				15415ACF19A71A53004F1E71 /* tcp.h in Headers */,
 				15415AAB19A71A53004F1E71 /* buffer.h in Headers */,
+				777EFC0723425017003724EA /* notifier.h in Headers */,
 				15AC69DE1987711400D17520 /* lauxlib.h in Headers */,
 				155C7E1419A71CA800F08B25 /* Lua_web_socket.h in Headers */,
+				777EFC8A23425037003724EA /* deprecate.hpp in Headers */,
+				777EFD1523425054003724EA /* lua_utils.h in Headers */,
+				777EFC0B23425017003724EA /* shared-table.h in Headers */,
 				ADD1C0D61C196B9500733781 /* lua_module_register.h in Headers */,
 				15AC69DF1987711400D17520 /* lua.h in Headers */,
+				777EFBCD2342500D003724EA /* lua_cjson.h in Headers */,
+				777EFCCE23425037003724EA /* stack_field.hpp in Headers */,
+				777EFBED23425017003724EA /* channel.h in Headers */,
+				777EFC7E23425037003724EA /* compatibility.hpp in Headers */,
 				15AC69E01987711400D17520 /* luaconf.h in Headers */,
+				777EFC1123425017003724EA /* stored-object.h in Headers */,
 				155C7DF819A71C4400F08B25 /* lua_cocos2dx_cocosdenshion_manual.h in Headers */,
+				777EFCC823425037003724EA /* stack_check.hpp in Headers */,
+				777EFCF023425037003724EA /* tuple.hpp in Headers */,
 				15415AAF19A71A53004F1E71 /* except.h in Headers */,
 				150906F319D556D1002C4D97 /* lua_cocos2dx_audioengine_manual.h in Headers */,
 				ED1AA90B215DF5F3004ABA9F /* lua_downloader.h in Headers */,
+				777EFCB223425037003724EA /* property.hpp in Headers */,
+				777EFBC92342500D003724EA /* fpconv.h in Headers */,
+				777EFC8023425037003724EA /* container_traits.hpp in Headers */,
 				155C7E0419A71C6D00F08B25 /* lua_cocos2dx_cocosbuilder_manual.h in Headers */,
 				15415ACB19A71A53004F1E71 /* socket.h in Headers */,
+				777EFC8E23425037003724EA /* error.hpp in Headers */,
+				777EFBF523425017003724EA /* garbage-collector.h in Headers */,
 				15415ADF19A71A53004F1E71 /* usocket.h in Headers */,
+				777EFC8223425037003724EA /* container_usertype_metatable.hpp in Headers */,
 				15415AC319A71A53004F1E71 /* options.h in Headers */,
 				15AC69E11987711400D17520 /* lualib.h in Headers */,
+				777EFCC023425037003724EA /* reference.hpp in Headers */,
 				15C1C2E719874CBE00A46ACC /* CCLuaBridge.h in Headers */,
 				15C1C2E819874CBE00A46ACC /* CCLuaEngine.h in Headers */,
+				777EFC1523425017003724EA /* threading.h in Headers */,
+				777EFC6E23425037003724EA /* as_args.hpp in Headers */,
+				777EFC9623425037003724EA /* function_types.hpp in Headers */,
+				777EFCF223425037003724EA /* types.hpp in Headers */,
+				777EFBF123425017003724EA /* function.h in Headers */,
+				777EFCD623425037003724EA /* stack_probe.hpp in Headers */,
+				777EFBF923425017003724EA /* gc-data.h in Headers */,
 				15C1C2E919874CBE00A46ACC /* CCLuaStack.h in Headers */,
+				777EFC9E23425037003724EA /* function_types_stateless.hpp in Headers */,
+				777EFCE223425037003724EA /* string_shim.hpp in Headers */,
+				777EFD222342507F003724EA /* lua_cocos2dx_L_manual.h in Headers */,
+				777EFBFF23425017003724EA /* logger.h in Headers */,
 				15B575511A6F4D1500041C20 /* lua-cocos-studio-conversions.h in Headers */,
+				777EFCD023425037003724EA /* stack_get.hpp in Headers */,
+				777EFCA023425037003724EA /* function_types_templated.hpp in Headers */,
 				15C1C2EA19874CBE00A46ACC /* CCLuaValue.h in Headers */,
+				777EFD0023425037003724EA /* sol.hpp in Headers */,
+				777EFCB623425037003724EA /* protected_function.hpp in Headers */,
+				777EFCF823425037003724EA /* usertype_metatable.hpp in Headers */,
 				155C7E0C19A71C9000F08B25 /* lua_cocos2dx_network_manual.h in Headers */,
 				15C1C2EB19874CBE00A46ACC /* Cocos2dxLuaLoader.h in Headers */,
+				777EFD0E2342504D003724EA /* lutf8lib.h in Headers */,
+				777EFCEE23425037003724EA /* traits.hpp in Headers */,
+				777EFCE623425037003724EA /* table_core.hpp in Headers */,
 				15C1C2EC19874CBE00A46ACC /* LuaBasicConversions.h in Headers */,
+				777EFCCA23425037003724EA /* stack_check_get.hpp in Headers */,
 				15415AB319A71A53004F1E71 /* inet.h in Headers */,
 				15C1C2ED19874CBE00A46ACC /* CCLuaObjcBridge.h in Headers */,
 				15C1C2EE19874CBE00A46ACC /* tolua_fix.h in Headers */,
@@ -1060,30 +1676,77 @@
 				1595523C1A25E1C5001E9FC9 /* lua_cocos2dx_csloader_auto.hpp in Headers */,
 				15415AB719A71A53004F1E71 /* io.h in Headers */,
 				150983DF1B1C4860007F3818 /* lua_cocos2dx_navmesh_conversions.h in Headers */,
+				777EFC9C23425037003724EA /* function_types_stateful.hpp in Headers */,
+				777EFBFB23425017003724EA /* gc-object.h in Headers */,
+				777EFC9823425037003724EA /* function_types_core.hpp in Headers */,
+				777EFCA423425037003724EA /* inheritance.hpp in Headers */,
 				566F016119B5EB0F00FCA620 /* CustomGUIReader.h in Headers */,
 				15C1C2DC19874B4400A46ACC /* xxtea.h in Headers */,
+				777EFCEA23425037003724EA /* thread.hpp in Headers */,
 				15415AD319A71A53004F1E71 /* timeout.h in Headers */,
+				777EFD2E2342507F003724EA /* lua_L_tmxmap.h in Headers */,
+				777EFC8C23425037003724EA /* environment.hpp in Headers */,
 				15C1C2D5198749BC00A46ACC /* LuaOpengl.h in Headers */,
+				777EFCBC23425037003724EA /* proxy_base.hpp in Headers */,
+				777EFCAA23425037003724EA /* object_base.hpp in Headers */,
+				777EFCC623425037003724EA /* stack.hpp in Headers */,
 				15A561EE1B00A3F1005D4720 /* lua_cocos2dx_physics3d_manual.h in Headers */,
 				ADD1C0D71C196B9500733781 /* Lua-BindingsExport.h in Headers */,
 				155C7E2819A71CE600F08B25 /* lua_cocos2dx_ui_manual.hpp in Headers */,
+				777EFC9A23425037003724EA /* function_types_overloaded.hpp in Headers */,
+				777EFC7623425037003724EA /* 5.1.0.h in Headers */,
 				15C1C2D6198749BC00A46ACC /* lua_cocos2dx_deprecated.h in Headers */,
+				777EFCEC23425037003724EA /* tie.hpp in Headers */,
 				15C1C2D7198749BC00A46ACC /* lua_cocos2dx_experimental_manual.hpp in Headers */,
 				15C1C2D8198749BC00A46ACC /* lua_cocos2dx_manual.hpp in Headers */,
+				777EFCAE23425037003724EA /* optional_implementation.hpp in Headers */,
+				777EFC7C23425037003724EA /* version.hpp in Headers */,
 				155C7E0819A71C7B00F08B25 /* lua_cocos2dx_extension_manual.h in Headers */,
 				155C7E1819A71CB300F08B25 /* lua_xml_http_request.h in Headers */,
 				150983D21B1C0554007F3818 /* lua_cocos2dx_navmesh_auto.hpp in Headers */,
+				777EFC7023425037003724EA /* bind_traits.hpp in Headers */,
+				777EFCD423425037003724EA /* stack_pop.hpp in Headers */,
+				777EFCE823425037003724EA /* table_iterator.hpp in Headers */,
+				777EFC1E23425021003724EA /* lua_i64.h in Headers */,
+				777EFCB823425037003724EA /* protected_function_result.hpp in Headers */,
+				777EFCBE23425037003724EA /* raii.hpp in Headers */,
+				777EFBD12342500D003724EA /* strbuf.h in Headers */,
+				777EFCF423425037003724EA /* userdata.hpp in Headers */,
+				777EFCA223425037003724EA /* in_place.hpp in Headers */,
+				777EFC8423425037003724EA /* coroutine.hpp in Headers */,
 				155C7DFC19A71C5300F08B25 /* lua_cocos2dx_coco_studio_manual.hpp in Headers */,
+				777EFCD823425037003724EA /* stack_proxy.hpp in Headers */,
 				15C1C2D9198749BC00A46ACC /* lua_cocos2dx_physics_manual.hpp in Headers */,
+				777EFC8823425037003724EA /* demangle.hpp in Headers */,
+				777EFCF623425037003724EA /* usertype.hpp in Headers */,
+				777EFC7223425037003724EA /* call.hpp in Headers */,
+				777EFC9223425037003724EA /* function.hpp in Headers */,
+				777EFC0D23425017003724EA /* spin-mutex.h in Headers */,
+				777EFD0723425041003724EA /* lua_struct.h in Headers */,
+				777EFCA623425037003724EA /* load_result.hpp in Headers */,
 				15C1C2DA198749BC00A46ACC /* LuaScriptHandlerMgr.h in Headers */,
+				777EFCC423425037003724EA /* simple_usertype_metatable.hpp in Headers */,
 				15AC69D619876EA200D17520 /* lua_cocos2dx_physics_auto.hpp in Headers */,
+				777EFCFE23425037003724EA /* wrapper.hpp in Headers */,
+				777EFD2A2342507F003724EA /* lua_L_scene.h in Headers */,
+				777EFCE423425037003724EA /* table.hpp in Headers */,
+				777EFCC223425037003724EA /* resolve.hpp in Headers */,
+				777EFCB023425037003724EA /* overload.hpp in Headers */,
+				777EFCCC23425037003724EA /* stack_core.hpp in Headers */,
+				777EFCFC23425037003724EA /* variadic_args.hpp in Headers */,
 				155C7E0019A71C6000F08B25 /* CCBProxy.h in Headers */,
 				15415AC719A71A53004F1E71 /* select.h in Headers */,
 				155C7E1C19A71CC200F08B25 /* lua_cocos2dx_spine_manual.hpp in Headers */,
+				777EFC1723425017003724EA /* utils.h in Headers */,
 				BA0CBB601BB0756F00003364 /* CCComponentLua.h in Headers */,
+				777EFCAC23425037003724EA /* optional.hpp in Headers */,
+				777EFCBA23425037003724EA /* proxy.hpp in Headers */,
 				15C1C2D41987499F00A46ACC /* lua_cocos2dx_auto.hpp in Headers */,
 				150906F119D556C8002C4D97 /* lua_cocos2dx_audioengine_auto.hpp in Headers */,
+				777EFCB423425037003724EA /* protect.hpp in Headers */,
 				F4FE0D5919ECD00100B8B12B /* luasocket_scripts.h in Headers */,
+				777EFCDE23425037003724EA /* state.hpp in Headers */,
+				777EFCE023425037003724EA /* state_view.hpp in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1091,43 +1754,94 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				777EFC7B23425037003724EA /* 5.x.x.h in Headers */,
+				777EFCDD23425037003724EA /* stack_reference.hpp in Headers */,
 				150983E01B1C4860007F3818 /* lua_cocos2dx_navmesh_conversions.h in Headers */,
 				15EFA64D198B3342000C57D3 /* lauxlib.h in Headers */,
+				777EFCD323425037003724EA /* stack_guard.hpp in Headers */,
+				777EFCA923425037003724EA /* object.hpp in Headers */,
+				777EFD272342507F003724EA /* lua_L_filemanager.h in Headers */,
+				777EFC9523425037003724EA /* function_result.hpp in Headers */,
 				15415AA819A71A53004F1E71 /* auxiliar.h in Headers */,
 				155C7E1119A71C9F00F08B25 /* lua_extensions.h in Headers */,
+				777EFC0423425017003724EA /* lua-helpers.h in Headers */,
 				15415AC019A71A53004F1E71 /* mime.h in Headers */,
 				15EFA64E198B3342000C57D3 /* lua.h in Headers */,
+				777EFCDB23425037003724EA /* stack_push.hpp in Headers */,
 				15415AD819A71A53004F1E71 /* udp.h in Headers */,
+				777EFCFB23425037003724EA /* usertype_traits.hpp in Headers */,
+				777EFC9123425037003724EA /* feature_test.hpp in Headers */,
+				777EFC7923425037003724EA /* 5.2.0.h in Headers */,
 				15EFA64F198B3342000C57D3 /* luaconf.h in Headers */,
 				15415ADC19A71A53004F1E71 /* unix.h in Headers */,
 				155C7DF519A71C3900F08B25 /* lua_cocos2dx_3d_manual.h in Headers */,
 				15415ABC19A71A53004F1E71 /* luasocket.h in Headers */,
+				777EFC7523425037003724EA /* 5.0.0.h in Headers */,
 				159552431A25E4B8001E9FC9 /* lua_cocos2dx_csloader_manual.hpp in Headers */,
+				777EFC8723425037003724EA /* debug.hpp in Headers */,
 				155C7E2519A71CDA00F08B25 /* lua_cocos2dx_experimental_video_manual.hpp in Headers */,
 				15415AD019A71A53004F1E71 /* tcp.h in Headers */,
 				BA0CBB611BB0756F00003364 /* CCComponentLua.h in Headers */,
+				777EFC0823425017003724EA /* notifier.h in Headers */,
 				15415AAC19A71A53004F1E71 /* buffer.h in Headers */,
 				15EFA650198B3342000C57D3 /* lualib.h in Headers */,
+				777EFC8B23425037003724EA /* deprecate.hpp in Headers */,
+				777EFD1623425054003724EA /* lua_utils.h in Headers */,
+				777EFC0C23425017003724EA /* shared-table.h in Headers */,
 				155C7E1519A71CAA00F08B25 /* Lua_web_socket.h in Headers */,
 				15EFA64B198B3320000C57D3 /* tolua_event.h in Headers */,
+				777EFBCE2342500D003724EA /* lua_cjson.h in Headers */,
+				777EFCCF23425037003724EA /* stack_field.hpp in Headers */,
+				777EFBEE23425017003724EA /* channel.h in Headers */,
+				777EFC7F23425037003724EA /* compatibility.hpp in Headers */,
 				15A561EF1B00A3F1005D4720 /* lua_cocos2dx_physics3d_manual.h in Headers */,
+				777EFC1223425017003724EA /* stored-object.h in Headers */,
 				15EFA64C198B3320000C57D3 /* tolua++.h in Headers */,
+				777EFCC923425037003724EA /* stack_check.hpp in Headers */,
+				777EFCF123425037003724EA /* tuple.hpp in Headers */,
 				155C7DF919A71C4500F08B25 /* lua_cocos2dx_cocosdenshion_manual.h in Headers */,
 				15415AB019A71A53004F1E71 /* except.h in Headers */,
 				ED1AA90C215DF5F3004ABA9F /* lua_downloader.h in Headers */,
+				777EFCB323425037003724EA /* property.hpp in Headers */,
+				777EFBCA2342500D003724EA /* fpconv.h in Headers */,
+				777EFC8123425037003724EA /* container_traits.hpp in Headers */,
 				3E2BDB0B19C5E6100055CDCD /* lua_cocos2dx_audioengine_manual.h in Headers */,
 				155C7E0519A71C6F00F08B25 /* lua_cocos2dx_cocosbuilder_manual.h in Headers */,
+				777EFC8F23425037003724EA /* error.hpp in Headers */,
+				777EFBF623425017003724EA /* garbage-collector.h in Headers */,
 				15415ACC19A71A53004F1E71 /* socket.h in Headers */,
+				777EFC8323425037003724EA /* container_usertype_metatable.hpp in Headers */,
 				15415AE019A71A53004F1E71 /* usocket.h in Headers */,
 				15415AC419A71A53004F1E71 /* options.h in Headers */,
+				777EFCC123425037003724EA /* reference.hpp in Headers */,
 				15EFA644198B32D5000C57D3 /* xxtea.h in Headers */,
 				15EFA63B198B32BB000C57D3 /* CCLuaBridge.h in Headers */,
+				777EFC1623425017003724EA /* threading.h in Headers */,
+				777EFC6F23425037003724EA /* as_args.hpp in Headers */,
+				777EFC9723425037003724EA /* function_types.hpp in Headers */,
+				777EFCF323425037003724EA /* types.hpp in Headers */,
+				777EFBF223425017003724EA /* function.h in Headers */,
+				777EFCD723425037003724EA /* stack_probe.hpp in Headers */,
+				777EFBFA23425017003724EA /* gc-data.h in Headers */,
 				15EFA63C198B32BB000C57D3 /* CCLuaEngine.h in Headers */,
+				777EFC9F23425037003724EA /* function_types_stateless.hpp in Headers */,
+				777EFCE323425037003724EA /* string_shim.hpp in Headers */,
+				777EFD232342507F003724EA /* lua_cocos2dx_L_manual.h in Headers */,
+				777EFC0023425017003724EA /* logger.h in Headers */,
 				15EFA63D198B32BB000C57D3 /* CCLuaStack.h in Headers */,
+				777EFCD123425037003724EA /* stack_get.hpp in Headers */,
+				777EFCA123425037003724EA /* function_types_templated.hpp in Headers */,
 				15B575521A6F4D1500041C20 /* lua-cocos-studio-conversions.h in Headers */,
+				777EFD0123425037003724EA /* sol.hpp in Headers */,
+				777EFCB723425037003724EA /* protected_function.hpp in Headers */,
+				777EFCF923425037003724EA /* usertype_metatable.hpp in Headers */,
 				15EFA63E198B32BB000C57D3 /* CCLuaValue.h in Headers */,
 				155C7E0D19A71C9300F08B25 /* lua_cocos2dx_network_manual.h in Headers */,
+				777EFD0F2342504D003724EA /* lutf8lib.h in Headers */,
+				777EFCEF23425037003724EA /* traits.hpp in Headers */,
+				777EFCE723425037003724EA /* table_core.hpp in Headers */,
 				15EFA63F198B32BB000C57D3 /* Cocos2dxLuaLoader.h in Headers */,
+				777EFCCB23425037003724EA /* stack_check_get.hpp in Headers */,
 				15EFA640198B32BB000C57D3 /* LuaBasicConversions.h in Headers */,
 				150983D31B1C0554007F3818 /* lua_cocos2dx_navmesh_auto.hpp in Headers */,
 				15415AB419A71A53004F1E71 /* inet.h in Headers */,
@@ -1136,30 +1850,77 @@
 				155C7E2119A71CCE00F08B25 /* LuaSkeletonAnimation.h in Headers */,
 				1595523D1A25E1C5001E9FC9 /* lua_cocos2dx_csloader_auto.hpp in Headers */,
 				15415AB819A71A53004F1E71 /* io.h in Headers */,
+				777EFC9D23425037003724EA /* function_types_stateful.hpp in Headers */,
+				777EFBFC23425017003724EA /* gc-object.h in Headers */,
+				777EFC9923425037003724EA /* function_types_core.hpp in Headers */,
+				777EFCA523425037003724EA /* inheritance.hpp in Headers */,
 				566F016219B5EB0F00FCA620 /* CustomGUIReader.h in Headers */,
 				15EFA62B198B3220000C57D3 /* LuaOpengl.h in Headers */,
+				777EFCEB23425037003724EA /* thread.hpp in Headers */,
 				15415AD419A71A53004F1E71 /* timeout.h in Headers */,
+				777EFD2F2342507F003724EA /* lua_L_tmxmap.h in Headers */,
+				777EFC8D23425037003724EA /* environment.hpp in Headers */,
 				15EFA62C198B3220000C57D3 /* lua_cocos2dx_deprecated.h in Headers */,
+				777EFCBD23425037003724EA /* proxy_base.hpp in Headers */,
+				777EFCAB23425037003724EA /* object_base.hpp in Headers */,
+				777EFCC723425037003724EA /* stack.hpp in Headers */,
 				155C7E2919A71CE800F08B25 /* lua_cocos2dx_ui_manual.hpp in Headers */,
 				15EFA62D198B3220000C57D3 /* lua_cocos2dx_experimental_manual.hpp in Headers */,
 				15C9A1131AE4973400C15443 /* lua_cocos2dx_experimental_webview_manual.hpp in Headers */,
+				777EFC9B23425037003724EA /* function_types_overloaded.hpp in Headers */,
+				777EFC7723425037003724EA /* 5.1.0.h in Headers */,
 				15EFA62E198B3220000C57D3 /* lua_cocos2dx_manual.hpp in Headers */,
+				777EFCED23425037003724EA /* tie.hpp in Headers */,
 				15C9A10F1AE4972500C15443 /* lua_cocos2dx_experimental_webview_auto.hpp in Headers */,
 				150983DA1B1C3F3E007F3818 /* lua_cocos2dx_navmesh_manual.h in Headers */,
+				777EFCAF23425037003724EA /* optional_implementation.hpp in Headers */,
+				777EFC7D23425037003724EA /* version.hpp in Headers */,
 				15EFA62F198B3220000C57D3 /* lua_cocos2dx_physics_manual.hpp in Headers */,
 				155C7E0919A71C8500F08B25 /* lua_cocos2dx_extension_manual.h in Headers */,
 				155C7E1919A71CB500F08B25 /* lua_xml_http_request.h in Headers */,
+				777EFC7123425037003724EA /* bind_traits.hpp in Headers */,
+				777EFCD523425037003724EA /* stack_pop.hpp in Headers */,
+				777EFCE923425037003724EA /* table_iterator.hpp in Headers */,
+				777EFC1F23425021003724EA /* lua_i64.h in Headers */,
+				777EFCB923425037003724EA /* protected_function_result.hpp in Headers */,
+				777EFCBF23425037003724EA /* raii.hpp in Headers */,
+				777EFBD22342500D003724EA /* strbuf.h in Headers */,
+				777EFCF523425037003724EA /* userdata.hpp in Headers */,
+				777EFCA323425037003724EA /* in_place.hpp in Headers */,
+				777EFC8523425037003724EA /* coroutine.hpp in Headers */,
 				155C7DFD19A71C5400F08B25 /* lua_cocos2dx_coco_studio_manual.hpp in Headers */,
+				777EFCD923425037003724EA /* stack_proxy.hpp in Headers */,
 				15EFA630198B3220000C57D3 /* LuaScriptHandlerMgr.h in Headers */,
+				777EFC8923425037003724EA /* demangle.hpp in Headers */,
+				777EFCF723425037003724EA /* usertype.hpp in Headers */,
+				777EFC7323425037003724EA /* call.hpp in Headers */,
+				777EFC9323425037003724EA /* function.hpp in Headers */,
+				777EFC0E23425017003724EA /* spin-mutex.h in Headers */,
+				777EFD0823425041003724EA /* lua_struct.h in Headers */,
+				777EFCA723425037003724EA /* load_result.hpp in Headers */,
 				15EFA622198B2E74000C57D3 /* lua_cocos2dx_experimental_auto.hpp in Headers */,
+				777EFCC523425037003724EA /* simple_usertype_metatable.hpp in Headers */,
 				15EFA623198B2E74000C57D3 /* lua_cocos2dx_auto.hpp in Headers */,
+				777EFCFF23425037003724EA /* wrapper.hpp in Headers */,
+				777EFD2B2342507F003724EA /* lua_L_scene.h in Headers */,
+				777EFCE523425037003724EA /* table.hpp in Headers */,
+				777EFCC323425037003724EA /* resolve.hpp in Headers */,
+				777EFCB123425037003724EA /* overload.hpp in Headers */,
+				777EFCCD23425037003724EA /* stack_core.hpp in Headers */,
+				777EFCFD23425037003724EA /* variadic_args.hpp in Headers */,
 				155C7E0119A71C6300F08B25 /* CCBProxy.h in Headers */,
 				15A561E81B00A09A005D4720 /* lua_cocos2dx_physics3d_auto.hpp in Headers */,
 				15415AC819A71A53004F1E71 /* select.h in Headers */,
+				777EFC1823425017003724EA /* utils.h in Headers */,
 				155C7E1D19A71CC300F08B25 /* lua_cocos2dx_spine_manual.hpp in Headers */,
+				777EFCAD23425037003724EA /* optional.hpp in Headers */,
+				777EFCBB23425037003724EA /* proxy.hpp in Headers */,
 				15EFA624198B2E74000C57D3 /* lua_cocos2dx_physics_auto.hpp in Headers */,
 				3E2BDB0619C5E5FE0055CDCD /* lua_cocos2dx_audioengine_auto.hpp in Headers */,
+				777EFCB523425037003724EA /* protect.hpp in Headers */,
 				F4FE0D5A19ECD00100B8B12B /* luasocket_scripts.h in Headers */,
+				777EFCDF23425037003724EA /* state.hpp in Headers */,
+				777EFCE123425037003724EA /* state_view.hpp in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1242,6 +2003,625 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		15C1C255198748D200A46ACC /* libluacocos2d Mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15C1C2C9198748D200A46ACC /* Build configuration list for PBXNativeTarget "libluacocos2d Mac" */;
+			buildPhases = (
+				15C1C256198748D200A46ACC /* Sources */,
+				15C1C28E198748D200A46ACC /* Frameworks */,
+				15C1C290198748D200A46ACC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "libluacocos2d Mac";
+			productName = cocos2dx;
+			productReference = 15C1C2CC198748D200A46ACC /* libluacocos2d Mac.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		15EFA59E198B2DAA000C57D3 /* libluacocos2d iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 15EFA613198B2DAA000C57D3 /* Build configuration list for PBXNativeTarget "libluacocos2d iOS" */;
+			buildPhases = (
+				15EFA59F198B2DAA000C57D3 /* Sources */,
+				15EFA5D7198B2DAA000C57D3 /* Frameworks */,
+				15EFA5DA198B2DAA000C57D3 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "libluacocos2d iOS";
+			productName = cocos2dx;
+			productReference = 15EFA616198B2DAA000C57D3 /* libluacocos2d iOS.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		507B42BB1C31FA0C0067B53E /* libluacocos2d tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 507B43501C31FA0C0067B53E /* Build configuration list for PBXNativeTarget "libluacocos2d tvOS" */;
+			buildPhases = (
+				507B42BC1C31FA0C0067B53E /* Sources */,
+				507B43091C31FA0C0067B53E /* Frameworks */,
+				507B430B1C31FA0C0067B53E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "libluacocos2d tvOS";
+			productName = cocos2dx;
+			productReference = 507B43531C31FA0C0067B53E /* libluacocos2d tvOS.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1551A336158F2AB200E66CFE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "";
+			};
+			buildConfigurationList = 1551A339158F2AB200E66CFE /* Build configuration list for PBXProject "cocos2d_lua_bindings" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1551A334158F2AB200E66CFE;
+			productRefGroup = 1551A334158F2AB200E66CFE;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				15C1C255198748D200A46ACC /* libluacocos2d Mac */,
+				15EFA59E198B2DAA000C57D3 /* libluacocos2d iOS */,
+				507B42BB1C31FA0C0067B53E /* libluacocos2d tvOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		15C1C256198748D200A46ACC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				777EFBFD23425017003724EA /* logger.cpp in Sources */,
+				777EFC0523425017003724EA /* lua-module.cpp in Sources */,
+				15415A7219A718FB004F1E71 /* lua_cocos2dx_3d_auto.cpp in Sources */,
+				15415A7319A718FB004F1E71 /* lua_cocos2dx_cocosbuilder_auto.cpp in Sources */,
+				777EFD2C2342507F003724EA /* lua_L_tmxmap.cpp in Sources */,
+				150906F219D556CE002C4D97 /* lua_cocos2dx_audioengine_manual.cpp in Sources */,
+				777EFD0523425041003724EA /* lua_struct.cpp in Sources */,
+				777EFBEF23425017003724EA /* function.cpp in Sources */,
+				15415A7519A718FB004F1E71 /* lua_cocos2dx_experimental_video_auto.cpp in Sources */,
+				150983DD1B1C4860007F3818 /* lua_cocos2dx_navmesh_conversions.cpp in Sources */,
+				15B5754F1A6F4D1500041C20 /* lua-cocos-studio-conversions.cpp in Sources */,
+				15415A7619A718FB004F1E71 /* lua_cocos2dx_ui_auto.cpp in Sources */,
+				15415A7719A718FB004F1E71 /* lua_cocos2dx_spine_auto.cpp in Sources */,
+				15A561E51B00A09A005D4720 /* lua_cocos2dx_physics3d_auto.cpp in Sources */,
+				15415A7819A718FB004F1E71 /* lua_cocos2dx_studio_auto.cpp in Sources */,
+				155C7DEC19A71BF200F08B25 /* lua_cocos2dx_cocosdenshion_auto.cpp in Sources */,
+				15AC69D91987710400D17520 /* tolua_event.c in Sources */,
+				15AC69DA1987710400D17520 /* tolua_is.c in Sources */,
+				777EFBC72342500D003724EA /* fpconv.c in Sources */,
+				15415ACD19A71A53004F1E71 /* tcp.c in Sources */,
+				15AC69DB1987710400D17520 /* tolua_map.c in Sources */,
+				777EFD1323425054003724EA /* lua_utils.cpp in Sources */,
+				ADD1C0D51C196B9500733781 /* lua_module_register.cpp in Sources */,
+				15415AD519A71A53004F1E71 /* udp.c in Sources */,
+				150983D01B1C0554007F3818 /* lua_cocos2dx_navmesh_auto.cpp in Sources */,
+				ED1AA90E215DF5F3004ABA9F /* lua_downloader.cpp in Sources */,
+				15415ADD19A71A53004F1E71 /* usocket.c in Sources */,
+				15AC69DC1987710400D17520 /* tolua_push.c in Sources */,
+				15AC69DD1987710400D17520 /* tolua_to.c in Sources */,
+				15415AAD19A71A53004F1E71 /* except.c in Sources */,
+				15415ABD19A71A53004F1E71 /* mime.c in Sources */,
+				15C1C2E519874C9200A46ACC /* CCLuaObjcBridge.mm in Sources */,
+				155C7E1619A71CAD00F08B25 /* lua_xml_http_request.cpp in Sources */,
+				15C1C2E419874C7C00A46ACC /* tolua_fix.cpp in Sources */,
+				777EFBF723425017003724EA /* gc-data.cpp in Sources */,
+				15C1C2E219874BA100A46ACC /* LuaBasicConversions.cpp in Sources */,
+				F4FE0D5719ECD00100B8B12B /* luasocket_scripts.c in Sources */,
+				15415AC519A71A53004F1E71 /* select.c in Sources */,
+				155C7DFE19A71C5A00F08B25 /* CCBProxy.cpp in Sources */,
+				1595523A1A25E1C5001E9FC9 /* lua_cocos2dx_csloader_auto.cpp in Sources */,
+				15415AD919A71A53004F1E71 /* unix.c in Sources */,
+				777EFBCB2342500D003724EA /* lua_cjson.c in Sources */,
+				777EFBCF2342500D003724EA /* strbuf.c in Sources */,
+				155C7E0619A71C7600F08B25 /* lua_cocos2dx_extension_manual.cpp in Sources */,
+				15C1C2DD19874B8800A46ACC /* CCLuaBridge.cpp in Sources */,
+				15C1C2DE19874B8800A46ACC /* CCLuaEngine.cpp in Sources */,
+				777EFD282342507F003724EA /* lua_L_scene.cpp in Sources */,
+				15415AC919A71A53004F1E71 /* serial.c in Sources */,
+				777EFC1323425017003724EA /* threading.cpp in Sources */,
+				BA0CBB5E1BB0756F00003364 /* CCComponentLua.cpp in Sources */,
+				777EFC0923425017003724EA /* shared-table.cpp in Sources */,
+				155C7E0219A71C6700F08B25 /* lua_cocos2dx_cocosbuilder_manual.cpp in Sources */,
+				777EFC1C23425021003724EA /* lua_i64.cpp in Sources */,
+				15C1C2DF19874B8800A46ACC /* CCLuaStack.cpp in Sources */,
+				15C1C2E019874B8800A46ACC /* CCLuaValue.cpp in Sources */,
+				155C7DF219A71C3200F08B25 /* lua_cocos2dx_3d_manual.cpp in Sources */,
+				15415AB119A71A53004F1E71 /* inet.c in Sources */,
+				15C1C2E119874B8800A46ACC /* Cocos2dxLuaLoader.cpp in Sources */,
+				15C1C2DB19874B3D00A46ACC /* xxtea.cpp in Sources */,
+				155C7E0E19A71C9600F08B25 /* lua_extensions.c in Sources */,
+				15EFA1F61989E528000C57D3 /* lua_cocos2dx_experimental_auto.cpp in Sources */,
+				777EFC0F23425017003724EA /* stored-object.cpp in Sources */,
+				15AC69D519876E9300D17520 /* lua_cocos2dx_physics_auto.cpp in Sources */,
+				777EFC0123425017003724EA /* lua-helpers.cpp in Sources */,
+				155C7E1E19A71CC700F08B25 /* LuaSkeletonAnimation.cpp in Sources */,
+				15415AB519A71A53004F1E71 /* io.c in Sources */,
+				15C1C2CE1987498B00A46ACC /* LuaOpengl.cpp in Sources */,
+				777EFD242342507F003724EA /* lua_L_filemanager.cpp in Sources */,
+				566F015F19B5EB0F00FCA620 /* CustomGUIReader.cpp in Sources */,
+				15415AC119A71A53004F1E71 /* options.c in Sources */,
+				150906F019D556C5002C4D97 /* lua_cocos2dx_audioengine_auto.cpp in Sources */,
+				155C7E0A19A71C8B00F08B25 /* lua_cocos2dx_network_manual.cpp in Sources */,
+				15415AD119A71A53004F1E71 /* timeout.c in Sources */,
+				15C1C2CF1987498B00A46ACC /* lua_cocos2dx_deprecated.cpp in Sources */,
+				155C7E2219A71CD300F08B25 /* lua_cocos2dx_experimental_video_manual.cpp in Sources */,
+				155C7DFA19A71C4C00F08B25 /* lua_cocos2dx_coco_studio_manual.cpp in Sources */,
+				777EFBEB23425017003724EA /* channel.cpp in Sources */,
+				155C7E2619A71CDD00F08B25 /* lua_cocos2dx_ui_manual.cpp in Sources */,
+				150983D71B1C3F3E007F3818 /* lua_cocos2dx_navmesh_manual.cpp in Sources */,
+				777EFD202342507F003724EA /* lua_cocos2dx_L_manual.cpp in Sources */,
+				15415A7019A71768004F1E71 /* lua_cocos2dx_extension_auto.cpp in Sources */,
+				155C7DF619A71C3E00F08B25 /* lua_cocos2dx_cocosdenshion_manual.cpp in Sources */,
+				15415AA519A71A53004F1E71 /* auxiliar.c in Sources */,
+				155C7E1A19A71CBC00F08B25 /* lua_cocos2dx_spine_manual.cpp in Sources */,
+				15A561EC1B00A3F1005D4720 /* lua_cocos2dx_physics3d_manual.cpp in Sources */,
+				15C1C2D01987498B00A46ACC /* lua_cocos2dx_experimental_manual.cpp in Sources */,
+				777EFD0C2342504D003724EA /* lutf8lib.c in Sources */,
+				15C1C2D11987498B00A46ACC /* lua_cocos2dx_manual.cpp in Sources */,
+				15C1C2D21987498B00A46ACC /* lua_cocos2dx_physics_manual.cpp in Sources */,
+				15C1C2D31987498B00A46ACC /* LuaScriptHandlerMgr.cpp in Sources */,
+				15415AA919A71A53004F1E71 /* buffer.c in Sources */,
+				15C1C2CD1987495500A46ACC /* lua_cocos2dx_auto.cpp in Sources */,
+				15415AB919A71A53004F1E71 /* luasocket.c in Sources */,
+				159552401A25E4B8001E9FC9 /* lua_cocos2dx_csloader_manual.cpp in Sources */,
+				777EFBF323425017003724EA /* garbage-collector.cpp in Sources */,
+				155C7E1219A71CA200F08B25 /* Lua_web_socket.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15EFA59F198B2DAA000C57D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADAC23ED1C2044A60049A6A2 /* lua_module_register.cpp in Sources */,
+				15415AC619A71A53004F1E71 /* select.c in Sources */,
+				15A561ED1B00A3F1005D4720 /* lua_cocos2dx_physics3d_manual.cpp in Sources */,
+				15EFA646198B3311000C57D3 /* tolua_event.c in Sources */,
+				3E2BDB0A19C5E6100055CDCD /* lua_cocos2dx_audioengine_manual.cpp in Sources */,
+				777EFC1023425017003724EA /* stored-object.cpp in Sources */,
+				15415AA619A71A53004F1E71 /* auxiliar.c in Sources */,
+				15B575501A6F4D1500041C20 /* lua-cocos-studio-conversions.cpp in Sources */,
+				15EFA647198B3311000C57D3 /* tolua_is.c in Sources */,
+				15EFA648198B3311000C57D3 /* tolua_map.c in Sources */,
+				15EFA649198B3311000C57D3 /* tolua_push.c in Sources */,
+				15EFA64A198B3311000C57D3 /* tolua_to.c in Sources */,
+				777EFBCC2342500D003724EA /* lua_cjson.c in Sources */,
+				777EFD292342507F003724EA /* lua_L_scene.cpp in Sources */,
+				777EFD252342507F003724EA /* lua_L_filemanager.cpp in Sources */,
+				777EFBF423425017003724EA /* garbage-collector.cpp in Sources */,
+				15415AC219A71A53004F1E71 /* options.c in Sources */,
+				15EFA645198B32DB000C57D3 /* xxtea.cpp in Sources */,
+				15EFA632198B328B000C57D3 /* CCLuaBridge.cpp in Sources */,
+				150983D11B1C0554007F3818 /* lua_cocos2dx_navmesh_auto.cpp in Sources */,
+				15EFA633198B328B000C57D3 /* CCLuaEngine.cpp in Sources */,
+				155C7DEE19A71BFC00F08B25 /* lua_cocos2dx_experimental_video_auto.cpp in Sources */,
+				15EFA634198B328B000C57D3 /* CCLuaStack.cpp in Sources */,
+				15EFA635198B328B000C57D3 /* CCLuaValue.cpp in Sources */,
+				777EFC0A23425017003724EA /* shared-table.cpp in Sources */,
+				15EFA636198B328B000C57D3 /* Cocos2dxLuaLoader.cpp in Sources */,
+				155C7DEB19A71BE900F08B25 /* lua_cocos2dx_cocosbuilder_auto.cpp in Sources */,
+				150983DE1B1C4860007F3818 /* lua_cocos2dx_navmesh_conversions.cpp in Sources */,
+				15EFA637198B328B000C57D3 /* LuaBasicConversions.cpp in Sources */,
+				15EFA638198B328B000C57D3 /* CCLuaObjcBridge.mm in Sources */,
+				155C7E1719A71CAF00F08B25 /* lua_xml_http_request.cpp in Sources */,
+				15415ACE19A71A53004F1E71 /* tcp.c in Sources */,
+				15415AD219A71A53004F1E71 /* timeout.c in Sources */,
+				F4FE0D5819ECD00100B8B12B /* luasocket_scripts.c in Sources */,
+				15EFA639198B328B000C57D3 /* tolua_fix.cpp in Sources */,
+				15A561E61B00A09A005D4720 /* lua_cocos2dx_physics3d_auto.cpp in Sources */,
+				155C7DFF19A71C5C00F08B25 /* CCBProxy.cpp in Sources */,
+				1595523B1A25E1C5001E9FC9 /* lua_cocos2dx_csloader_auto.cpp in Sources */,
+				15C9A1121AE4973400C15443 /* lua_cocos2dx_experimental_webview_manual.cpp in Sources */,
+				155C7DF019A71C1E00F08B25 /* lua_cocos2dx_spine_auto.cpp in Sources */,
+				777EFD2D2342507F003724EA /* lua_L_tmxmap.cpp in Sources */,
+				777EFBF023425017003724EA /* function.cpp in Sources */,
+				155C7E0719A71C7800F08B25 /* lua_cocos2dx_extension_manual.cpp in Sources */,
+				15EFA625198B31FB000C57D3 /* LuaOpengl.cpp in Sources */,
+				15EFA626198B31FB000C57D3 /* lua_cocos2dx_deprecated.cpp in Sources */,
+				777EFC1423425017003724EA /* threading.cpp in Sources */,
+				15EFA627198B31FB000C57D3 /* lua_cocos2dx_experimental_manual.cpp in Sources */,
+				777EFBEC23425017003724EA /* channel.cpp in Sources */,
+				777EFC0223425017003724EA /* lua-helpers.cpp in Sources */,
+				155C7E0319A71C6900F08B25 /* lua_cocos2dx_cocosbuilder_manual.cpp in Sources */,
+				15415ABE19A71A53004F1E71 /* mime.c in Sources */,
+				15415ADA19A71A53004F1E71 /* unix.c in Sources */,
+				155C7DF319A71C3400F08B25 /* lua_cocos2dx_3d_manual.cpp in Sources */,
+				15415ADE19A71A53004F1E71 /* usocket.c in Sources */,
+				777EFBFE23425017003724EA /* logger.cpp in Sources */,
+				155C7DED19A71BF400F08B25 /* lua_cocos2dx_cocosdenshion_auto.cpp in Sources */,
+				15EFA628198B31FB000C57D3 /* lua_cocos2dx_manual.cpp in Sources */,
+				777EFC1D23425021003724EA /* lua_i64.cpp in Sources */,
+				155C7E0F19A71C9800F08B25 /* lua_extensions.c in Sources */,
+				BA0CBB5F1BB0756F00003364 /* CCComponentLua.cpp in Sources */,
+				15415AD619A71A53004F1E71 /* udp.c in Sources */,
+				15415ABA19A71A53004F1E71 /* luasocket.c in Sources */,
+				155C7E1F19A71CC800F08B25 /* LuaSkeletonAnimation.cpp in Sources */,
+				15415ACA19A71A53004F1E71 /* serial.c in Sources */,
+				155C7DEA19A71BDA00F08B25 /* lua_cocos2dx_3d_auto.cpp in Sources */,
+				566F016019B5EB0F00FCA620 /* CustomGUIReader.cpp in Sources */,
+				155C7DF119A71C2300F08B25 /* lua_cocos2dx_studio_auto.cpp in Sources */,
+				3E2BDB0519C5E5FE0055CDCD /* lua_cocos2dx_audioengine_auto.cpp in Sources */,
+				155C7E0B19A71C8D00F08B25 /* lua_cocos2dx_network_manual.cpp in Sources */,
+				777EFD212342507F003724EA /* lua_cocos2dx_L_manual.cpp in Sources */,
+				15415AAE19A71A53004F1E71 /* except.c in Sources */,
+				15C9A10E1AE4972500C15443 /* lua_cocos2dx_experimental_webview_auto.cpp in Sources */,
+				15415AAA19A71A53004F1E71 /* buffer.c in Sources */,
+				155C7E2319A71CD500F08B25 /* lua_cocos2dx_experimental_video_manual.cpp in Sources */,
+				150983D81B1C3F3E007F3818 /* lua_cocos2dx_navmesh_manual.cpp in Sources */,
+				155C7DFB19A71C4E00F08B25 /* lua_cocos2dx_coco_studio_manual.cpp in Sources */,
+				777EFBD02342500D003724EA /* strbuf.c in Sources */,
+				155C7E2719A71CDE00F08B25 /* lua_cocos2dx_ui_manual.cpp in Sources */,
+				777EFD1423425054003724EA /* lua_utils.cpp in Sources */,
+				15415AB619A71A53004F1E71 /* io.c in Sources */,
+				777EFC0623425017003724EA /* lua-module.cpp in Sources */,
+				777EFBF823425017003724EA /* gc-data.cpp in Sources */,
+				155C7DF719A71C4000F08B25 /* lua_cocos2dx_cocosdenshion_manual.cpp in Sources */,
+				155C7DEF19A71C0900F08B25 /* lua_cocos2dx_ui_auto.cpp in Sources */,
+				155C7E1B19A71CBE00F08B25 /* lua_cocos2dx_spine_manual.cpp in Sources */,
+				15415A7119A71782004F1E71 /* lua_cocos2dx_extension_auto.cpp in Sources */,
+				777EFD0623425041003724EA /* lua_struct.cpp in Sources */,
+				15EFA629198B31FB000C57D3 /* lua_cocos2dx_physics_manual.cpp in Sources */,
+				777EFBC82342500D003724EA /* fpconv.c in Sources */,
+				15EFA62A198B31FB000C57D3 /* LuaScriptHandlerMgr.cpp in Sources */,
+				777EFD0D2342504D003724EA /* lutf8lib.c in Sources */,
+				15EFA617198B2E2B000C57D3 /* lua_cocos2dx_experimental_auto.cpp in Sources */,
+				ED1AA90F215DF5F3004ABA9F /* lua_downloader.cpp in Sources */,
+				15EFA618198B2E2B000C57D3 /* lua_cocos2dx_auto.cpp in Sources */,
+				15EFA619198B2E2B000C57D3 /* lua_cocos2dx_physics_auto.cpp in Sources */,
+				15415AB219A71A53004F1E71 /* inet.c in Sources */,
+				159552411A25E4B8001E9FC9 /* lua_cocos2dx_csloader_manual.cpp in Sources */,
+				155C7E1319A71CA400F08B25 /* Lua_web_socket.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		507B42BC1C31FA0C0067B53E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				507B42BD1C31FA0C0067B53E /* lua_module_register.cpp in Sources */,
+				507B42BE1C31FA0C0067B53E /* select.c in Sources */,
+				507B42BF1C31FA0C0067B53E /* lua_cocos2dx_physics3d_manual.cpp in Sources */,
+				507B42C01C31FA0C0067B53E /* tolua_event.c in Sources */,
+				507B42C11C31FA0C0067B53E /* lua_cocos2dx_audioengine_manual.cpp in Sources */,
+				507B42C21C31FA0C0067B53E /* auxiliar.c in Sources */,
+				507B42C31C31FA0C0067B53E /* lua-cocos-studio-conversions.cpp in Sources */,
+				507B42C41C31FA0C0067B53E /* tolua_is.c in Sources */,
+				507B42C51C31FA0C0067B53E /* tolua_map.c in Sources */,
+				507B42C61C31FA0C0067B53E /* tolua_push.c in Sources */,
+				507B42C71C31FA0C0067B53E /* tolua_to.c in Sources */,
+				507B42C81C31FA0C0067B53E /* options.c in Sources */,
+				507B42C91C31FA0C0067B53E /* xxtea.cpp in Sources */,
+				507B42CA1C31FA0C0067B53E /* CCLuaBridge.cpp in Sources */,
+				507B42CB1C31FA0C0067B53E /* lua_cocos2dx_navmesh_auto.cpp in Sources */,
+				507B42CC1C31FA0C0067B53E /* CCLuaEngine.cpp in Sources */,
+				507B42CD1C31FA0C0067B53E /* lua_cocos2dx_experimental_video_auto.cpp in Sources */,
+				507B42CE1C31FA0C0067B53E /* CCLuaStack.cpp in Sources */,
+				507B42CF1C31FA0C0067B53E /* CCLuaValue.cpp in Sources */,
+				507B42D01C31FA0C0067B53E /* Cocos2dxLuaLoader.cpp in Sources */,
+				507B42D11C31FA0C0067B53E /* lua_cocos2dx_cocosbuilder_auto.cpp in Sources */,
+				507B42D21C31FA0C0067B53E /* lua_cocos2dx_navmesh_conversions.cpp in Sources */,
+				507B42D31C31FA0C0067B53E /* LuaBasicConversions.cpp in Sources */,
+				507B42D41C31FA0C0067B53E /* CCLuaObjcBridge.mm in Sources */,
+				507B42D51C31FA0C0067B53E /* lua_xml_http_request.cpp in Sources */,
+				507B42D61C31FA0C0067B53E /* tcp.c in Sources */,
+				507B42D71C31FA0C0067B53E /* timeout.c in Sources */,
+				507B42D81C31FA0C0067B53E /* luasocket_scripts.c in Sources */,
+				507B42D91C31FA0C0067B53E /* tolua_fix.cpp in Sources */,
+				507B42DA1C31FA0C0067B53E /* lua_cocos2dx_physics3d_auto.cpp in Sources */,
+				507B42DB1C31FA0C0067B53E /* CCBProxy.cpp in Sources */,
+				507B42DC1C31FA0C0067B53E /* lua_cocos2dx_csloader_auto.cpp in Sources */,
+				507B42DD1C31FA0C0067B53E /* lua_cocos2dx_experimental_webview_manual.cpp in Sources */,
+				507B42DE1C31FA0C0067B53E /* lua_cocos2dx_spine_auto.cpp in Sources */,
+				507B42DF1C31FA0C0067B53E /* lua_cocos2dx_extension_manual.cpp in Sources */,
+				507B42E01C31FA0C0067B53E /* LuaOpengl.cpp in Sources */,
+				507B42E11C31FA0C0067B53E /* lua_cocos2dx_deprecated.cpp in Sources */,
+				507B42E21C31FA0C0067B53E /* lua_cocos2dx_experimental_manual.cpp in Sources */,
+				507B42E31C31FA0C0067B53E /* lua_cocos2dx_cocosbuilder_manual.cpp in Sources */,
+				507B42E41C31FA0C0067B53E /* mime.c in Sources */,
+				507B42E51C31FA0C0067B53E /* unix.c in Sources */,
+				507B42E61C31FA0C0067B53E /* lua_cocos2dx_3d_manual.cpp in Sources */,
+				507B42E71C31FA0C0067B53E /* usocket.c in Sources */,
+				507B42E81C31FA0C0067B53E /* lua_cocos2dx_cocosdenshion_auto.cpp in Sources */,
+				507B42E91C31FA0C0067B53E /* lua_cocos2dx_manual.cpp in Sources */,
+				507B42EA1C31FA0C0067B53E /* lua_extensions.c in Sources */,
+				507B42EB1C31FA0C0067B53E /* CCComponentLua.cpp in Sources */,
+				507B42EC1C31FA0C0067B53E /* udp.c in Sources */,
+				507B42ED1C31FA0C0067B53E /* luasocket.c in Sources */,
+				507B42EE1C31FA0C0067B53E /* LuaSkeletonAnimation.cpp in Sources */,
+				507B42EF1C31FA0C0067B53E /* serial.c in Sources */,
+				507B42F01C31FA0C0067B53E /* lua_cocos2dx_3d_auto.cpp in Sources */,
+				507B42F11C31FA0C0067B53E /* CustomGUIReader.cpp in Sources */,
+				507B42F21C31FA0C0067B53E /* lua_cocos2dx_studio_auto.cpp in Sources */,
+				507B42F31C31FA0C0067B53E /* lua_cocos2dx_audioengine_auto.cpp in Sources */,
+				507B42F41C31FA0C0067B53E /* lua_cocos2dx_network_manual.cpp in Sources */,
+				507B42F51C31FA0C0067B53E /* except.c in Sources */,
+				507B42F61C31FA0C0067B53E /* lua_cocos2dx_experimental_webview_auto.cpp in Sources */,
+				507B42F71C31FA0C0067B53E /* buffer.c in Sources */,
+				507B42F81C31FA0C0067B53E /* lua_cocos2dx_experimental_video_manual.cpp in Sources */,
+				507B42F91C31FA0C0067B53E /* lua_cocos2dx_navmesh_manual.cpp in Sources */,
+				507B42FA1C31FA0C0067B53E /* lua_cocos2dx_coco_studio_manual.cpp in Sources */,
+				507B42FB1C31FA0C0067B53E /* lua_cocos2dx_ui_manual.cpp in Sources */,
+				507B42FC1C31FA0C0067B53E /* io.c in Sources */,
+				507B42FD1C31FA0C0067B53E /* lua_cocos2dx_cocosdenshion_manual.cpp in Sources */,
+				507B42FE1C31FA0C0067B53E /* lua_cocos2dx_ui_auto.cpp in Sources */,
+				507B42FF1C31FA0C0067B53E /* lua_cocos2dx_spine_manual.cpp in Sources */,
+				507B43001C31FA0C0067B53E /* lua_cocos2dx_extension_auto.cpp in Sources */,
+				507B43011C31FA0C0067B53E /* lua_cocos2dx_physics_manual.cpp in Sources */,
+				507B43021C31FA0C0067B53E /* LuaScriptHandlerMgr.cpp in Sources */,
+				507B43031C31FA0C0067B53E /* lua_cocos2dx_experimental_auto.cpp in Sources */,
+				ED1AA910215DF5F3004ABA9F /* lua_downloader.cpp in Sources */,
+				507B43041C31FA0C0067B53E /* lua_cocos2dx_auto.cpp in Sources */,
+				507B43051C31FA0C0067B53E /* lua_cocos2dx_physics_auto.cpp in Sources */,
+				507B43061C31FA0C0067B53E /* inet.c in Sources */,
+				507B43071C31FA0C0067B53E /* lua_cocos2dx_csloader_manual.cpp in Sources */,
+				507B43081C31FA0C0067B53E /* Lua_web_socket.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1551A34A158F2AB200E66CFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"COCOS2D_DEBUG=1",
+					USE_FILE32API,
+					"CC_ENABLE_CHIPMUNK_INTEGRATION=1",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = YES;
+				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_HIDDEN_VIRTUAL_FUNCTIONS = YES;
+				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/../../../.. $(SRCROOT)/../../.. $(SRCROOT)/../../../base $(SRCROOT)/../../../3d $(SRCROOT)/../../../2d $(SRCROOT)/../../../deprecated $(SRCROOT)/../../../physics $(SRCROOT)/../../../2d/platform $(SRCROOT)/../../../audio/include $(SRCROOT)/../../../editor-support $(SRCROOT)/../../../editor-support/spine $(SRCROOT)/../../../editor-support/cocostudio $(SRCROOT)/../../../editor-support/cocosbuilder $(SRCROOT)/../../../ui $(SRCROOT)/../../../storage $(SRCROOT)/../../../../extensions $(SRCROOT)/../../../../external $(SRCROOT)/../../../../external/chipmunk/include $(SRCROOT)/../../../../external/lua $(SRCROOT)/../../../../external/lua/luajit/include $(SRCROOT)/../../../../external/lua/tolua $(SRCROOT)/../../../editor-support/cocostudio/ActionTimeline $(SRCROOT)/../../../physics3d $(SRCROOT)/../../../navmesh $(SRCROOT)/../../../../external/bullet/include/bullet $(SRCROOT)/../../../../external/bullet/include";
+			};
+			name = Debug;
+		};
+		1551A34B158F2AB200E66CFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"CC_ENABLE_CHIPMUNK_INTEGRATION=1",
+					NDEBUG,
+					USE_FILE32API,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = YES;
+				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_HIDDEN_VIRTUAL_FUNCTIONS = YES;
+				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/../../../.. $(SRCROOT)/../../.. $(SRCROOT)/../../../base $(SRCROOT)/../../../3d $(SRCROOT)/../../../2d $(SRCROOT)/../../../deprecated $(SRCROOT)/../../../physics $(SRCROOT)/../../../2d/platform $(SRCROOT)/../../../audio/include $(SRCROOT)/../../../editor-support $(SRCROOT)/../../../editor-support/spine $(SRCROOT)/../../../editor-support/cocostudio $(SRCROOT)/../../../editor-support/cocosbuilder $(SRCROOT)/../../../ui $(SRCROOT)/../../../storage $(SRCROOT)/../../../../extensions $(SRCROOT)/../../../../external $(SRCROOT)/../../../../external/chipmunk/include $(SRCROOT)/../../../../external/lua $(SRCROOT)/../../../../external/lua/luajit/include $(SRCROOT)/../../../../external/lua/tolua $(SRCROOT)/../../../editor-support/cocostudio/ActionTimeline $(SRCROOT)/../../../physics3d $(SRCROOT)/../../../navmesh $(SRCROOT)/../../../../external/bullet/include/bullet $(SRCROOT)/../../../../external/bullet/include";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		15C1C2CA198748D200A46ACC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					CC_TARGET_OS_MAC,
+					CC_KEYBOARD_SUPPORT,
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/../../../../external/lua/luajit/prebuilt/mac";
+				PRODUCT_NAME = "libluacocos2d Mac";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "$(inherited) $(SRCROOT)/../../../platform/mac $(SRCROOT)/../../../../external/glfw3/include/mac $(SRCROOT)/../../../../external/curl/include/mac";
+			};
+			name = Debug;
+		};
+		15C1C2CB198748D200A46ACC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				EXECUTABLE_PREFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					CC_TARGET_OS_MAC,
+					CC_KEYBOARD_SUPPORT,
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/../../../../external/lua/luajit/prebuilt/mac";
+				PRODUCT_NAME = "libluacocos2d Mac";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "$(inherited) $(SRCROOT)/../../../platform/mac $(SRCROOT)/../../../../external/glfw3/include/mac $(SRCROOT)/../../../../external/curl/include/mac";
+			};
+			name = Release;
+		};
+		15EFA614198B2DAA000C57D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ENABLE_BITCODE = NO;
+				EXECUTABLE_PREFIX = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					CC_TARGET_OS_IPHONE,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/../../../../external/lua/luajit/prebuilt/ios";
+				PRODUCT_NAME = "libluacocos2d iOS";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "$(inherited) $(SRCROOT)/../../../platform/ios $(SRCROOT)/../../../../external/curl/include/ios";
+			};
+			name = Debug;
+		};
+		15EFA615198B2DAA000C57D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ENABLE_BITCODE = NO;
+				EXECUTABLE_PREFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					CC_TARGET_OS_IPHONE,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/../../../../external/lua/luajit/prebuilt/ios";
+				PRODUCT_NAME = "libluacocos2d iOS";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = "$(inherited) $(SRCROOT)/../../../platform/ios $(SRCROOT)/../../../../external/curl/include/ios";
+			};
+			name = Release;
+		};
+		507B43511C31FA0C0067B53E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				EXECUTABLE_PREFIX = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					CC_TARGET_OS_TVOS,
+				);
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/../../../../external/lua/luajit/prebuilt/ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				USER_HEADER_SEARCH_PATHS = "$(inherited) $(SRCROOT)/../../../platform/ios $(SRCROOT)/../../../../external/curl/include/ios";
+			};
+			name = Debug;
+		};
+		507B43521C31FA0C0067B53E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				EXECUTABLE_PREFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					CC_TARGET_OS_TVOS,
+				);
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/../../../../external/lua/luajit/prebuilt/ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				USER_HEADER_SEARCH_PATHS = "$(inherited) $(SRCROOT)/../../../platform/ios $(SRCROOT)/../../../../external/curl/include/ios";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1551A339158F2AB200E66CFE /* Build configuration list for PBXProject "cocos2d_lua_bindings" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1551A34A158F2AB200E66CFE /* Debug */,
+				1551A34B158F2AB200E66CFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		15C1C2C9198748D200A46ACC /* Build configuration list for PBXNativeTarget "libluacocos2d Mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15C1C2CA198748D200A46ACC /* Debug */,
+				15C1C2CB198748D200A46ACC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		15EFA613198B2DAA000C57D3 /* Build configuration list for PBXNativeTarget "libluacocos2d iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15EFA614198B2DAA000C57D3 /* Debug */,
+				15EFA615198B2DAA000C57D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		507B43501C31FA0C0067B53E /* Build configuration list for PBXNativeTarget "libluacocos2d tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				507B43511C31FA0C0067B53E /* Debug */,
+				507B43521C31FA0C0067B53E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1551A336158F2AB200E66CFE /* Project object */;
+}
+iveTarget section */
 		15C1C255198748D200A46ACC /* libluacocos2d Mac */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 15C1C2C9198748D200A46ACC /* Build configuration list for PBXNativeTarget "libluacocos2d Mac" */;
@@ -1516,305 +2896,4 @@
 				507B42D21C31FA0C0067B53E /* lua_cocos2dx_navmesh_conversions.cpp in Sources */,
 				507B42D31C31FA0C0067B53E /* LuaBasicConversions.cpp in Sources */,
 				507B42D41C31FA0C0067B53E /* CCLuaObjcBridge.mm in Sources */,
-				507B42D51C31FA0C0067B53E /* lua_xml_http_request.cpp in Sources */,
-				507B42D61C31FA0C0067B53E /* tcp.c in Sources */,
-				507B42D71C31FA0C0067B53E /* timeout.c in Sources */,
-				507B42D81C31FA0C0067B53E /* luasocket_scripts.c in Sources */,
-				507B42D91C31FA0C0067B53E /* tolua_fix.cpp in Sources */,
-				507B42DA1C31FA0C0067B53E /* lua_cocos2dx_physics3d_auto.cpp in Sources */,
-				507B42DB1C31FA0C0067B53E /* CCBProxy.cpp in Sources */,
-				507B42DC1C31FA0C0067B53E /* lua_cocos2dx_csloader_auto.cpp in Sources */,
-				507B42DD1C31FA0C0067B53E /* lua_cocos2dx_experimental_webview_manual.cpp in Sources */,
-				507B42DE1C31FA0C0067B53E /* lua_cocos2dx_spine_auto.cpp in Sources */,
-				507B42DF1C31FA0C0067B53E /* lua_cocos2dx_extension_manual.cpp in Sources */,
-				507B42E01C31FA0C0067B53E /* LuaOpengl.cpp in Sources */,
-				507B42E11C31FA0C0067B53E /* lua_cocos2dx_deprecated.cpp in Sources */,
-				507B42E21C31FA0C0067B53E /* lua_cocos2dx_experimental_manual.cpp in Sources */,
-				507B42E31C31FA0C0067B53E /* lua_cocos2dx_cocosbuilder_manual.cpp in Sources */,
-				507B42E41C31FA0C0067B53E /* mime.c in Sources */,
-				507B42E51C31FA0C0067B53E /* unix.c in Sources */,
-				507B42E61C31FA0C0067B53E /* lua_cocos2dx_3d_manual.cpp in Sources */,
-				507B42E71C31FA0C0067B53E /* usocket.c in Sources */,
-				507B42E81C31FA0C0067B53E /* lua_cocos2dx_cocosdenshion_auto.cpp in Sources */,
-				507B42E91C31FA0C0067B53E /* lua_cocos2dx_manual.cpp in Sources */,
-				507B42EA1C31FA0C0067B53E /* lua_extensions.c in Sources */,
-				507B42EB1C31FA0C0067B53E /* CCComponentLua.cpp in Sources */,
-				507B42EC1C31FA0C0067B53E /* udp.c in Sources */,
-				507B42ED1C31FA0C0067B53E /* luasocket.c in Sources */,
-				507B42EE1C31FA0C0067B53E /* LuaSkeletonAnimation.cpp in Sources */,
-				507B42EF1C31FA0C0067B53E /* serial.c in Sources */,
-				507B42F01C31FA0C0067B53E /* lua_cocos2dx_3d_auto.cpp in Sources */,
-				507B42F11C31FA0C0067B53E /* CustomGUIReader.cpp in Sources */,
-				507B42F21C31FA0C0067B53E /* lua_cocos2dx_studio_auto.cpp in Sources */,
-				507B42F31C31FA0C0067B53E /* lua_cocos2dx_audioengine_auto.cpp in Sources */,
-				507B42F41C31FA0C0067B53E /* lua_cocos2dx_network_manual.cpp in Sources */,
-				507B42F51C31FA0C0067B53E /* except.c in Sources */,
-				507B42F61C31FA0C0067B53E /* lua_cocos2dx_experimental_webview_auto.cpp in Sources */,
-				507B42F71C31FA0C0067B53E /* buffer.c in Sources */,
-				507B42F81C31FA0C0067B53E /* lua_cocos2dx_experimental_video_manual.cpp in Sources */,
-				507B42F91C31FA0C0067B53E /* lua_cocos2dx_navmesh_manual.cpp in Sources */,
-				507B42FA1C31FA0C0067B53E /* lua_cocos2dx_coco_studio_manual.cpp in Sources */,
-				507B42FB1C31FA0C0067B53E /* lua_cocos2dx_ui_manual.cpp in Sources */,
-				507B42FC1C31FA0C0067B53E /* io.c in Sources */,
-				507B42FD1C31FA0C0067B53E /* lua_cocos2dx_cocosdenshion_manual.cpp in Sources */,
-				507B42FE1C31FA0C0067B53E /* lua_cocos2dx_ui_auto.cpp in Sources */,
-				507B42FF1C31FA0C0067B53E /* lua_cocos2dx_spine_manual.cpp in Sources */,
-				507B43001C31FA0C0067B53E /* lua_cocos2dx_extension_auto.cpp in Sources */,
-				507B43011C31FA0C0067B53E /* lua_cocos2dx_physics_manual.cpp in Sources */,
-				507B43021C31FA0C0067B53E /* LuaScriptHandlerMgr.cpp in Sources */,
-				507B43031C31FA0C0067B53E /* lua_cocos2dx_experimental_auto.cpp in Sources */,
-				ED1AA910215DF5F3004ABA9F /* lua_downloader.cpp in Sources */,
-				507B43041C31FA0C0067B53E /* lua_cocos2dx_auto.cpp in Sources */,
-				507B43051C31FA0C0067B53E /* lua_cocos2dx_physics_auto.cpp in Sources */,
-				507B43061C31FA0C0067B53E /* inet.c in Sources */,
-				507B43071C31FA0C0067B53E /* lua_cocos2dx_csloader_manual.cpp in Sources */,
-				507B43081C31FA0C0067B53E /* Lua_web_socket.cpp in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin XCBuildConfiguration section */
-		1551A34A158F2AB200E66CFE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = c99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"COCOS2D_DEBUG=1",
-					USE_FILE32API,
-					"CC_ENABLE_CHIPMUNK_INTEGRATION=1",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
-				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = YES;
-				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_HIDDEN_VIRTUAL_FUNCTIONS = YES;
-				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
-				GCC_WARN_SHADOW = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/../../../.. $(SRCROOT)/../../.. $(SRCROOT)/../../../base $(SRCROOT)/../../../3d $(SRCROOT)/../../../2d $(SRCROOT)/../../../deprecated $(SRCROOT)/../../../physics $(SRCROOT)/../../../2d/platform $(SRCROOT)/../../../audio/include $(SRCROOT)/../../../editor-support $(SRCROOT)/../../../editor-support/spine $(SRCROOT)/../../../editor-support/cocostudio $(SRCROOT)/../../../editor-support/cocosbuilder $(SRCROOT)/../../../ui $(SRCROOT)/../../../storage $(SRCROOT)/../../../../extensions $(SRCROOT)/../../../../external $(SRCROOT)/../../../../external/chipmunk/include $(SRCROOT)/../../../../external/lua $(SRCROOT)/../../../../external/lua/luajit/include $(SRCROOT)/../../../../external/lua/tolua $(SRCROOT)/../../../editor-support/cocostudio/ActionTimeline $(SRCROOT)/../../../physics3d $(SRCROOT)/../../../navmesh $(SRCROOT)/../../../../external/bullet/include/bullet $(SRCROOT)/../../../../external/bullet/include";
-			};
-			name = Debug;
-		};
-		1551A34B158F2AB200E66CFE /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				GCC_C_LANGUAGE_STANDARD = c99;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"CC_ENABLE_CHIPMUNK_INTEGRATION=1",
-					NDEBUG,
-					USE_FILE32API,
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
-				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = YES;
-				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_HIDDEN_VIRTUAL_FUNCTIONS = YES;
-				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
-				GCC_WARN_SHADOW = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/../../../.. $(SRCROOT)/../../.. $(SRCROOT)/../../../base $(SRCROOT)/../../../3d $(SRCROOT)/../../../2d $(SRCROOT)/../../../deprecated $(SRCROOT)/../../../physics $(SRCROOT)/../../../2d/platform $(SRCROOT)/../../../audio/include $(SRCROOT)/../../../editor-support $(SRCROOT)/../../../editor-support/spine $(SRCROOT)/../../../editor-support/cocostudio $(SRCROOT)/../../../editor-support/cocosbuilder $(SRCROOT)/../../../ui $(SRCROOT)/../../../storage $(SRCROOT)/../../../../extensions $(SRCROOT)/../../../../external $(SRCROOT)/../../../../external/chipmunk/include $(SRCROOT)/../../../../external/lua $(SRCROOT)/../../../../external/lua/luajit/include $(SRCROOT)/../../../../external/lua/tolua $(SRCROOT)/../../../editor-support/cocostudio/ActionTimeline $(SRCROOT)/../../../physics3d $(SRCROOT)/../../../navmesh $(SRCROOT)/../../../../external/bullet/include/bullet $(SRCROOT)/../../../../external/bullet/include";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		15C1C2CA198748D200A46ACC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = YES;
-				COMBINE_HIDPI_IMAGES = YES;
-				EXECUTABLE_PREFIX = "";
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"$(inherited)",
-					CC_TARGET_OS_MAC,
-					CC_KEYBOARD_SUPPORT,
-				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-				);
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/../../../../external/lua/luajit/prebuilt/mac";
-				PRODUCT_NAME = "libluacocos2d Mac";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				USER_HEADER_SEARCH_PATHS = "$(inherited) $(SRCROOT)/../../../platform/mac $(SRCROOT)/../../../../external/glfw3/include/mac $(SRCROOT)/../../../../external/curl/include/mac";
-			};
-			name = Debug;
-		};
-		15C1C2CB198748D200A46ACC /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = YES;
-				COMBINE_HIDPI_IMAGES = YES;
-				EXECUTABLE_PREFIX = "";
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"$(inherited)",
-					CC_TARGET_OS_MAC,
-					CC_KEYBOARD_SUPPORT,
-				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-				);
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/../../../../external/lua/luajit/prebuilt/mac";
-				PRODUCT_NAME = "libluacocos2d Mac";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				USER_HEADER_SEARCH_PATHS = "$(inherited) $(SRCROOT)/../../../platform/mac $(SRCROOT)/../../../../external/glfw3/include/mac $(SRCROOT)/../../../../external/curl/include/mac";
-			};
-			name = Release;
-		};
-		15EFA614198B2DAA000C57D3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = YES;
-				ENABLE_BITCODE = NO;
-				EXECUTABLE_PREFIX = "";
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"$(inherited)",
-					CC_TARGET_OS_IPHONE,
-				);
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/../../../../external/lua/luajit/prebuilt/ios";
-				PRODUCT_NAME = "libluacocos2d iOS";
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				USER_HEADER_SEARCH_PATHS = "$(inherited) $(SRCROOT)/../../../platform/ios $(SRCROOT)/../../../../external/curl/include/ios";
-			};
-			name = Debug;
-		};
-		15EFA615198B2DAA000C57D3 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = YES;
-				ENABLE_BITCODE = NO;
-				EXECUTABLE_PREFIX = "";
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"$(inherited)",
-					CC_TARGET_OS_IPHONE,
-				);
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/../../../../external/lua/luajit/prebuilt/ios";
-				PRODUCT_NAME = "libluacocos2d iOS";
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				USER_HEADER_SEARCH_PATHS = "$(inherited) $(SRCROOT)/../../../platform/ios $(SRCROOT)/../../../../external/curl/include/ios";
-			};
-			name = Release;
-		};
-		507B43511C31FA0C0067B53E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = YES;
-				EXECUTABLE_PREFIX = "";
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"$(inherited)",
-					CC_TARGET_OS_TVOS,
-				);
-				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/../../../../external/lua/luajit/prebuilt/ios";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = appletvos;
-				USER_HEADER_SEARCH_PATHS = "$(inherited) $(SRCROOT)/../../../platform/ios $(SRCROOT)/../../../../external/curl/include/ios";
-			};
-			name = Debug;
-		};
-		507B43521C31FA0C0067B53E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = YES;
-				EXECUTABLE_PREFIX = "";
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"$(inherited)",
-					CC_TARGET_OS_TVOS,
-				);
-				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/../../../../external/lua/luajit/prebuilt/ios";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = appletvos;
-				USER_HEADER_SEARCH_PATHS = "$(inherited) $(SRCROOT)/../../../platform/ios $(SRCROOT)/../../../../external/curl/include/ios";
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		1551A339158F2AB200E66CFE /* Build configuration list for PBXProject "cocos2d_lua_bindings" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1551A34A158F2AB200E66CFE /* Debug */,
-				1551A34B158F2AB200E66CFE /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		15C1C2C9198748D200A46ACC /* Build configuration list for PBXNativeTarget "libluacocos2d Mac" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				15C1C2CA198748D200A46ACC /* Debug */,
-				15C1C2CB198748D200A46ACC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		15EFA613198B2DAA000C57D3 /* Build configuration list for PBXNativeTarget "libluacocos2d iOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				15EFA614198B2DAA000C57D3 /* Debug */,
-				15EFA615198B2DAA000C57D3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		507B43501C31FA0C0067B53E /* Build configuration list for PBXNativeTarget "libluacocos2d tvOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				507B43511C31FA0C0067B53E /* Debug */,
-				507B43521C31FA0C0067B53E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = 1551A336158F2AB200E66CFE /* Project object */;
-}
+				507B42D
